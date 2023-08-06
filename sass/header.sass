@@ -1,0 +1,84 @@
+@import "vars"
+
+// header section
+header
+	background: #fff
+
+.header-top
+	padding: 24px 0
+	color: $accent
+
+.logo
+	@include d-flex
+	max-width: 133px
+	width: 100%
+
+.rating-link
+	margin: 0 52px
+	@include d-flex
+
+.header-contacts
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	.phone
+		margin: 0 10px 0 0
+
+.phone
+	font-size: 20px
+	font-weight: bold
+	leading-trim: both
+	text-edge: cap
+	color: $accent
+	&:hover
+		color: $grey
+
+.address
+	margin: 0 36px 0 auto
+
+.btn-burger
+	align-items: center
+	justify-content: center
+	width: 45px
+	height: 29px
+	fill: #051861
+	display: none
+
+.list-messengers
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 0 26px
+	li
+		margin: 0 15px 0 0
+		&:last-child
+			margin: 0
+		a
+			width: 28px
+			height: 28px
+			@include d-flex
+
+.header-bottom-wrapper
+	width: 100%
+	padding: 11px 15px
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	border-radius: 10px
+	background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0.60) 100%)
+
+.dropdown-services
+	.dropdown-toggle
+		padding: 5px 36px
+
+.dropdown-menu
+	border-radius: 20px
+	background: #F7F7F7
+	box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15)
+	border: none
+
+.link-mobile
+	.svg-icon
+		stroke: #B8B8B8
+		fill: none		
+
