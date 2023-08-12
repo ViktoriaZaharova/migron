@@ -3,6 +3,7 @@
 // header section
 header
 	background: #fff
+	margin: 0 0 22px
 
 .header-top
 	padding: 24px 0
@@ -70,15 +71,105 @@ header
 .dropdown-services
 	.dropdown-toggle
 		padding: 5px 36px
+	.dropdown-menu
+		min-width: 752px
+		padding: 58px 57px 33px 77px
+
+.list-services
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		width: 50%
+		margin: 0 0 75px
+
+.services-link
+	color: #333
+	display: flex
+	align-items: center
+	&__icon
+		@include d-flex
+		width: 30px
+		height: 30px
+		min-width: 30px
+		fill: $accent
+		margin: 0 20px 0 0
+
+.services-link
+	display: flex
+	align-items: center
 
 .dropdown-menu
 	border-radius: 20px
 	background: #F7F7F7
 	box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15)
 	border: none
+	&__body
+		width: 100%
+	&__footer
+		display: flex
+		align-items: center
+		flex-wrap: wrap
 
 .link-mobile
+	color: #B8B8B8
+	margin: 0 0 0 auto
+
 	.svg-icon
 		stroke: #B8B8B8
-		fill: none		
+		fill: none
+		width: 11.7px
+		min-width: 11.7px	
+		height: 18px
+		margin: 0 10px 0 0
 
+.nav-menu
+	margin: 0 auto
+	font-size: 16px
+	.nav-item
+		margin: 0 60px 0 0
+		&:last-child
+			margin: 0
+	.nav-link
+		color: #333
+		position: relative
+		z-index: 1
+		padding: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			bottom: -2px
+			width: 0
+			height: 2px
+			background: $accent
+			transition: .3s
+		&:hover
+			color: $accent
+			&::before
+				width: 100%
+
+.form-search
+	position: relative
+	max-width: 176px
+	width: 100%
+	label
+		margin: 0
+	input
+		padding: 0 37px 0 20px
+		height: 32px
+		border-radius: 10px
+		border: 1px solid #ECECEC
+	[type="submit"]
+		fill: none
+		stroke: #051861
+		width: 17px
+		height: 17px
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		right: 20px
+		@include d-flex
+		background: transparent
+		padding: 0

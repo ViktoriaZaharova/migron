@@ -68,19 +68,19 @@ input, textarea, select
 	outline: none
 	box-shadow: none
 	appearance: none
-	padding: 0 15px
+	padding: 20px 30px
 	box-sizing: border-box
 	font-family: $default-font
-	border: none
-	border-radius: 10px
+	border-radius: 20px
+	border: 1px solid #051861
 	width: 100%
-	height: 54px
+	height: 62px
 	background: transparent
-	color: #000
-	font-size: 15px
+	color: #051861
+	font-size: 16px
 
 	&::placeholder
-		color: #595959
+		color: #051861
 
 	&:hover, &:focus
 		outline: none
@@ -121,8 +121,8 @@ button, .btn
 	text-align: center
 	padding: 8px 20px
 	font-size: 16px
+	height: 42px
 	font-weight: normal
-	// height: 46px
 	border-radius: 20px
 	transition: 0.3s ease
 	position: relative
@@ -140,21 +140,27 @@ button, .btn
 	&:hover
 		&::before
 			width: 100%
+	.svg-icon
+		margin: 0 0 0 20px
+		@include d-flex
 
 .btn-sm
-	padding: 2px 20px		
+	padding: 2px 20px
+	height: 32px
 
 .btn-md
-	padding: 15px 30px
+	padding: 10px 30px
+	height: 62px
 
 .btn-accent
 	background: $accent
 	color: #fff
 	&::before
-		background: $grey			
-	&:hover
 		background: $grey
-		color: $accent
+	&:hover
+		color: #fff
+	.svg-icon
+		stroke: #fff	
 
 .btn-border-accent
 	border: 1px solid $accent
@@ -176,7 +182,24 @@ button, .btn
 
 .btn-white
 	background: #fff
-		
+	&::before
+		background: $accent
+	&:hover
+		color: #fff
+		.svg-icon
+			stroke: #fff
+
+.btn-group
+	.btn
+		margin: 0 44px 0 0
+		&:last-child
+			margin: 0			
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
+	border-radius: 20px		
+	flex: none	
+
 
 .dropdown-toggle
 	&:after
@@ -188,11 +211,16 @@ button, .btn
 		background: url('../img/arrow-dropdown.svg') no-repeat center
 		background-size: 100%
 
-
 .svg-icon
 	display: inline-block
 	width: 100%
 	height: 100%
+
+
+.svg-icon-arrow
+	width: 9px
+	height: 18px
+	fill: none		
 
 strong, b
 	font-weight: bold
@@ -234,8 +262,52 @@ h2
 h3
 	font-size: 24px
 	font-weight: 600
-	line-height: none
+	line-height: normal
 	width: 100%
+
+.title-decor
+	position: relative
+	z-index: 1
+	color: #fff
+	padding: 70px 75px 70px 0
+	width: fit-content
+	&::before
+		content: ''
+		position: absolute
+		z-index: -1
+		background: $accent
+		top: 0
+		right: 0
+		width: 900px
+		height: 100%
+		border-radius: 20px
+
+.font-bold
+	font-weight: bold	
+
+.mb-22
+	margin-bottom: 22px
+
+.mb-30
+	margin-bottom: 30px
+
+.mb-50
+	margin-bottom: 50px
+
+.mb-65
+	margin-bottom: 65px			
+
+.mb-80
+	margin-bottom: 80px	
+
+.mb-110
+	margin-bottom: 110px	
+
+.m-105
+	margin: 105px 0	
+
+.box-text
+	font-size: 20px
 
 // slick slider style
 .slick-slider
@@ -243,6 +315,44 @@ h3
 
 .slick-slide
 	outline: none
+
+.slick-arrow
+	position: absolute
+	z-index: 1
+	opacity: 1
+	background: transparent
+	border-radius: 0
+	border: none
+	width: 24px
+	height: 48px
+	top: 50%
+	transform: translate(-50%,0)
+	@include d-flex
+	stroke: $accent
+	fill: none
+	&:hover
+		stroke: $grey	
+	svg
+		@include d-flex	
+
+.slick-next
+	right: 0
+
+.slick-prev
+	left: 0		
+	svg
+		transform: rotate(180deg)	
+
+.slider-nav
+	display: flex
+	flex-wrap: wrap
+	.slick-arrow
+		position: relative
+		top: 0
+		right: 0
+		left: 0
+		transform: none
+				
 
 //checkbox my
 .label-checkbox
