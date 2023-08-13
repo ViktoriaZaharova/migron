@@ -1,3 +1,96 @@
-@import "fonts"
 @import "vars"
 
+footer
+	margin: 80px 0 0
+	background: #F7F7F7
+	padding: 57px 0 45px
+	.logo
+		max-width: 175px
+	.phone
+		font-size: 40px
+		color: #5C5C5C
+		margin: 0 70px 0 80px
+		&:hover
+			color: $accent
+	.schedule
+		color: #5C5C5C
+		font-size: 20px
+	.list-messengers
+		margin: 0 70px 0 35px
+	.rating-link
+		margin: 0				
+
+.mail
+	color: #5C5C5C
+	font-size: 20px
+	font-weight: bold
+	&:hover
+		color: $accent			
+
+.footer-box
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	&__top, &__bottom
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+	&__bottom
+		margin: 43px 0 0
+
+
+.social-box
+	h4
+		margin: 0 0 10px
+		color: $accent
+	.btn-group
+		.btn
+			margin-right: 20px	
+
+.list-social
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	margin: 0 0 18px
+	li
+		margin: 0 40px 0 0
+		&:last-child
+			margin: 0
+		a
+			@include d-flex	
+		.link-tg
+			width: 38px
+			height: 31px
+			img
+				width: 100%	
+
+
+.nav-menu-footer
+	.nav-item
+		width: 100%
+		margin: 0 0 16px
+		&:last-child
+			margin: 0 0 16px
+	.nav-link
+		color: $accent
+
+.list-documents
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 14px
+	li
+		margin: 0 90px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #BBB
+			&:hover
+				color: $accent
+
+.copyright
+	text-align: right
+	color: #BBB
+	font-size: 14px

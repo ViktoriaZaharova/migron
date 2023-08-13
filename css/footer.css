@@ -1,1 +1,146 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+footer {
+  margin: 80px 0 0;
+  background: #F7F7F7;
+  padding: 57px 0 45px;
+}
+footer .logo {
+  max-width: 175px;
+}
+footer .phone {
+  font-size: 40px;
+  color: #5C5C5C;
+  margin: 0 70px 0 80px;
+}
+footer .phone:hover {
+  color: #051861;
+}
+footer .schedule {
+  color: #5C5C5C;
+  font-size: 20px;
+}
+footer .list-messengers {
+  margin: 0 70px 0 35px;
+}
+footer .rating-link {
+  margin: 0;
+}
+
+.mail {
+  color: #5C5C5C;
+  font-size: 20px;
+  font-weight: bold;
+}
+.mail:hover {
+  color: #051861;
+}
+
+.footer-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-box__top, .footer-box__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.footer-box__bottom {
+  margin: 43px 0 0;
+}
+
+.social-box h4 {
+  margin: 0 0 10px;
+  color: #051861;
+}
+.social-box .btn-group .btn {
+  margin-right: 20px;
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 18px;
+}
+.list-social li {
+  margin: 0 40px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list-social li .link-tg {
+  width: 38px;
+  height: 31px;
+}
+.list-social li .link-tg img {
+  width: 100%;
+}
+
+.nav-menu-footer .nav-item {
+  width: 100%;
+  margin: 0 0 16px;
+}
+.nav-menu-footer .nav-item:last-child {
+  margin: 0 0 16px;
+}
+.nav-menu-footer .nav-link {
+  color: #051861;
+}
+
+.list-documents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 14px;
+}
+.list-documents li {
+  margin: 0 90px 0 0;
+}
+.list-documents li:last-child {
+  margin: 0;
+}
+.list-documents li a {
+  color: #BBB;
+}
+.list-documents li a:hover {
+  color: #051861;
+}
+
+.copyright {
+  text-align: right;
+  color: #BBB;
+  font-size: 14px;
+}

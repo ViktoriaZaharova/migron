@@ -332,7 +332,7 @@ ul, ol {
   padding: 0 15px;
 }
 
-h1 {
+h1, .h1 {
   width: 100%;
   font-weight: bold;
   color: #051861;
@@ -340,7 +340,7 @@ h1 {
   line-height: 115.625%;
 }
 
-h2 {
+h2, .h2 {
   font-size: 48px;
   font-weight: 600;
   width: 100%;

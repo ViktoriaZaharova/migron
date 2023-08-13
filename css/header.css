@@ -22,6 +22,19 @@ header {
   width: 100%;
 }
 
+.schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.schedule h4 {
+  margin: 0 20px 0 0;
+  font-size: 20px;
+}
+
 .rating-link {
   margin: 0 52px;
   display: -webkit-box;
