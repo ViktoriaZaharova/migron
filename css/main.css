@@ -777,9 +777,12 @@
 }
 .form-callback .consent {
   color: #405BA1;
+  margin: 0 0 0 20px;
+}
+
+.consent {
   font-size: 12px;
   max-width: 222px;
-  margin: 0 0 0 20px;
 }
 
 .communication-method {

@@ -17,3 +17,15 @@ $('.reviews-slider').slick({
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
+
+$('.address-gallery').slick({
+	slidesToShow: 2,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+});
+
+
+$('.modal').on('shown.bs.modal', function () {
+	$('.address-gallery').resize();
+	$('.address-gallery').slick('setPosition');
+});

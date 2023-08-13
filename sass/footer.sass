@@ -18,14 +18,14 @@ footer
 	.list-messengers
 		margin: 0 70px 0 35px
 	.rating-link
-		margin: 0				
+		margin: 0
 
 .mail
 	color: #5C5C5C
 	font-size: 20px
 	font-weight: bold
 	&:hover
-		color: $accent			
+		color: $accent
 
 .footer-box
 	width: 100%
@@ -40,14 +40,13 @@ footer
 	&__bottom
 		margin: 43px 0 0
 
-
 .social-box
 	h4
 		margin: 0 0 10px
 		color: $accent
 	.btn-group
 		.btn
-			margin-right: 20px	
+			margin-right: 20px
 
 .list-social
 	display: flex
@@ -59,13 +58,12 @@ footer
 		&:last-child
 			margin: 0
 		a
-			@include d-flex	
+			@include d-flex
 		.link-tg
 			width: 38px
 			height: 31px
 			img
-				width: 100%	
-
+				width: 100%
 
 .nav-menu-footer
 	.nav-item
@@ -94,3 +92,104 @@ footer
 	text-align: right
 	color: #BBB
 	font-size: 14px
+
+// modal
+.modal-dialog
+	max-width: 552px
+
+.modal-content
+	border-radius: 20px
+	border: none
+	background: #FFF
+	padding: 50px 20px 40px
+	.form
+		max-width: 335px
+		width: 100%
+		margin: 0 auto
+		label
+			margin: 0 0 20px
+		button
+			width: 100%
+		.consent
+			text-align: center
+			margin: 20px auto 0
+			color: #5C5C5C
+
+.modal-header
+	padding: 0
+	border: none
+	border-radius: 0
+	margin: 0 0 28px
+	width: 100%
+	flex-wrap: wrap
+	.btn-close
+		padding: 0
+		position: absolute
+		z-index: 1
+		opacity: 1
+		margin: 0
+		top: 17px
+		right: 16px
+		width: 21px
+		height: 21px
+		@include d-flex
+		fill: #051861
+		background: transparent
+		border: none
+		border-radius: 0
+
+.modal-title
+	text-align: center
+	width: 100%
+	color: #5C5C5C
+	font-size: 24px
+	font-weight: 600
+
+.modal-body
+	width: 100%
+	padding: 0
+	.box-text
+		color: #5C5C5C
+		margin: 0 auto 20px
+		font-size: 16px
+
+#addressModal
+	.modal-dialog
+		max-width: 1412px
+	.modal-title
+		color: $accent
+		font-size: 40px
+	.modal-title
+		margin: 0 0 90px	
+	.modal-content
+		padding: 56px 90px 95px				
+
+.address-gallery
+	padding: 0 44px
+	
+.address-gallery-photo
+	@include d-flex
+	padding: 0 20px	
+	height: 522px
+	width: 100%
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+
+.modal-v2
+	.modal-dialog
+		max-width: 680px
+	.modal-header
+		margin: 0 0 39px
+		padding: 0 0 32px
+		border-bottom: 1px solid #FFC797
+	.modal-title
+		text-align: left
+
+.route-metro-photo
+	width: 100%
+	img
+		width: 100%						
+
+

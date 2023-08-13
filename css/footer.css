@@ -144,3 +144,140 @@ footer .rating-link {
   color: #BBB;
   font-size: 14px;
 }
+
+.modal-dialog {
+  max-width: 552px;
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: none;
+  background: #FFF;
+  padding: 50px 20px 40px;
+}
+.modal-content .form {
+  max-width: 335px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-content .form label {
+  margin: 0 0 20px;
+}
+.modal-content .form button {
+  width: 100%;
+}
+.modal-content .form .consent {
+  text-align: center;
+  margin: 20px auto 0;
+  color: #5C5C5C;
+}
+
+.modal-header {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  margin: 0 0 28px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.modal-header .btn-close {
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  margin: 0;
+  top: 17px;
+  right: 16px;
+  width: 21px;
+  height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: #051861;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+.modal-title {
+  text-align: center;
+  width: 100%;
+  color: #5C5C5C;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modal-body {
+  width: 100%;
+  padding: 0;
+}
+.modal-body .box-text {
+  color: #5C5C5C;
+  margin: 0 auto 20px;
+  font-size: 16px;
+}
+
+#addressModal .modal-dialog {
+  max-width: 1412px;
+}
+#addressModal .modal-title {
+  color: #051861;
+  font-size: 40px;
+}
+#addressModal .modal-title {
+  margin: 0 0 90px;
+}
+#addressModal .modal-content {
+  padding: 56px 90px 95px;
+}
+
+.address-gallery {
+  padding: 0 44px;
+}
+
+.address-gallery-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+  height: 522px;
+  width: 100%;
+}
+.address-gallery-photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-v2 .modal-dialog {
+  max-width: 680px;
+}
+.modal-v2 .modal-header {
+  margin: 0 0 39px;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #FFC797;
+}
+.modal-v2 .modal-title {
+  text-align: left;
+}
+
+.route-metro-photo {
+  width: 100%;
+}
+.route-metro-photo img {
+  width: 100%;
+}

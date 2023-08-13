@@ -1217,8 +1217,6 @@
 								</div>
 							</div>
 						</div>
-
-
 					</div>
 				</div>
 			</div>
@@ -1239,7 +1237,7 @@
 
 	<!-- Модальное окно -->
 	<div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="callbackModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
 				<div class="modal-header">
 					<div class="modal-title">Получить бесплатную консультацию</div>
@@ -1248,8 +1246,8 @@
 						</svg></button>
 				</div>
 				<div class="modal-body">
-					<div class="box-text">
-						<p><span class="font-bold">Оставьте ваши данные </span>и мы свяжемся с вами в ближайшее время</p>
+					<div class="box-text text-center">
+						<p><span class="font-bold d-block">Оставьте ваши данные </span>и мы свяжемся с вами в ближайшее время</p>
 					</div>
 					<form action="" method="post" class="form">
 						<label>
@@ -1264,6 +1262,82 @@
 						<button type="submit" class="btn btn-md btn-accent">отправить</button>
 						<div class="consent">нажимая на кнопку, вы соглашаетесь с пользовательским соглашением</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="consultModal" tabindex="-1" aria-labelledby="consultModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Оставить заявку на услугу</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="box-text text-center">
+						<p><span class="font-bold d-block">Оставьте ваши данные </span>и мы свяжемся с вами в ближайшее время</p>
+					</div>
+					<form action="" method="post" class="form">
+						<label>
+							<input type="text" name="name" placeholder="имя*" required>
+						</label>
+						<label>
+							<input type="text" name="phone" placeholder="телефон*" required>
+						</label>
+						<label>
+							<input type="text" name="mail" placeholder="e-mai*" required>
+						</label>
+						<button type="submit" class="btn btn-md btn-accent">отправить</button>
+						<div class="consent">нажимая на кнопку, вы соглашаетесь с пользовательским соглашением</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Как добраться до нас</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="address-gallery">
+						<div class="slide">
+							<div class="address-gallery-photo"><img src="img/address1.png" alt=""></div>
+						</div>
+						<div class="slide">
+							<div class="address-gallery-photo"><img src="img/address2.png" alt=""></div>
+						</div>
+						<div class="slide">
+							<div class="address-gallery-photo"><img src="img/address1.png" alt=""></div>
+						</div>
+						<div class="slide">
+							<div class="address-gallery-photo"><img src="img/address2.png" alt=""></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="routeModal" tabindex="-1" aria-labelledby="routeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Как добраться от метро</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="route-metro-photo"><img src="img/route.png" alt=""></div>
 				</div>
 			</div>
 		</div>
