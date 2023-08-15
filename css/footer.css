@@ -273,6 +273,10 @@ footer .rating-link {
 }
 .modal-v2 .modal-title {
   text-align: left;
+  color: #333;
+}
+.modal-v2 .modal-content {
+  padding: 43px 37px 52px;
 }
 
 .route-metro-photo {
@@ -280,4 +284,102 @@ footer .rating-link {
 }
 .route-metro-photo img {
   width: 100%;
+}
+
+.map-location {
+  width: 100%;
+  height: 516px;
+  border-radius: 20px;
+}
+.map-location iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#surveyModal .modal-dialog {
+  max-width: 1200px;
+}
+
+.form-survey {
+  width: 100%;
+}
+.form-survey [type=submit], .form-survey .checkbox-consent {
+  display: none;
+}
+.form-survey.last-slide [type=submit], .form-survey.last-slide .checkbox-consent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-survey-box {
+  width: 100%;
+}
+.form-survey-box__header {
+  width: 100%;
+  margin: 0 0 33px;
+}
+
+.number-question {
+  font-size: 40px;
+  font-weight: 600;
+  color: #051861;
+}
+
+.title-question {
+  margin: 33px 0 0;
+}
+
+.checkbox-consent {
+  color: #5C5C5C;
+  font-size: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 27px 0 0;
+}
+.checkbox-consent .checkbox-text {
+  max-width: 152px;
+}
+
+.form-survey-slider__nav {
+  margin: 30px 0 0;
+}
+.form-survey-slider__nav .slick-arrow {
+  padding: 10px 30px;
+  height: 62px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+.form-survey-slider__nav .slick-arrow svg {
+  width: 9px;
+  height: 18px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.form-survey-slider__nav .slick-prev {
+  margin: 0 27px 0 0;
+}
+.form-survey-slider__nav .slick-prev svg {
+  margin: 0 20px 0 0;
+  stroke: #051861;
+}
+.form-survey-slider__nav .btn-border-accent {
+  border: 1px solid #051861;
+}
+.form-survey-slider__nav .btn-border-accent:hover svg {
+  stroke: #fff;
+}
+.form-survey-slider__nav .btn-accent {
+  background: #051861;
+}
+.form-survey-slider__nav .btn-accent svg {
+  stroke: #fff;
 }

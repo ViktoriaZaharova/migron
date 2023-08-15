@@ -26,8 +26,10 @@
 		height: 702px
 	&-min
 		height: 334px
+		margin: 0 0 22px
 		&__last
 			height: 346px
+			margin: 0
 
 // sales section
 .sales
@@ -68,6 +70,8 @@
 .services-box
 	width: 100%
 	height: 100%
+	display: flex
+	flex-direction: column
 	.btn
 		margin: 25px 44px 0 0
 		&:last-child
@@ -78,13 +82,18 @@
 		height: 42px
 		min-width: 35px
 		fill: $accent
+		margin: 0 0 28px
 	h3
-		margin: 0 0 12px
 		font-size: 23px
+		width: 100%
+	&__head
+		display: flex
+		align-items: center
+		flex-wrap: wrap
 	&__body
 		width: 100%
-		height: calc(100% - 42px)
-		padding: 28px 0 0
+		// height: calc(100% - 101px)
+		padding: 12px 0 0
 		display: flex
 		flex-direction: column
 	.btn-group
@@ -104,7 +113,7 @@
 	width: 100%
 	position: relative
 	z-index: 1
-	border-radius: 20px
+	border-radius: 20px 0 0 20px
 	padding: 84px 0 113px 50px
 	&::before
 		content: ''
@@ -137,6 +146,8 @@
 
 // why-us
 .why-us
+	position: relative
+	overflow: hidden
 	h2
 		margin: 70px 0 0
 
@@ -172,7 +183,6 @@
 		height: 1px
 		max-width: 1700px
 		width: 100%
-		padding: 0 15px
 
 .video-reviews
 	position: relative
@@ -298,6 +308,7 @@
 		max-width: 323px
 	&-wrapper
 		position: relative
+		overflow: hidden
 		z-index: 1
 		padding: 78px 0 53px 55px
 		&::before
@@ -416,7 +427,6 @@
 		height: 1px
 		max-width: 1700px
 		width: 100%
-		padding: 0 15px
 
 .articles-card
 	width: 100%

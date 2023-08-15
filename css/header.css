@@ -1,6 +1,11 @@
 header {
   background: #fff;
   margin: 0 0 22px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .header-top {
@@ -65,8 +70,6 @@ header {
 .phone {
   font-size: 20px;
   font-weight: bold;
-  leading-trim: both;
-  text-edge: cap;
   color: #051861;
 }
 .phone:hover {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -47,6 +48,14 @@ body {
   font-weight: normal;
   background: #fff;
   color: #333;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  padding: 166px 0 0;
 }
 
 img {
@@ -162,6 +171,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   font-size: 16px;
   height: 42px;
   font-weight: normal;
+  line-height: 1;
   border-radius: 20px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -412,6 +422,22 @@ h3 {
   font-size: 20px;
 }
 
+.column-count-5 {
+  -webkit-column-count: 5;
+     -moz-column-count: 5;
+          column-count: 5;
+}
+
+.list-radio li {
+  margin: 0 0 58px;
+}
+
+.column-count-5 {
+  -webkit-column-count: 5;
+     -moz-column-count: 5;
+          column-count: 5;
+}
+
 .slick-slider {
   width: 100%;
 }
@@ -477,6 +503,9 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .slider-nav .slick-arrow {
   position: relative;
@@ -487,36 +516,136 @@ h3 {
           transform: none;
 }
 
-.label-checkbox {
+.slick-disabled {
+  display: none !important;
+}
+
+.checkbox {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #333;
+}
+.checkbox input {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 17px 0 0;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #051861;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  cursor: pointer;
+}
+.checkbox-custom::before {
+  content: "✓";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  color: #051861;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.checkbox input:checked ~ .checkbox-custom:before {
+  opacity: 1;
+}
+
+.radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+.radio input {
+  display: none;
+}
+.radio input:checked ~ .radio-custom::before {
+  opacity: 1;
+}
+
+.radio-custom {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  border: 1px solid #051861;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 17px 0 0;
+  position: relative;
+}
+.radio-custom::before {
+  content: "✓";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 22px;
+  height: 22px;
+  color: #051861;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-checkbox {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-
-.inp-check {
-  display: none;
-}
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
-}
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.list-checkbox li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }

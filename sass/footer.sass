@@ -160,16 +160,16 @@ footer
 		color: $accent
 		font-size: 40px
 	.modal-title
-		margin: 0 0 90px	
+		margin: 0 0 90px
 	.modal-content
-		padding: 56px 90px 95px				
+		padding: 56px 90px 95px
 
 .address-gallery
 	padding: 0 44px
-	
+
 .address-gallery-photo
 	@include d-flex
-	padding: 0 20px	
+	padding: 0 20px
 	height: 522px
 	width: 100%
 	img
@@ -186,10 +186,84 @@ footer
 		border-bottom: 1px solid #FFC797
 	.modal-title
 		text-align: left
+		color: #333
+	.modal-content
+		padding: 43px 37px 52px
 
 .route-metro-photo
 	width: 100%
 	img
-		width: 100%						
+		width: 100%
 
+.map-location
+	width: 100%
+	height: 516px
+	border-radius: 20px
+	iframe
+		border-radius: 20px
+		width: 100%
+		height: 100%
 
+#surveyModal
+	.modal-dialog
+		max-width: 1200px
+
+.form-survey
+	width: 100%
+	[type='submit'], .checkbox-consent
+		display: none
+	&.last-slide
+		[type='submit'], .checkbox-consent
+			display: flex
+
+.form-survey-box
+	width: 100%
+	&__header
+		width: 100%
+		margin: 0 0 33px
+
+		
+
+.number-question
+	font-size: 40px
+	font-weight: 600
+	color: $accent
+
+.title-question
+	margin: 33px 0 0
+
+.checkbox-consent
+	color: #5C5C5C
+	font-size: 12px
+	width: fit-content
+	margin: 0 27px 0 0
+	.checkbox-text
+		max-width: 152px
+
+.form-survey-slider
+	&__nav
+		margin: 30px 0 0
+		.slick-arrow
+			padding: 10px 30px
+			height: 62px
+			width: fit-content
+			border-radius: 20px
+			order: -1
+			svg
+				width: 9px
+				height: 18px
+				display: inline-flex
+		.slick-prev
+			margin: 0 27px 0 0
+			svg
+				margin: 0 20px 0 0
+				stroke: $accent
+		.btn-border-accent
+			border: 1px solid $accent
+			&:hover
+				svg
+					stroke: #fff
+		.btn-accent
+			background: $accent
+			svg
+				stroke: #fff

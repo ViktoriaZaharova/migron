@@ -39,9 +39,11 @@
 }
 .home-image-min {
   height: 334px;
+  margin: 0 0 22px;
 }
 .home-image-min__last {
   height: 346px;
+  margin: 0;
 }
 
 .sales .title-decor {
@@ -98,6 +100,13 @@
 .services-box {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .services-box .btn {
   margin: 25px 44px 0 0;
@@ -119,15 +128,25 @@
   height: 42px;
   min-width: 35px;
   fill: #051861;
+  margin: 0 0 28px;
 }
 .services-box h3 {
-  margin: 0 0 12px;
   font-size: 23px;
+  width: 100%;
+}
+.services-box__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .services-box__body {
   width: 100%;
-  height: calc(100% - 42px);
-  padding: 28px 0 0;
+  padding: 12px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +175,7 @@
   width: 100%;
   position: relative;
   z-index: 1;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
   padding: 84px 0 113px 50px;
 }
 .about-wrapper::before {
@@ -195,6 +214,10 @@
      object-fit: cover;
 }
 
+.why-us {
+  position: relative;
+  overflow: hidden;
+}
 .why-us h2 {
   margin: 70px 0 0;
 }
@@ -248,7 +271,6 @@
   height: 1px;
   max-width: 1700px;
   width: 100%;
-  padding: 0 15px;
 }
 
 .video-reviews {
@@ -453,6 +475,7 @@
 }
 .mass-media-wrapper {
   position: relative;
+  overflow: hidden;
   z-index: 1;
   padding: 78px 0 53px 55px;
 }
@@ -636,7 +659,6 @@
   height: 1px;
   max-width: 1700px;
   width: 100%;
-  padding: 0 15px;
 }
 
 .articles-card {

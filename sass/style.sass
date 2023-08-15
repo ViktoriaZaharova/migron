@@ -46,6 +46,12 @@ body
 	background: #fff
 	color: #333
 
+html, body
+	overflow-x: hidden
+
+.wrapper
+	padding: 166px 0 0
+
 img
 	display: block
 	max-width: 100%
@@ -123,6 +129,7 @@ button, .btn
 	font-size: 16px
 	height: 42px
 	font-weight: normal
+	line-height: 1
 	border-radius: 20px
 	transition: 0.3s ease
 	position: relative
@@ -160,7 +167,7 @@ button, .btn
 	&:hover
 		color: #fff
 	.svg-icon
-		stroke: #fff	
+		stroke: #fff
 
 .btn-border-accent
 	border: 1px solid $accent
@@ -193,13 +200,12 @@ button, .btn
 	.btn
 		margin: 0 44px 0 0
 		&:last-child
-			margin: 0			
+			margin: 0
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle),
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
-	border-radius: 20px		
-	flex: none	
-
+	border-radius: 20px
+	flex: none
 
 .dropdown-toggle
 	&:after
@@ -216,11 +222,10 @@ button, .btn
 	width: 100%
 	height: 100%
 
-
 .svg-icon-arrow
 	width: 9px
 	height: 18px
-	fill: none		
+	fill: none
 
 strong, b
 	font-weight: bold
@@ -283,7 +288,7 @@ h3
 		border-radius: 20px
 
 .font-bold
-	font-weight: bold	
+	font-weight: bold
 
 .mb-22
 	margin-bottom: 22px
@@ -295,19 +300,29 @@ h3
 	margin-bottom: 50px
 
 .mb-65
-	margin-bottom: 65px			
+	margin-bottom: 65px
 
 .mb-80
-	margin-bottom: 80px	
+	margin-bottom: 80px
 
 .mb-110
-	margin-bottom: 110px	
+	margin-bottom: 110px
 
 .m-105
-	margin: 105px 0	
+	margin: 105px 0
 
 .box-text
 	font-size: 20px
+
+.column-count-5
+	column-count: 5
+
+.list-radio
+	li
+		margin: 0 0 58px
+
+.column-count-5
+	column-count: 5
 
 // slick slider style
 .slick-slider
@@ -331,53 +346,106 @@ h3
 	stroke: $accent
 	fill: none
 	&:hover
-		stroke: $grey	
+		stroke: $grey
 	svg
-		@include d-flex	
+		@include d-flex
 
 .slick-next
 	right: 0
 
 .slick-prev
-	left: 0		
+	left: 0
 	svg
-		transform: rotate(180deg)	
+		transform: rotate(180deg)
 
 .slider-nav
 	display: flex
 	flex-wrap: wrap
+	align-items: center
 	.slick-arrow
 		position: relative
 		top: 0
 		right: 0
 		left: 0
 		transform: none
-				
+
+.slick-disabled
+	display: none !important		
 
 //checkbox my
-.label-checkbox
+.checkbox
 	position: relative
 	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
-
-.inp-check
-	display: none
+	align-items: center
+	font-size: 20px
+	color: #333
+	input
+		display: none
 
 .checkbox-custom
-	margin: 0 12px 0 0
+	margin: 0 17px 0 0
 	position: relative
 	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
+	border: 1px solid $accent
+	width: 28px
+	height: 28px
+	min-width: 28px
 	cursor: pointer
+	&::before
+		content: '✓'
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: 22px
+		height: 22px
+		color: $accent
+		opacity: 0
+		transition: .3s
+		@include d-flex
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
+.checkbox input:checked ~ .checkbox-custom:before
+	opacity: 1
 //checkbox my end
+
+// radio my
+.radio
+	display: flex
+	align-items: center
+	font-size: 20px
+	color: #333
+	cursor: pointer
+	input
+		display: none
+		&:checked ~ .radio-custom::before
+			opacity: 1
+
+.radio-custom
+	width: 36px
+	height: 36px
+	min-width: 36px
+	border: 1px solid $accent
+	border-radius: 50%
+	@include d-flex
+	margin: 0 17px 0 0
+	position: relative
+	&::before
+		content: '✓'
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: 22px
+		height: 22px
+		color: $accent
+		opacity: 0
+		transition: .3s
+		@include d-flex
+
+.list-checkbox
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	li
+		flex: 1	
