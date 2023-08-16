@@ -60,12 +60,34 @@ footer .rating-link {
   margin: 43px 0 0;
 }
 
+.social-box {
+  max-width: 475px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .social-box h4 {
   margin: 0 0 10px;
   color: #051861;
 }
+.social-box .btn-group {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .social-box .btn-group .btn {
   margin-right: 20px;
+}
+.social-box .btn-group .btn:last-child {
+  margin: 0;
 }
 
 .list-social {
@@ -231,7 +253,7 @@ footer .rating-link {
   color: #051861;
   font-size: 40px;
 }
-#addressModal .modal-title {
+#addressModal .modal-header {
   margin: 0 0 90px;
 }
 #addressModal .modal-content {
@@ -261,6 +283,7 @@ footer .rating-link {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
 }
 
 .modal-v2 .modal-dialog {

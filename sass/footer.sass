@@ -41,12 +41,20 @@ footer
 		margin: 43px 0 0
 
 .social-box
+	max-width: 475px
+	width: fit-content
+	margin: 0 0 0 auto
+	display: flex
+	flex-direction: column
 	h4
 		margin: 0 0 10px
 		color: $accent
 	.btn-group
+		justify-content: flex-end
 		.btn
 			margin-right: 20px
+			&:last-child
+				margin: 0
 
 .list-social
 	display: flex
@@ -159,7 +167,7 @@ footer
 	.modal-title
 		color: $accent
 		font-size: 40px
-	.modal-title
+	.modal-header
 		margin: 0 0 90px
 	.modal-content
 		padding: 56px 90px 95px
@@ -176,6 +184,7 @@ footer
 		width: 100%
 		height: 100%
 		object-fit: cover
+		border-radius: 5px
 
 .modal-v2
 	.modal-dialog

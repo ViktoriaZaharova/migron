@@ -8,7 +8,7 @@
 	<title>MIGRON - миграционное агенство</title>
 
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
 
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,7 +26,126 @@
 
 	<div class="wrapper">
 
-		<div class="mobile-menu"></div>
+		<div class="overlay-bg"></div>
+		<div class="mobile-menu">
+			<div class="mobile-menu__head">
+				<a href="index.html" class="logo"><img src="img/logo-mobile.svg" alt=""></a>
+				<button class="mobile-menu__close"><svg class="svg-icon">
+						<use xlink:href="img/sprite.svg#close-mobile"></use>
+					</svg></button>
+			</div>
+			<div class="mobile-menu__body">
+				<div class="header-contacts">
+					<a href="tel:+74996818014" class="phone">8 499 681 80 14</a>
+					<div class="schedule">
+						<p>пн-вс 09:00 - 21:00 МСК</p>
+					</div>
+				</div>
+
+				<form action="" method="post" class="form-search">
+					<label>
+						<input type="text" placeholder="Поиск" name="search" required>
+					</label>
+					<button type="submit"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#search"></use>
+						</svg></button>
+				</form>
+
+				<div class="dropdown dropdown-services">
+					<button class="btn btn-sm btn-light-grey dropdown-toggle" type="button" data-bs-toggle="dropdown"
+						aria-expanded="false">
+						все услуги
+					</button>
+					<div class="dropdown-menu">
+						<div class="dropdown-menu__body">
+							<ul class="list-services my-ul">
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon1"></use>
+											</svg></span><span class="services-link__name">Вид на жительство <br>(ВНЖ)</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon2"></use>
+											</svg></span><span class="services-link__name">Гражданство РФ</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon3"></use>
+											</svg></span><span class="services-link__name">Разрешение на временное <br>проживание
+											(РВП)</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon4"></use>
+											</svg></span><span class="services-link__name">Носители русского языка (НРЯ)</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon5"></use>
+											</svg></span><span class="services-link__name">Установление личности</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon6"></use>
+											</svg></span><span class="services-link__name">Внутренний паспорт РФ</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon7"></use>
+											</svg></span><span class="services-link__name">Обжалование решения <br>о запрете на
+											въезд</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon8"></use>
+											</svg></span><span class="services-link__name">Временное убежище (ВУ)</span>
+									</a></li>
+								<li><a href="#" class="services-link">
+										<span class="services-link__icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#services-icon8"></use>
+											</svg></span><span class="services-link__name">Бесплатная консультация <br>миграционного юриста</span>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<ul class="nav nav-menu">
+					<li class="nav-item"><a href="o-kompanii.html" class="nav-link">О компании</a></li>
+					<li class="nav-item"><a href="ceni.html" class="nav-link">Цены</a></li>
+					<li class="nav-item"><a href="akcii.html" class="nav-link">Акции</a></li>
+					<li class="nav-item"><a href="testi.html" class="nav-link">Тесты</a></li>
+					<li class="nav-item"><a href="informaciya.html" class="nav-link">Полезная информация</a></li>
+					<li class="nav-item"><a href="kontakti.html" class="nav-link">Контакты</a></li>
+				</ul>
+
+				<a href="#" class="btn btn-border-orange btn-consultation" data-bs-toggle="modal"
+					data-bs-target="#callbackModal">получить бесплатную консультацию</a>
+
+				<div class="address">
+					<p><span class="font-bold">Москва</span>, ул. Таганская, 9</p>
+				</div>
+
+				<ul class="list-messengers my-ul">
+					<li><a href="#" rel="nofollow" target="_blank">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#tg"></use>
+							</svg>
+						</a></li>
+					<li><a href="#" rel="nofollow" target="_blank">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#whatsapp"></use>
+							</svg>
+						</a></li>
+					<li><a href="#" rel="nofollow" target="_blank">
+							<svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#viber"></use>
+							</svg>
+						</a></li>
+				</ul>
+			</div>
+		</div>
 
 		<header>
 			<div class="header-top">
@@ -247,7 +366,6 @@
 			</div>
 		</section>
 
-
 		<section class="services m-105">
 			<div class="container">
 				<div class="row">
@@ -446,7 +564,7 @@
 								<h3>Временное <br>убежище (ВУ)</h3>
 							</div>
 							<div class="services-box__body">
-								
+
 								<div class="box-text">
 									<p>Восстановление документов из ЗАГСов, получение справки о несудимости, справки о том, что не
 										состоите
@@ -473,7 +591,7 @@
 								<h3>Бесплатная консультация <br>миграционного юриста</h3>
 							</div>
 							<div class="services-box__body">
-								
+
 								<div class="box-text">
 									<p>Восстановление документов из ЗАГСов, получение <br>справки о несудимости, справки о том, что не
 										<br>состоите
@@ -481,11 +599,12 @@
 										государств. Переводы <br>документов с иностранного на русский язык.
 									</p>
 								</div>
-								
+
 							</div>
 							<div class="btn-group">
 								<a href="#" class="btn btn-md btn-border-accent">подробнее</a>
-								<a href="#" class="btn btn-md btn-border-accent" data-bs-target="#consultModal" data-bs-toggle="modal">оставить
+								<a href="#" class="btn btn-md btn-border-accent" data-bs-target="#consultModal"
+									data-bs-toggle="modal">оставить
 									заявку</a>
 							</div>
 						</div>
@@ -637,25 +756,27 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 d-flex flex-wrap">
-						<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-							<img src="img/reviews-preview1.png" alt="">
-							<span class="video-reviews__icon"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#play"></use>
-								</svg></span>
-						</a>
-						<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-							<img src="img/reviews-preview2.png" alt="">
-							<span class="video-reviews__icon"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#play"></use>
-								</svg></span>
-						</a>
-						<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-							<img src="img/reviews-preview3.png" alt="">
-							<span class="video-reviews__icon"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#play"></use>
-								</svg></span>
-						</a>
+					<div class="col-12">
+						<div class="video-reviews-wrapper">
+							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
+								<img src="img/reviews-preview1.png" alt="">
+								<span class="video-reviews__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#play"></use>
+									</svg></span>
+							</a>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
+								<img src="img/reviews-preview2.png" alt="">
+								<span class="video-reviews__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#play"></use>
+									</svg></span>
+							</a>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
+								<img src="img/reviews-preview3.png" alt="">
+								<span class="video-reviews__icon"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#play"></use>
+									</svg></span>
+							</a>
+						</div>
 					</div>
 				</div>
 
@@ -922,27 +1043,29 @@
 								</div>
 								<div class="col-12 col-lg-9">
 									<div class="row">
-										<div class="col-12 d-flex flex-wrap">
-											<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
-												class="video-reviews video-mass-media">
-												<span class="video-mass-media__img">
-													<img src="img/mass-media-video1.png" alt="">
-													<span class="video-reviews__icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#play"></use>
-														</svg></span>
-												</span>
-												<span class="video-mass-media__title">Выступление на канале ABRACADABRA TV</span>
-											</a>
-											<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
-												class="video-reviews video-mass-media">
-												<span class="video-mass-media__img">
-													<img src="img/mass-media-video2.png" alt="">
-													<span class="video-reviews__icon"><svg class="svg-icon">
-															<use xlink:href="img/sprite.svg#play"></use>
-														</svg></span>
-												</span>
-												<span class="video-mass-media__title">Ролик на телеканале НТВ</span>
-											</a>
+										<div class="col-12">
+											<div class="video-mass-media-wrapper">
+												<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
+													class="video-reviews video-mass-media">
+													<span class="video-mass-media__img">
+														<img src="img/mass-media-video1.png" alt="">
+														<span class="video-reviews__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#play"></use>
+															</svg></span>
+													</span>
+													<span class="video-mass-media__title">Выступление на канале ABRACADABRA TV</span>
+												</a>
+												<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
+													class="video-reviews video-mass-media">
+													<span class="video-mass-media__img">
+														<img src="img/mass-media-video2.png" alt="">
+														<span class="video-reviews__icon"><svg class="svg-icon">
+																<use xlink:href="img/sprite.svg#play"></use>
+															</svg></span>
+													</span>
+													<span class="video-mass-media__title">Ролик на телеканале НТВ</span>
+												</a>
+											</div>
 										</div>
 										<div class="col-12 d-flex flex-wrap">
 											<div class="mass-media-box">
@@ -991,8 +1114,8 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-12 col-sm-6 col-md-3 mb-30">
+				<div class="row news-slider">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
 						<div class="news-card">
 							<div class="news-card__date">12.08.2023</div>
 							<a href="novoct.html" class="news-card__img"><img src="img/news1.jpeg" alt=""></a>
@@ -1005,7 +1128,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3 mb-30">
+					<div class="col-12 col-sm-6 col-lg-3 mb-30">
 						<div class="news-card">
 							<div class="news-card__date">12.08.2023</div>
 							<a href="novoct.html" class="news-card__img"><img src="img/news1.jpeg" alt=""></a>
@@ -1063,7 +1186,7 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row articles-slider">
 					<div class="col-12 col-sm-6 col-md-4 mb-30">
 						<div class="articles-card">
 							<a href="statya.html" class="articles-card__img"><img src="img/article1.jpeg" alt=""></a>
@@ -1124,7 +1247,6 @@
 								</form>
 							</div>
 
-
 							<div class="communication-method">
 								<h3 class="h2">Или свяжитесь с нами любым удобным Вам способом</h3>
 								<ul class="list-messengers list-messengers-callback my-ul">
@@ -1149,13 +1271,13 @@
 
 		<section class="contacts">
 			<div class="container">
-				<div class="row">
+				<div class="row d-none d-xl-flex">
 					<div class="col-12">
 						<h2>Наши контакты</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-lg-5">
+					<div class="col-12 col-xl-5">
 						<div class="contacts-photo"><img src="img/news1.jpeg" alt=""></div>
 						<div class="contacts-address">
 							<div class="address-location">
@@ -1171,7 +1293,7 @@
 								путь</a>
 						</div>
 					</div>
-					<div class="col-12 col-lg-7">
+					<div class="col-12 col-xl-7">
 						<div class="contacts-map">
 							<iframe
 								src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.660045%2C55.740938&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwMzE1NBI80KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCi0LDQs9Cw0L3RgdC60LDRjyDRg9C70LjRhtCwLCA5IgoN4qMWQhW49l5C&z=16.79"
@@ -1204,7 +1326,7 @@
 		<footer>
 			<div class="container">
 				<div class="row mb-22">
-					<div class="col-12 col-lg-6">
+					<div class="col-12 col-xxl-6">
 						<div class="footer-box">
 							<div class="footer-box__top">
 								<a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
@@ -1227,7 +1349,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-lg-6">
+					<div class="col-12 col-xxl-6">
 						<div class="footer-box">
 							<div class="row">
 								<div class="col-5 col-md-2">
@@ -1246,7 +1368,7 @@
 										<li class="nav-item"><a href="prezentaciya.html" class="nav-link">Презентация</a></li>
 									</ul>
 								</div>
-								<div class="col-12 col-md-7 col-lg-6 offset-lg-1">
+								<div class="col-12 col-md-7">
 									<div class="social-box">
 										<h4>Мы в соц.сетях</h4>
 

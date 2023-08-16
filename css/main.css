@@ -51,6 +51,7 @@
 }
 
 .sales-slider {
+  width: calc(100% + 10px);
   padding: 0 120px 0 0;
 }
 .sales-slider .slick-prev {
@@ -273,6 +274,16 @@
   width: 100%;
 }
 
+.video-reviews-wrapper {
+  width: calc(100% + 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .video-reviews {
   position: relative;
   z-index: 1;
@@ -444,8 +455,8 @@
   margin: 0;
 }
 
-.reviews-slider .slick-list {
-  margin: 0 -15px;
+.reviews-slider {
+  width: calc(100% + 10px);
 }
 .reviews-slider .slick-track {
   display: -webkit-box;
@@ -457,7 +468,7 @@
 }
 .reviews-slider .slick-slide {
   height: auto;
-  padding: 0 15px;
+  margin: 0 30px 0 0;
 }
 .reviews-slider__nav {
   margin: 120px 0 0;
@@ -475,7 +486,6 @@
 }
 .mass-media-wrapper {
   position: relative;
-  overflow: hidden;
   z-index: 1;
   padding: 78px 0 53px 55px;
 }
@@ -489,6 +499,23 @@
   width: calc(100% + 97px);
   border-radius: 20px;
   background: #F7F7F7;
+}
+
+.video-mass-media-wrapper {
+  width: calc(100% + 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 64px 0 0;
+}
+.video-mass-media-wrapper .slick-arrow {
+  top: 25%;
+}
+.video-mass-media-wrapper .slick-prev {
+  display: none !important;
 }
 
 .video-mass-media {
@@ -521,15 +548,7 @@
   margin: 27px 0 0;
   max-width: 260px;
   font-weight: 600;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
 }
 
 .mass-media-box {
@@ -709,6 +728,7 @@
 .articles-card__title {
   color: #333;
   font-size: 20px;
+  margin: 0 0 20px;
 }
 .articles-card__title:hover {
   color: #051861;
@@ -836,6 +856,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin: 0;
 }
 .list-messengers-callback li {
   margin: 0 30px 20px 0;

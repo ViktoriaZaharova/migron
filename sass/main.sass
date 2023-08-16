@@ -37,6 +37,7 @@
 		padding: 70px 160px 70px 0
 
 .sales-slider
+	width: calc(100% + 10px)
 	padding: 0 120px 0 0
 	.slick-prev
 		opacity: 0
@@ -184,6 +185,11 @@
 		max-width: 1700px
 		width: 100%
 
+.video-reviews-wrapper
+	width: calc(100% + 10px)
+	display: flex
+	align-items: flex-start
+
 .video-reviews
 	position: relative
 	z-index: 1
@@ -287,14 +293,13 @@
 			margin: 0
 
 .reviews-slider
-	.slick-list
-		margin: 0 -15px
+	width: calc(100% + 10px)
 	.slick-track
 		display: flex
 		align-items: stretch
 	.slick-slide
 		height: auto
-		padding: 0 15px
+		margin: 0 30px 0 0
 	&__nav
 		margin: 120px 0 0
 		justify-content: flex-end
@@ -308,7 +313,6 @@
 		max-width: 323px
 	&-wrapper
 		position: relative
-		overflow: hidden
 		z-index: 1
 		padding: 78px 0 53px 55px
 		&::before
@@ -321,6 +325,17 @@
 			width: calc(100% + 97px)
 			border-radius: 20px
 			background: #F7F7F7
+
+.video-mass-media-wrapper
+	width: calc(100% + 10px)
+	display: flex
+	align-items: flex-start
+	padding: 0 64px 0 0
+	.slick-arrow
+		top: 25%
+	.slick-prev
+		display: none !important
+
 
 .video-mass-media
 	margin: 0 43px 60px 0
@@ -340,7 +355,7 @@
 		margin: 27px 0 0
 		max-width: 260px
 		font-weight: 600
-		@include d-flex
+		display: block
 
 .mass-media-box
 	margin: 0 33px 20px 0
@@ -454,6 +469,7 @@
 	&__title
 		color: #333
 		font-size: 20px
+		margin: 0 0 20px
 		&:hover
 			color: $accent
 	.btn
@@ -530,6 +546,7 @@
 
 .list-messengers-callback
 	justify-content: flex-end
+	margin: 0
 	li
 		margin: 0 30px 20px 0
 		&:last-child

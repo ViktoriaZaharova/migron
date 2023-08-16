@@ -6,6 +6,37 @@
 		&::before
 			width: calc(100% - 30px)
 
+	.video-reviews
+		max-width: 400px
+
+	.list-messengers-callback li
+		margin-right: 10px
+		a
+			width: 165px
+			height: 50px
+
+	.communication-method
+		padding: 43px 40px 90px 30px
+
+	.contacts-map-size
+		max-width: 255px
+
+	footer
+		.phone, .list-messengers
+			margin: 0 auto
+
+@media only screen and (max-width: 1520px)
+	.phone-callback
+		font-size: 44px
+		margin: 16px 0 0 auto
+
+	.contacts-map-size
+		max-width: none
+		margin: 0 0 30px
+
+	.contacts-map__footer, .contacts-address
+		margin: 30px 0 0
+
 @media only screen and (max-width: 1440px)
 	.rating-link
 		margin: 0 20px
@@ -19,6 +50,32 @@
 	.sales
 		.title-decor
 			padding: 30px 30px 30px 0
+
+	.mass-media-wrapper
+		padding: 34px 0 32px 20px
+
+	.callback-content
+		width: 700px
+		padding: 23px 35px 55px
+
+	.communication-method
+		width: calc(100% - 700px)
+		padding: 30px 25px 65px
+
+	.callback-image
+		max-width: 250px
+		left: -125px
+
+	.nav-menu-footer .nav-item
+		margin: 0 0 16px
+
+@media only screen and (max-width: 1399px)
+	.footer-box
+		margin: 0 0 38px
+
+	footer
+		.mb-22
+			margin-bottom: 10px
 
 @media only screen and (max-width: 1350px)
 	.header-contacts
@@ -36,12 +93,31 @@
 		font-size: 54px
 		line-height: normal
 
+	h2, .h2
+		font-size: 40px
+
 	.services-box .btn
 		margin-right: 20px
 		padding: 10px
 
 	.about-content
 		padding: 0
+
+	.articles-card
+		padding: 20px
+		flex-direction: column
+		&__img
+			width: 100%
+			height: 300px
+			margin: 0
+		&__body
+			width: 100%
+			margin: 20px 0 0
+			padding: 0
+
+	.address-location
+		width: 100%
+		margin: 0 0 30px
 
 @media only screen and (max-width: 1200px)
 	.nav-menu .nav-item
@@ -80,6 +156,12 @@
 	.m-105
 		margin: 64px 0
 
+	.mb-50
+		margin-bottom: 36px
+
+	.mb-65
+		margin-bottom: 40px
+
 	.mb-80
 		margin-bottom: 37px
 
@@ -104,6 +186,51 @@
 	.why-us
 		h2
 			margin: 0
+
+	.reviews
+		margin: 10px 0 35px
+		padding: 35px 0 0
+		h2
+			margin: 0 0 35px
+
+	.news
+		margin: 98px 0 46px
+
+	.callback
+		margin: 80px 0 97px
+		h3
+			margin: 0 0 40px auto
+
+	.callback-content
+		max-width: 610px
+
+	.communication-method
+		width: calc(100% - 610px)
+
+	.callback-image
+		max-width: 170px
+		left: -85px
+
+	.phone-callback
+		font-size: 32px
+		font-weight: 600
+
+	.list-messengers-callback
+		flex-direction: column
+		justify-content: flex-end
+		align-items: flex-end
+
+		li
+			margin: 0 0 20px
+
+	.contacts-address
+		margin: 30px 0 35px
+
+	.contacts-photo
+		height: auto
+
+	.nav-menu-footer .nav-item
+		margin: 0 0 16px
 
 @media only screen and (max-width: 992px)
 	header
@@ -200,6 +327,183 @@
 	.why-us-box
 		margin: 0 0 40px
 
+	.video-reviews
+		max-width: 240px
+		height: 131px
+		margin: 0 20px 63px 0
+		&__icon
+			width: 65px
+			height: 65px
+			svg
+				width: 16px
+				height: 20px
+
+	.reviews-slider
+		padding: 0 46px 0 0
+		margin: 0 0 108px
+		.slick-prev
+			display: none !important
+		.slick-next
+			right: 0
+		&__nav
+			display: none
+
+	.reviews-card
+		width: 322px
+		padding: 20px
+		&__head
+			flex-wrap: wrap
+		&__avatar
+			margin: 0 0 20px
+		&__name
+			font-size: 18px
+
+	.mass-media
+		h2
+			margin: 0 0 35px
+			max-width: none
+
+	.video-mass-media-wrapper
+		margin: 30px 0 0
+
+	.video-mass-media
+		height: auto
+		font-size: 16px
+		text-align: left
+		&__img
+			height: 181px
+		&__title
+			margin: 8px 0 0
+
+	.news-slider
+		margin: 0
+		width: calc(100% + 10px)
+		padding: 0 65px 0 0
+		.slick-list
+			padding: 0
+		.slick-slide
+			padding: 0
+			width: 305px
+			margin: 0 30px 0 0
+		.slick-prev
+			display: none !important
+		.slick-next
+			padding: 0
+
+	.btn-all-news
+		margin: 20px 0 0
+
+	.articles-card
+		&__img
+			height: 232px
+		&__title
+			font-size: 16px
+
+	.articles
+		padding: 39px 0 0
+
+	.articles-slider
+		padding: 0 50px 0 0
+		margin: 0
+		width: calc(100% + 10px)
+		.slick-list
+			padding: 0
+		.slick-slide
+			width: 335px
+			margin: 0 20px 0 0
+		.slick-prev
+			display: none !important
+		.slick-next
+			padding: 0
+
+	.callback
+		margin: 39px 0 97px
+		h2
+			text-align: center
+			margin: 0 auto 29px
+			max-width: 300px
+
+	.communication-method
+		width: 100%
+		display: flex
+		flex-direction: column
+		h3
+			text-align: center
+			margin: 0 auto 16px
+			font-weight: 600
+			font-size: 24px
+			max-width: 297px
+
+	.callback-image
+		left: 7px
+
+	.list-messengers-callback
+		order: 1
+		align-items: center
+		li
+			a
+				height: 44px
+				font-size: 16px
+
+	.phone-callback
+		margin: 0 auto 30px
+		text-align: center
+
+	.callback-content
+		max-width: none
+		width: 100%
+
+	.form-callback
+		width: 100%
+		max-width: 245px
+		margin: 0 auto
+		flex-direction: column
+		label
+			width: 100%
+			margin: 0 0 20px
+		.form-group
+			width: 100%
+			flex-direction: column
+			margin: 9px 0 0
+		[type='submit']
+			width: 100%
+		.consent
+			margin: 20px auto 0
+			text-align: center
+
+	.copyright
+		text-align: left
+
+	.list-documents
+		flex-direction: column
+		margin: 0 0 30px
+		li
+			margin: 0 0 30px
+			&:last-child
+				margin: 0
+
+	footer
+		margin: 70px 0 0
+		padding: 42px 0
+
+	.modal-header
+		margin: 0 auto 14.5px
+
+	#addressModal
+		.modal-content
+			padding: 57px 18px 42px
+		.modal-header
+			margin: 0 0 40px
+		.modal-title
+			margin: 0
+			font-size: 24px
+
+	.address-gallery
+		padding: 0 65px
+
+	#addressModal .modal-dialog
+		max-width: 800px	
+
 @media only screen and (max-width: 768px)
 	h1, .h1
 		font-size: 36px
@@ -215,6 +519,52 @@
 			margin: 20px 0 0
 		&__title
 			font-size: 16px
+
+	.news-card
+		&__img
+			height: 163px
+		&__title
+			font-size: 20px
+
+	.contacts-map__footer
+		flex-direction: column
+		align-items: flex-start
+		.btn
+			margin: 0 0 30px
+			&:last-child
+				margin: 0
+
+	.contacts-map
+		height: 370px
+
+	.social-box
+		max-width: none
+		margin: 34px 0 0
+		.list-social
+			margin: 0 0 48px
+
+	footer
+		.phone
+			width: 100%
+			margin: 48px 0 33px
+			font-weight: 600
+		.schedule
+			margin: 0 0 38px
+			width: 100%
+		.list-messengers
+			margin: 0 70px 0 0
+
+	.footer-box__bottom
+		margin: 18px 0 0
+
+	.schedule
+		h4
+			width: 100%
+			margin: 0 0 10px
+
+	.address-gallery-photo
+		padding: 0
+		height: 370px
 
 @media only screen and (max-width: 576px)
 	.home-image-min__last, .home-image-min
@@ -251,6 +601,48 @@
 	.about-wrapper
 		padding: 25px 0 43px 20px
 
+	.mass-media-box
+		margin: 0 0 47px
+		max-width: none
+		width: 100%
+		display: none
+		&:nth-child(-n+2)
+			display: block
+		&__title
+			font-size: 16px
+
+	.mass-media-wrapper
+		padding: 34px 0 0 20px
+
+	.list-messengers-callback
+		align-items: flex-end
+
+	.modal-dialog
+		max-width: 370px
+		margin: 10px auto
+
+	.modal-content
+		padding: 57px 35px 35px
+		.box-text
+			font-size: 14px
+
+	.modal-v2
+		.modal-header
+			border: none
+			padding: 0
+			margin: 0 auto 40px
+
+		.modal-title
+			text-align: center
+		.modal-content
+			padding: 57px 20px 30px
+
+	.map-location
+		height: 330px
+
+	#addressModal .modal-dialog
+		max-width: 370px	
+
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 110px
@@ -267,6 +659,11 @@
 				padding: 10px 15px
 		&__head
 			align-items: start
+
+	.articles-slider
+		.slick-slide
+			margin: 0
+			width: 100%
 
 @media only screen and (max-width: 390px)
 	.logo
@@ -285,3 +682,41 @@
 	header
 		.address
 			font-size: 12px
+
+	.reviews-card
+		width: 100%
+
+	.reviews-slider
+		margin: 0 0 40px
+		.slick-slide
+			margin: 0
+
+	.video-mass-media-wrapper
+		padding: 0 45px 0 0
+
+	.news-slider
+		padding: 0 45px 0 0
+		.slick-slide
+			margin: 0
+
+	.slick-arrow
+		padding: 22px
+		height: 46px
+
+	.callback-content
+		padding: 23px 20px 55px
+
+	footer
+		.phone
+			font-size: 30px
+		.list-messengers
+			margin: 0 30px 0 0
+
+	.social-box .btn-group
+		flex-wrap: wrap
+		justify-content: flex-start
+		align-items: flex-start
+		.btn
+			margin: 0 20px 10px 0
+			&:last-child
+				margin: 0

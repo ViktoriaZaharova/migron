@@ -241,6 +241,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-border-orange {
+  border: 1px solid #FFC797;
+  color: #fff;
+}
+.btn-border-orange::before {
+  background: #051861;
+}
+.btn-border-orange:hover {
+  color: #fff;
+}
+
 .btn-light-grey {
   border-radius: 10px;
   border: 2px solid #ECECEC;
