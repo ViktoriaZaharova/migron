@@ -336,7 +336,6 @@
 	.slick-prev
 		display: none !important
 
-
 .video-mass-media
 	margin: 0 43px 60px 0
 	height: auto
@@ -484,6 +483,9 @@
 	h3
 		margin: 0 0 53px auto
 		max-width: 645px
+
+.callback-v2
+	margin: 40px 0 120px
 
 .callback-wrapper
 	position: relative
@@ -641,3 +643,110 @@
 	max-width: 365px
 	width: 100%
 	margin: 0 auto 0 0
+
+// services-page
+.services-page
+	h1
+		margin: 0 0 110px
+
+// .prices
+.subtitle
+	margin: 48px 0 63px
+	font-size: 32px
+	font-weight: 600
+	text-transform: uppercase
+	color: $accent
+
+.accordion
+	border: none
+	border-radius: 0
+
+.accordion-item
+	border-radius: 20px
+	border: none
+	margin: 0 0 34px
+	background: #fff
+	&:last-child
+		margin: 0
+		border-radius: 20px
+		.accordion-button
+			border-radius: 20px
+	&:first-child
+		border-radius: 20px
+		.accordion-button
+			border-radius: 20px
+
+.accordion-button
+	border-radius: 20px
+	background: #F7F7F7
+	padding: 31px 56px 39px 49px
+	color: #333
+	font-size: 24px
+	font-weight: 600
+	outline: none
+	box-shadow: none
+	border: none
+	&:focus
+		box-shadow: none
+	&:after
+		background: url('../img/accordion-arrow.svg') no-repeat center
+		background-size: 100%
+		width: 24px
+		min-width: 24px
+		height: 12px	
+
+.accordion-body
+	border: 1px solid #B4B4B4
+	border-top: none
+	border-radius: 0 0 20px 20px
+	padding: 35px 45px 23px	
+	margin: -20px 0 0
+
+.accordion-button:not(.collapsed)
+	background: #F7F7F7
+	color: #333
+	box-shadow: none
+	&:after
+		background: url('../img/accordion-arrow.svg') no-repeat center
+		background-size: 100%
+		width: 24px
+		height: 12px
+		transform: rotate(180deg)
+
+.accordion-item:last-of-type .accordion-button.collapsed
+	border-radius: 20px
+
+.table-price
+	font-size: 20px
+	color: $accent
+	h4
+		font-weight: 600
+		color: #333
+		// max-width: 345px
+	th
+		padding: 20px
+		font-weight: 600
+		text-align: center
+		border: 1px solid #B4B4B4
+		border-top: none
+		&:first-child
+			border-left: none
+		&:last-child
+			border-right: none	
+	td
+		padding: 19px 20px 24px 
+		min-height: 108px
+		border: 1px solid #B4B4B4
+		text-align: center
+		&:first-child
+			border-left: none
+			width: 43%
+			text-align: left
+			padding: 19px 70px 24px 0
+		&:last-child
+			border-right: none
+
+.btn-details-service
+	margin: 32px 0 0	
+		
+								

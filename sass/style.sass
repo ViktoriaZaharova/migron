@@ -183,7 +183,7 @@ button, .btn
 	&::before
 		background: $accent
 	&:hover
-		color: #fff		
+		color: #fff
 
 .btn-light-grey
 	border-radius: 10px
@@ -378,7 +378,7 @@ h3
 		transform: none
 
 .slick-disabled
-	display: none !important		
+	display: none !important
 
 //checkbox my
 .checkbox
@@ -456,4 +456,32 @@ h3
 	align-items: flex-start
 	flex-wrap: wrap
 	li
-		flex: 1	
+		flex: 1
+
+// nav-breadcrumb
+.nav-breadcrumb
+	margin: 0 0 25px
+
+.breadcrumb
+	margin: 0
+	font-size: 16px
+	font-family: $default-font
+
+.breadcrumb-item
+	color: #5C5C5C
+	a
+		color: #5C5C5C
+		&:hover
+			color: $accent
+
+.breadcrumb-item+.breadcrumb-item
+	padding: 0
+
+.breadcrumb-item+.breadcrumb-item::before
+	border: none
+	margin: 0 12px
+	padding: 0
+	content: '>'
+	color: #5C5C5C
+	font-size: 16px
+	font-family: $default-font

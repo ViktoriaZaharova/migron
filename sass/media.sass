@@ -232,6 +232,13 @@
 	.nav-menu-footer .nav-item
 		margin: 0 0 16px
 
+	.services-page
+		margin: 0
+		h1
+			margin: 0 0 40px	
+
+		
+
 @media only screen and (max-width: 992px)
 	header
 		position: relative
@@ -502,7 +509,23 @@
 		padding: 0 65px
 
 	#addressModal .modal-dialog
-		max-width: 800px	
+		max-width: 800px
+
+	.subtitle
+		margin: 40px 0 23px
+		font-size: 20px	
+
+	.accordion-button
+		padding: 26px 24px
+		font-size: 20px
+
+	.accordion-item
+		margin: 0 0 23px
+		&:last-child
+			margin: 0
+			
+	.table-price
+		font-size: 16px			
 
 @media only screen and (max-width: 768px)
 	h1, .h1
@@ -566,6 +589,36 @@
 		padding: 0
 		height: 370px
 
+	.dropdown-services
+		.dropdown-menu
+			min-width: 500px
+			padding: 20px
+
+	.list-services li
+		margin: 0 0 20px
+
+	.table-price
+		font-size: 14px
+		th
+			padding: 10px 7px
+			border-top: none
+			text-align: left
+		td
+			padding: 12px 7px
+			&:first-child
+				padding: 12px 15px 12px 7px
+		tr		
+			&:last-child
+				td
+					border-bottom: none
+					
+
+	.accordion-body
+		padding: 26px 0 		
+
+	.btn-details-service
+		margin: 39px 0 0 14px	
+
 @media only screen and (max-width: 576px)
 	.home-image-min__last, .home-image-min
 		height: 224px
@@ -583,9 +636,13 @@
 		&__head
 			flex-wrap: nowrap
 		h3
+			font-size: 20px
 			width: fit-content
 		&__icon
 			margin: 0 20px 0 0
+			width: 37px
+			height: 37px
+			min-width: 37px
 		&__body
 			padding: 20px 0 0
 		.btn-group
@@ -641,7 +698,44 @@
 		height: 330px
 
 	#addressModal .modal-dialog
-		max-width: 370px	
+		max-width: 370px
+
+	.dropdown-services
+		.dropdown-menu
+			min-width: 308px
+
+	.dropdown-menu__footer
+		margin: 30px 0 0
+
+	.list-services
+		font-size: 16px
+		li
+			margin: 0 0 20px
+			width: 100%
+			&:last-child
+				margin: 0
+
+	.services-link
+		align-items: flex-start
+		&__icon
+			width: 25px
+			height: 25px
+			min-width: 25px
+
+	.requisites-box
+		font-size: 16px
+		margin: 0 0 20px
+		h3
+			margin: 0 0 15px
+
+	.header
+		.header-bottom
+			display: none	
+
+	.table-price
+		font-size: 12px
+		h4
+			font-size: 14px			
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -657,8 +751,7 @@
 			.btn
 				margin: 20px 10px 0 0
 				padding: 10px 15px
-		&__head
-			align-items: start
+		
 
 	.articles-slider
 		.slick-slide
@@ -720,3 +813,14 @@
 			margin: 0 20px 10px 0
 			&:last-child
 				margin: 0
+
+	h1, .h1
+		font-size: 32px			
+
+	.callback-image
+		max-width: 140px
+
+	.table-price
+		font-size: 10px
+		h4
+			font-size: 12px	

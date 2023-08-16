@@ -660,3 +660,37 @@ h3 {
       -ms-flex: 1;
           flex: 1;
 }
+
+.nav-breadcrumb {
+  margin: 0 0 25px;
+}
+
+.breadcrumb {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.breadcrumb-item {
+  color: #5C5C5C;
+}
+.breadcrumb-item a {
+  color: #5C5C5C;
+}
+.breadcrumb-item a:hover {
+  color: #051861;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  border: none;
+  margin: 0 12px;
+  padding: 0;
+  content: ">";
+  color: #5C5C5C;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}

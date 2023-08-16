@@ -406,3 +406,27 @@ footer .rating-link {
 .form-survey-slider__nav .btn-accent svg {
   stroke: #fff;
 }
+
+.requisites-box {
+  font-size: 20px;
+}
+.requisites-box h3 {
+  margin: 0 0 24px;
+  color: #051861;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#requisitesModal .modal-dialog {
+  max-width: 1030px;
+}
+
+.list-requisites {
+  max-width: 470px;
+}
+.list-requisites .font-bold {
+  font-weight: 600;
+}
+.list-requisites span {
+  margin: 0 10px 0 0;
+}
