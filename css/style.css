@@ -240,6 +240,13 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-border-accent:hover {
   color: #fff;
 }
+.btn-border-accent:hover .svg-icon {
+  stroke: #fff;
+}
+.btn-border-accent .svg-icon {
+  fill: none;
+  stroke: #051861;
+}
 
 .btn-border-orange {
   border: 1px solid #FFC797;
@@ -413,6 +420,10 @@ h3 {
   margin-bottom: 50px;
 }
 
+.mb-55 {
+  margin-bottom: 55px;
+}
+
 .mb-65 {
   margin-bottom: 65px;
 }
@@ -431,6 +442,12 @@ h3 {
 
 .box-text {
   font-size: 20px;
+}
+.box-text p {
+  margin: 0 0 30px;
+}
+.box-text p:last-child {
+  margin: 0;
 }
 
 .column-count-5 {
@@ -480,6 +497,7 @@ h3 {
           justify-content: center;
   stroke: #051861;
   fill: none;
+  padding: 0;
 }
 .slick-arrow:hover {
   stroke: #5C5C5C;

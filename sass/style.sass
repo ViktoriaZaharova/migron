@@ -176,6 +176,11 @@ button, .btn
 		background: $accent
 	&:hover
 		color: #fff
+		.svg-icon
+			stroke: #fff
+	.svg-icon
+		fill: none
+		stroke: $accent	
 
 .btn-border-orange
 	border: 1px solid $orange
@@ -307,6 +312,9 @@ h3
 .mb-50
 	margin-bottom: 50px
 
+.mb-55
+	margin-bottom: 55px	
+
 .mb-65
 	margin-bottom: 65px
 
@@ -321,6 +329,10 @@ h3
 
 .box-text
 	font-size: 20px
+	p
+		margin: 0 0 30px
+		&:last-child
+			margin: 0
 
 .column-count-5
 	column-count: 5
@@ -353,6 +365,7 @@ h3
 	@include d-flex
 	stroke: $accent
 	fill: none
+	padding: 0
 	&:hover
 		stroke: $grey
 	svg

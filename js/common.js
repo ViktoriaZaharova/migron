@@ -83,6 +83,13 @@ $('.address-gallery').slick({
 	]
 });
 
+$('.cases-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
+
 
 $('.form-survey-slider').slick({
 	slidesToShow: 1,
