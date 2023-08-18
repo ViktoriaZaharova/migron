@@ -27,15 +27,17 @@
 
 	.warranty-box
 		width: calc(50% - 35px)
-		margin: 0 auto 35px 0	
-
+		margin: 0 auto 35px 0
 
 @media only screen and (max-width: 1600px)
 	.jobs-area .box-text
 		max-width: 330px
 
 	.mail-jobs
-		font-size: 40px	
+		font-size: 40px
+
+	.contacts-box:last-child
+		padding: 0 0 0 60px
 
 @media only screen and (max-width: 1520px)
 	.phone-callback
@@ -48,8 +50,6 @@
 
 	.contacts-map__footer, .contacts-address
 		margin: 30px 0 0
-
-		
 
 @media only screen and (max-width: 1440px)
 	.rating-link
@@ -83,14 +83,14 @@
 	.nav-menu-footer .nav-item
 		margin: 0 0 16px
 
-	.jobs-area 
-		.box-text	
+	.jobs-area
+		.box-text
 			max-width: none
 			margin: 0 0 22px
 
 	.mail-jobs
 		width: 100%
-		margin: 13px 0 0	
+		margin: 13px 0 0
 
 @media only screen and (max-width: 1399px)
 	.footer-box
@@ -300,7 +300,7 @@
 		&__body
 			padding: 24px 0 0 36px
 		&__name
-			font-size: 16px	
+			font-size: 16px
 
 	.payments
 		margin: 70px 0 40px
@@ -310,7 +310,26 @@
 	.payments-box
 		margin: 0 30px 30px 0
 		&:last-child
-			margin: 0 0 30px		
+			margin: 0 0 30px
+
+	.name-company
+		margin: 10px 0 54px
+		font-size: 28px
+
+	.contacts-page .contacts-map
+		height: 438px
+		max-width: none
+		width: 100%
+		margin: 49px 0 37px
+
+	.driving-direction-box-last
+		max-width: none
+		margin: 50px 0 0
+
+	.footer
+		margin: 15px 0 0
+		padding: 60px 0
+				
 
 @media only screen and (max-width: 992px)
 	header
@@ -652,14 +671,23 @@
 	.jobs-callback
 		padding: 0
 		border: none
-		margin: 32px 0 0			
+		margin: 32px 0 0
 
 	.accordion-jobs
-		margin: 32px 0 0	
+		margin: 32px 0 0
 
 	.payments-box
 		padding: 20px 40px
-					
+
+	.footer
+		.list-documents
+			align-items: center
+		.copyright
+			margin: 0 auto
+			text-align: center
+
+	.driving-slider
+		margin: 60px auto 0				
 
 @media only screen and (max-width: 768px)
 	h1, .h1
@@ -754,7 +782,7 @@
 
 	.team-card
 		&__photo
-			max-width: none	
+			max-width: none
 
 	.cases
 		margin: 66px 0 64px
@@ -771,18 +799,18 @@
 			height: 192px
 		&__body
 			width: 100%
-			padding: 18px 0 0		
+			padding: 18px 0 0
 		&__name
-			margin: 10px 0 0	
+			margin: 10px 0 0
 		.btn
-			margin: 18px 0 0	
+			margin: 18px 0 0
 
 	.warranty-box
 		width: 100%
 		margin: 0 0 35px
 
 	.team-card__photo
-		height: 400px	
+		height: 400px
 
 	.documents-card
 		width: 100%
@@ -794,11 +822,90 @@
 		margin: 0 auto
 
 	.documents
-		margin: 0 0 55px	
+		margin: 0 0 55px
 
 	.payments-box
 		width: 100%
-		margin: 0 0 30px				
+		margin: 0 0 30px
+
+	.contacts-page
+		.social-box
+			margin: 45px 0 0
+			flex-direction: column
+			align-items: flex-start
+			h4
+				margin: 0 0 20px
+		.list-social
+			margin: 0
+
+	.contacts-box
+		flex: none
+		width: 100%
+		padding: 0 0 45px
+		border: none
+		border-bottom: 1px solid #FFC797
+		&:last-child
+			padding: 45px 0 0 30px
+			border: none
+
+	.contacts-callback
+		padding: 40px
+		flex-direction: column
+		&-box
+			width: 100%
+			text-align: center
+			border: none
+			border-bottom: 1px solid #FFC797
+			padding: 0 0 36px
+			&:last-child
+				width: 100%
+				border: none
+				padding: 36px 0 0
+		h3
+			margin: 0 auto
+		.box-text
+			margin: 6px auto 0
+		.form-callback
+			margin: 30px auto 0
+		.list-messengers-callback
+			margin: 20px auto 0
+			flex-direction: column
+			align-items: center
+			li
+				width: 180px
+				margin: 0 auto 19px
+				a
+					height: 64px
+
+	.driving-direction
+		margin: 60px 0 0
+		padding: 50px 0 0
+		h3
+			font-size: 24px
+			width: 100%
+
+	.driving-direction-box
+		&__head
+			margin: 0 0 50px
+		.btn-route
+			margin: 24px 0 0
+		.box-text	
+			margin: 20px 0 0		
+	
+
+	.driving-parking__img
+		border-radius: 20px
+		img
+			border-radius: 20px
+		&::before
+			content: ''
+			position: absolute
+			width: 30px
+			height: 30px
+			bottom: 17px
+			right: 21px
+			background: url('../img/loupe.svg') no-repeat center
+			background-size: 100%
 
 @media only screen and (max-width: 576px)
 	.section-top-line
@@ -929,7 +1036,11 @@
 		margin: 0 0 37px
 
 	.cases-slider
-		padding: 0 0			
+		padding: 0 0
+
+	.name-company
+		font-size: 16px
+
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -937,7 +1048,7 @@
 
 	.team-card
 		&__photo
-			height: 201px	
+			height: 201px
 
 @media only screen and (max-width: 420px)
 	.home
@@ -1027,7 +1138,10 @@
 			font-size: 18px
 
 	.warranty-box
-		padding: 20px		
+		padding: 20px
 
 	.payments-box__icon
-		margin: 0 20px 0 0	
+		margin: 0 20px 0 0
+
+	.contacts-page .phone, .contacts-page .mail
+		font-size: 34px

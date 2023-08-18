@@ -35,6 +35,9 @@
   .mail-jobs {
     font-size: 40px;
   }
+  .contacts-box:last-child {
+    padding: 0 0 0 60px;
+  }
 }
 @media only screen and (max-width: 1520px) {
   .phone-callback {
@@ -333,6 +336,24 @@
   }
   .payments-box:last-child {
     margin: 0 0 30px;
+  }
+  .name-company {
+    margin: 10px 0 54px;
+    font-size: 28px;
+  }
+  .contacts-page .contacts-map {
+    height: 438px;
+    max-width: none;
+    width: 100%;
+    margin: 49px 0 37px;
+  }
+  .driving-direction-box-last {
+    max-width: none;
+    margin: 50px 0 0;
+  }
+  .footer {
+    margin: 15px 0 0;
+    padding: 60px 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -747,6 +768,18 @@
   .payments-box {
     padding: 20px 40px;
   }
+  .footer .list-documents {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .copyright {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .driving-slider {
+    margin: 60px auto 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -904,6 +937,113 @@
     width: 100%;
     margin: 0 0 30px;
   }
+  .contacts-page .social-box {
+    margin: 45px 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacts-page .social-box h4 {
+    margin: 0 0 20px;
+  }
+  .contacts-page .list-social {
+    margin: 0;
+  }
+  .contacts-box {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    padding: 0 0 45px;
+    border: none;
+    border-bottom: 1px solid #FFC797;
+  }
+  .contacts-box:last-child {
+    padding: 45px 0 0 30px;
+    border: none;
+  }
+  .contacts-callback {
+    padding: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts-callback-box {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #FFC797;
+    padding: 0 0 36px;
+  }
+  .contacts-callback-box:last-child {
+    width: 100%;
+    border: none;
+    padding: 36px 0 0;
+  }
+  .contacts-callback h3 {
+    margin: 0 auto;
+  }
+  .contacts-callback .box-text {
+    margin: 6px auto 0;
+  }
+  .contacts-callback .form-callback {
+    margin: 30px auto 0;
+  }
+  .contacts-callback .list-messengers-callback {
+    margin: 20px auto 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contacts-callback .list-messengers-callback li {
+    width: 180px;
+    margin: 0 auto 19px;
+  }
+  .contacts-callback .list-messengers-callback li a {
+    height: 64px;
+  }
+  .driving-direction {
+    margin: 60px 0 0;
+    padding: 50px 0 0;
+  }
+  .driving-direction h3 {
+    font-size: 24px;
+    width: 100%;
+  }
+  .driving-direction-box__head {
+    margin: 0 0 50px;
+  }
+  .driving-direction-box .btn-route {
+    margin: 24px 0 0;
+  }
+  .driving-direction-box .box-text {
+    margin: 20px 0 0;
+  }
+  .driving-parking__img {
+    border-radius: 20px;
+  }
+  .driving-parking__img img {
+    border-radius: 20px;
+  }
+  .driving-parking__img::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 17px;
+    right: 21px;
+    background: url("../img/loupe.svg") no-repeat center;
+    background-size: 100%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .section-top-line {
@@ -1051,6 +1191,9 @@
   .cases-slider {
     padding: 0 0;
   }
+  .name-company {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1157,5 +1300,8 @@
   }
   .payments-box__icon {
     margin: 0 20px 0 0;
+  }
+  .contacts-page .phone, .contacts-page .mail {
+    font-size: 34px;
   }
 }

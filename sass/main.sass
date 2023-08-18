@@ -42,7 +42,7 @@
 	.slick-prev
 		opacity: 0
 	.slick-arrow
-		top: 30%
+		top: 35%
 
 .sales-item
 	&__img
@@ -320,7 +320,7 @@
 	align-items: flex-start
 	padding: 0 64px 0 0
 	.slick-arrow
-		top: 25%
+		top: 30%
 	.slick-prev
 		display: none !important
 
@@ -603,15 +603,16 @@
 	margin: 0 11px 0 0
 	&:last-child
 		margin: 0
-	svg
+	.svg-icon
 		width: 26px
 		height: 26px
 		fill: none
 		stroke: #fff
-	&-metro
-		svg
-			fill: #EE2F2E
-			stroke: none
+
+.btn-route-metro
+	.svg-icon
+		fill: #EE2F2E
+		stroke: none
 
 .contacts-map-size
 	font-size: 20px
@@ -800,7 +801,7 @@
 
 // cases
 .cases
-	margin: 110px 0 
+	margin: 110px 0
 	h2
 		margin: 0 0 56px
 
@@ -809,8 +810,6 @@
 	width: calc(100% + 15px)
 	.slick-prev
 		display: none !important
-	.slick-arrow
-		padding: 0
 	.slick-slide
 		margin: 0 30px 0 0
 
@@ -1009,8 +1008,179 @@
 	&__icon
 		margin: 0 60px 0 0
 		width: 60px
-		height: 46px	
+		height: 46px
 		@include d-flex
-	
+
 // contacts page
+.contacts-page
+	.contacts-map
+		height: 100%
+		max-width: 772px
+		margin: 0 0 0 auto
+	.social-box
+		width: 100%
+		max-width: none
+		flex-direction: row
+		align-items: center
+		justify-content: flex-start
+		margin: 70px 0 0
+		font-size: 16px
+		h4
+			margin: 0
+	.list-social
+		margin: 0 0 0 38px
+	.phone, .mail
+		font-size: 40px
+		color: $accent
+		&:hover
+			color: $orange
+	.schedule
+		flex-direction: column
+		align-items: flex-start
+		margin: 34px 0 38px
+		font-size: 20px
+		color: $accent
+		h4
+			margin: 0 0 6px
+	.requisites-box
+		font-size: 16px
+		margin: 18px 0 20px
+	.address-location
+		align-items: flex-start
+		font-size: 16px
+		color: $accent
+		font-weight: normal
+		max-width: none
+		margin: 0
+		&__icon
+			margin: 0 13px 0 -30px
+			fill: #FFC797
+			width: 18px
+			height: 26px
+		&__text
+			max-width: 366px
+
+.name-company
+	color: $accent
+	margin: 25px 0 60px
+	text-transform: uppercase
+	font-size: 32px
+
+.contacts-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
+.contacts-box
+	flex: 1
+	padding: 0 20px 0 0
+	border-right: 1px solid $orange
+	&:last-child
+		padding: 0 0 0 90px
+		border: none
+
+.contacts-callback
+	border-radius: 20px
+	background: #F7F7F7
+	padding: 32px 43px 24px 35px
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	margin: 70px 0 0
+	.form-callback
+		max-width: 252px
+		width: 100%
+		margin: 30px 0 0
+		label
+			width: 100%
+			margin: 0 0 30px
+		input
+			border: 1px solid #051861
+			color: $accent
+			&::placeholder
+				color: $accent
+		[type="submit"]
+				width: 100%
+				max-width: none
+		.consent
+			margin: 20px 0 0
+			color: #5C5C5C
+	.list-messengers-callback
+		margin: 44px 0 0
+		justify-content: space-between
+		align-items: flex-start
+		li
+			margin: 0 0 30px
+			width: 180px
+			&:last-child
+				margin: 0
+
+.contacts-callback-box
+	border-right: 1px solid $orange
+	width: 45%
+	padding: 0 40px 0 0
+	&:last-child
+		padding: 0 0 0 40px
+		border: none
+		width: 55%
+	h3
+		color: #5C5C5C
+		max-width: 285px
+	.box-text
+		font-size: 16px
+		margin: 6px 0 0
+		max-width: 185px
+
+.driving-direction
+	margin: 88px 0 0
+	h3
+		font-size: 40px
+		color: $accent
+		width: fit-content
+
+.driving-metro__img
+	position: relative
+	width: 100%
+	img
+		width: 100%		
 	
+.driving-direction-box
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 0 0 30px
+	&-last
+		margin-left: auto
+		max-width: 1045px
+	&__img
+		width: 100%
+		height: 467px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 20px			
+	.box-text
+		margin: 36px 0 0
+
+.driving-slider
+	margin: 87px 0 0
+	padding: 0 24px
+	.slick-slide
+		margin: 0 20px
+
+.driving-photo
+	width: 100%
+	height: 194px
+	@include d-flex
+	border-radius: 5px
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		border-radius: 5px			

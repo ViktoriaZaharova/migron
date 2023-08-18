@@ -7,7 +7,7 @@ $('.sales-slider').slick({
 	slidesToShow: 1,
 	fade: true,
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>'
 });
 
 $('.video-reviews-wrapper').slick({
@@ -33,7 +33,7 @@ $('.reviews-slider').slick({
 	variableWidth: true,
 	appendArrows: '.reviews-slider__nav',
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 992,
@@ -56,7 +56,7 @@ $('.video-mass-media-wrapper').slick({
 	slidesToShow: 2,
 	variableWidth: true,
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	infinite: false,
 	responsive: [
 		{
@@ -72,7 +72,7 @@ $('.video-mass-media-wrapper').slick({
 $('.address-gallery').slick({
 	slidesToShow: 2,
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 768,
@@ -87,13 +87,39 @@ $('.cases-slider').slick({
 	slidesToShow: 1,
 	variableWidth: true,
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 	responsive: [
 		{
 			breakpoint: 576,
 			settings: {
 				arrows: false,
 				autoplay: true
+			}
+		}
+	]
+});
+
+$('.driving-slider').slick({
+	slidesToShow: 4,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
 			}
 		}
 	]
@@ -106,7 +132,7 @@ $('.form-survey-slider').slick({
 	infinite: false,
 	appendArrows: '.form-survey-slider__nav',
 	nextArrow: '<button type="button" class="slick-next btn btn-md btn-accent"><span>следующий вопрос</span><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev btn btn-md btn-border-accent"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg><span>назад</span></button>'
+	prevArrow: '<button type="button" class="slick-prev btn btn-md btn-border-accent"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg><span>назад</span></button>'
 });
 
 $(".form-survey-slider").on("afterChange", function (event) {
@@ -128,7 +154,7 @@ $(window).on('load resize', function () {
 			slidesToShow: 1,
 			variableWidth: true,
 			nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',	
+			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',	
 			responsive: [
 				{
 					breakpoint: 390,
@@ -144,7 +170,7 @@ $(window).on('load resize', function () {
 			slidesToShow: 1,
 			variableWidth: true,
 			nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 			responsive: [
 				{
 					breakpoint: 420,
