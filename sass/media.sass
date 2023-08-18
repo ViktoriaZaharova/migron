@@ -25,6 +25,18 @@
 		.phone, .list-messengers
 			margin: 0 auto
 
+	.warranty-box
+		width: calc(50% - 35px)
+		margin: 0 auto 35px 0	
+
+
+@media only screen and (max-width: 1600px)
+	.jobs-area .box-text
+		max-width: 330px
+
+	.mail-jobs
+		font-size: 40px	
+
 @media only screen and (max-width: 1520px)
 	.phone-callback
 		font-size: 44px
@@ -36,6 +48,8 @@
 
 	.contacts-map__footer, .contacts-address
 		margin: 30px 0 0
+
+		
 
 @media only screen and (max-width: 1440px)
 	.rating-link
@@ -69,6 +83,15 @@
 	.nav-menu-footer .nav-item
 		margin: 0 0 16px
 
+	.jobs-area 
+		.box-text	
+			max-width: none
+			margin: 0 0 22px
+
+	.mail-jobs
+		width: 100%
+		margin: 13px 0 0	
+
 @media only screen and (max-width: 1399px)
 	.footer-box
 		margin: 0 0 38px
@@ -76,6 +99,23 @@
 	footer
 		.mb-22
 			margin-bottom: 10px
+
+	.company-founder__photo
+		width: 450px
+		height: auto
+
+	.company-founder__content
+		h3
+			margin: 0 0 30px
+
+	.box-text
+		p
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+
+	.company-founder__name
+		padding: 25px 30px
 
 @media only screen and (max-width: 1350px)
 	.header-contacts
@@ -118,6 +158,9 @@
 	.address-location
 		width: 100%
 		margin: 0 0 30px
+
+	.documents-card
+		width: calc(33.33% - 35px)
 
 @media only screen and (max-width: 1200px)
 	.nav-menu .nav-item
@@ -235,9 +278,39 @@
 	.services-page
 		margin: 0
 		h1
-			margin: 0 0 40px	
+			margin: 0 0 40px
 
-		
+	.about-section
+		.about-image
+			height: auto
+
+	.company-founder__name
+		padding: 20px 30px
+		.position
+			margin: 10px 0 0
+			font-size: 20px
+
+	.documents
+		margin: 0 0 90px
+		.mb-50
+			margin: 0 0 35px
+
+	.documents-card
+		width: calc(50% - 35px)
+		&__body
+			padding: 24px 0 0 36px
+		&__name
+			font-size: 16px	
+
+	.payments
+		margin: 70px 0 40px
+		.mb-50
+			margin: 0 0 26px
+
+	.payments-box
+		margin: 0 30px 30px 0
+		&:last-child
+			margin: 0 0 30px		
 
 @media only screen and (max-width: 992px)
 	header
@@ -513,7 +586,7 @@
 
 	.subtitle
 		margin: 40px 0 23px
-		font-size: 20px	
+		font-size: 20px
 
 	.accordion-button
 		padding: 26px 24px
@@ -523,9 +596,70 @@
 		margin: 0 0 23px
 		&:last-child
 			margin: 0
-			
+
 	.table-price
-		font-size: 16px			
+		font-size: 16px
+
+	.about-section
+		margin: 0 0 76px
+		.about-content
+			margin: 0 0 40px
+			h3
+				margin: 11px 0 16px
+				max-width: none
+
+	.company-founder
+		margin: 53px auto 0
+		flex-wrap: wrap
+		max-width: 700px
+		&__photo
+			width: 100%
+			border-radius: 0 0 10px 10px
+			img
+				border-radius: 0 0 10px 10px
+		&__name
+			position: relative
+			top: 0
+			width: 100%
+			border-radius: 10px 10px 0 0
+			h3
+				font-size: 36px
+		&__content
+			max-width: none
+			margin: 27px 0 0
+
+	.team
+		margin: 70px 0 27px
+		h2
+			margin: 0 0 30px
+		.mb-55
+			margin-bottom: 30px
+
+	.team-card
+		&__body
+			margin: 20px 0 0
+		&__position
+			font-size: 16px
+
+	.jobs
+		margin: 28px 0 70px
+		h2
+			margin: 0 0 32px
+
+	.jobs-area
+		margin: 22px 0 0
+
+	.jobs-callback
+		padding: 0
+		border: none
+		margin: 32px 0 0			
+
+	.accordion-jobs
+		margin: 32px 0 0	
+
+	.payments-box
+		padding: 20px 40px
+					
 
 @media only screen and (max-width: 768px)
 	h1, .h1
@@ -607,19 +741,69 @@
 			padding: 12px 7px
 			&:first-child
 				padding: 12px 15px 12px 7px
-		tr		
+		tr
 			&:last-child
 				td
 					border-bottom: none
-					
 
 	.accordion-body
-		padding: 26px 0 		
+		padding: 26px 0
 
 	.btn-details-service
-		margin: 39px 0 0 14px	
+		margin: 39px 0 0 14px
+
+	.team-card
+		&__photo
+			max-width: none	
+
+	.cases
+		margin: 66px 0 64px
+		h2
+			margin: 0 0 15px
+
+	.case-card
+		width: 232px
+		flex-direction: column
+		padding: 20px
+		font-size: 16px
+		&__photo
+			width: 100%
+			height: 192px
+		&__body
+			width: 100%
+			padding: 18px 0 0		
+		&__name
+			margin: 10px 0 0	
+		.btn
+			margin: 18px 0 0	
+
+	.warranty-box
+		width: 100%
+		margin: 0 0 35px
+
+	.team-card__photo
+		height: 400px	
+
+	.documents-card
+		width: 100%
+		margin: 0 0 35px
+		&:last-child
+			margin: 0 0 35px
+
+	.btn-toggle
+		margin: 0 auto
+
+	.documents
+		margin: 0 0 55px	
+
+	.payments-box
+		width: 100%
+		margin: 0 0 30px				
 
 @media only screen and (max-width: 576px)
+	.section-top-line
+		padding: 40px 0 0
+
 	.home-image-min__last, .home-image-min
 		height: 224px
 
@@ -730,16 +914,30 @@
 
 	.header
 		.header-bottom
-			display: none	
+			display: none
 
 	.table-price
 		font-size: 12px
 		h4
-			font-size: 14px			
+			font-size: 14px
+
+	.team-card
+		&__photo
+			height: 280px
+
+	.warranty h2
+		margin: 0 0 37px
+
+	.cases-slider
+		padding: 0 0			
 
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 110px
+
+	.team-card
+		&__photo
+			height: 201px	
 
 @media only screen and (max-width: 420px)
 	.home
@@ -751,7 +949,6 @@
 			.btn
 				margin: 20px 10px 0 0
 				padding: 10px 15px
-		
 
 	.articles-slider
 		.slick-slide
@@ -793,7 +990,7 @@
 			margin: 0
 
 	.slick-arrow
-		padding: 22px
+		width: 22px
 		height: 46px
 
 	.callback-content
@@ -815,7 +1012,7 @@
 				margin: 0
 
 	h1, .h1
-		font-size: 32px			
+		font-size: 32px
 
 	.callback-image
 		max-width: 140px
@@ -823,4 +1020,14 @@
 	.table-price
 		font-size: 10px
 		h4
-			font-size: 12px	
+			font-size: 12px
+
+	.team-card
+		&__name
+			font-size: 18px
+
+	.warranty-box
+		padding: 20px		
+
+	.payments-box__icon
+		margin: 0 20px 0 0	

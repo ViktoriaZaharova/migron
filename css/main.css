@@ -261,7 +261,7 @@
 }
 
 .video-reviews-wrapper {
-  width: calc(100% + 10px);
+  width: calc(100% + 15px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1198,7 +1198,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 258px;
+  width: 100%;
+  max-width: 258px;
   height: 295px;
   border-radius: 10px;
 }
@@ -1219,14 +1220,15 @@
 }
 
 .cases {
-  margin: 0 0 110px;
+  margin: 110px 0;
 }
 .cases h2 {
   margin: 0 0 56px;
 }
 
 .cases-slider {
-  padding: 0 34px 0 0;
+  padding: 0 54px 0 0;
+  width: calc(100% + 15px);
 }
 .cases-slider .slick-prev {
   display: none !important;
@@ -1438,6 +1440,10 @@
   border-radius: 10px;
   border: 1px solid #051861;
   width: 380px;
+  display: none;
+}
+.documents-card:nth-child(-n+4) {
+  display: block;
 }
 .documents-card:last-child {
   margin: 0 0 35px;

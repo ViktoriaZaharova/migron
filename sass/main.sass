@@ -174,7 +174,7 @@
 		margin: 0 0 54px
 
 .video-reviews-wrapper
-	width: calc(100% + 10px)
+	width: calc(100% + 15px)
 	display: flex
 	align-items: flex-start
 
@@ -782,7 +782,8 @@
 	height: 100%
 	&__photo
 		@include d-flex
-		width: 258px
+		width: 100%
+		max-width: 258px
 		height: 295px
 		border-radius: 10px
 		img
@@ -799,12 +800,13 @@
 
 // cases
 .cases
-	margin: 0 0 110px
+	margin: 110px 0 
 	h2
 		margin: 0 0 56px
 
 .cases-slider
-	padding: 0 34px 0 0
+	padding: 0 54px 0 0
+	width: calc(100% + 15px)
 	.slick-prev
 		display: none !important
 	.slick-arrow
@@ -941,6 +943,9 @@
 	border-radius: 10px
 	border: 1px solid $accent
 	width: 380px
+	display: none
+	&:nth-child(-n+4)
+		display: block
 	&:last-child
 		margin: 0 0 35px
 	&__icon
@@ -1006,4 +1011,6 @@
 		width: 60px
 		height: 46px	
 		@include d-flex
+	
+// contacts page
 	

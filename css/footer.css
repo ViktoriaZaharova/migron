@@ -430,3 +430,20 @@ footer .rating-link {
 .list-requisites span {
   margin: 0 10px 0 0;
 }
+
+#mediaModal .modal-dialog, #reviewsModal .modal-dialog {
+  max-width: 1030px;
+}
+
+.video-iframe {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.video-iframe iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

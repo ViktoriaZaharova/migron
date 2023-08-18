@@ -15,7 +15,7 @@ $('.video-reviews-wrapper').slick({
 	variableWidth: true,
 	arrows: false,
 	infinite: false,
-	swipe: false,
+	// swipe: false,
 	responsive: [
 		{
 			breakpoint: 992,
@@ -88,6 +88,15 @@ $('.cases-slider').slick({
 	variableWidth: true,
 	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
 	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				arrows: false,
+				autoplay: true
+			}
+		}
+	]
 });
 
 
@@ -166,4 +175,14 @@ $('.btn-burger').on('click', function () {
 $('.mobile-menu__close, .overlay-bg').on('click', function () {
 	$('.mobile-menu').removeClass('open');
 	$('.overlay-bg').fadeOut();
+});
+
+$('.btn-toggle').on('click', function (e) {
+	e.preventDefault();
+	$(this).prev('.documents-wrapper').find('.documents-card:hidden').slice(0, 5).slideDown();
+
+	var onBlock = $(this).prev('.documents-wrapper').find('.documents-card:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
 });
