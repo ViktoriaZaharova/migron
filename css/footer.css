@@ -80,7 +80,7 @@ footer .rating-link {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.social-box h4 {
+.social-box .h4 {
   margin: 0 0 10px;
   color: #051861;
 }

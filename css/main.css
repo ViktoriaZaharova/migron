@@ -194,7 +194,7 @@
 .about-content {
   padding: 0 0 0 90px;
 }
-.about-content h3 {
+.about-content .h3 {
   margin: 32px 0 31px;
   max-width: 681px;
 }
@@ -387,6 +387,10 @@
 }
 .reviews-card .box-text {
   font-size: 16px;
+}
+
+.btn-all-reviews {
+  margin: 0 0 0 auto;
 }
 
 .w476 {
@@ -1027,6 +1031,7 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 .accordion-button:focus {
   -webkit-box-shadow: none;
@@ -1071,9 +1076,11 @@
   font-size: 20px;
   color: #051861;
 }
-.table-price h4 {
+.table-price .h4 {
   font-weight: 600;
   color: #333;
+  margin: 0;
+  font-size: inherit;
 }
 .table-price th {
   padding: 20px;
@@ -1117,7 +1124,7 @@
 .about-section .about-content {
   padding: 0;
 }
-.about-section .about-content h3 {
+.about-section .about-content .h3 {
   margin: 74px 0 31px;
 }
 
@@ -1163,7 +1170,7 @@
   padding: 35px 56px;
   border-radius: 10px;
 }
-.company-founder__name h3 {
+.company-founder__name .h2 {
   color: #fff;
 }
 .company-founder__name .position {
@@ -1174,7 +1181,7 @@
   margin: 133px auto 0;
   max-width: 654px;
 }
-.company-founder__content h3 {
+.company-founder__content h2 {
   margin: 0 0 40px;
 }
 
@@ -1222,9 +1229,6 @@
 
 .cases {
   margin: 110px 0;
-}
-.cases h2 {
-  margin: 0 0 56px;
 }
 
 .cases-slider {
@@ -1300,10 +1304,6 @@
   width: 100%;
 }
 
-.warranty h2 {
-  margin: 0 0 47px;
-}
-
 .warranty-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -1356,9 +1356,6 @@
 .jobs {
   margin: 58px 0 40px;
 }
-.jobs h2 {
-  margin: 0 0 40px;
-}
 
 .accordion-jobs {
   max-width: 932px;
@@ -1384,7 +1381,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.jobs-callback h3 {
+.jobs-callback .h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1417,7 +1414,7 @@
 }
 
 .documents {
-  margin: 0 0 140px;
+  margin: 70px 0 140px;
 }
 
 .documents-wrapper {
@@ -1523,7 +1520,7 @@
 .payments-box:last-child {
   margin: 0 0 50px;
 }
-.payments-box h3 {
+.payments-box .h3 {
   font-weight: normal;
 }
 .payments-box__icon {
@@ -1561,9 +1558,11 @@
           justify-content: flex-start;
   margin: 70px 0 0;
   font-size: 16px;
+  color: #051861;
 }
-.contacts-page .social-box h4 {
+.contacts-page .social-box .h4 {
   margin: 0;
+  font-size: inherit;
 }
 .contacts-page .list-social {
   margin: 0 0 0 38px;
@@ -1587,7 +1586,7 @@
   font-size: 20px;
   color: #051861;
 }
-.contacts-page .schedule h4 {
+.contacts-page .schedule .h4 {
   margin: 0 0 6px;
 }
 .contacts-page .requisites-box {
@@ -1722,7 +1721,7 @@
   border: none;
   width: 55%;
 }
-.contacts-callback-box h3 {
+.contacts-callback-box .h3 {
   color: #5C5C5C;
   max-width: 285px;
 }

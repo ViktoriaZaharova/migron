@@ -51,6 +51,21 @@
   .contacts-map__footer, .contacts-address {
     margin: 30px 0 0;
   }
+  .nav-menu {
+    font-size: 15px;
+  }
+  footer .phone {
+    font-size: 34px;
+  }
+  footer .schedule {
+    font-size: 18px;
+  }
+  .schedule .h4 {
+    font-size: 18px;
+  }
+  h3, .h3 {
+    font-size: 22px;
+  }
 }
 @media only screen and (max-width: 1440px) {
   .rating-link {
@@ -103,7 +118,7 @@
     width: 450px;
     height: auto;
   }
-  .company-founder__content h3 {
+  .company-founder__content .h3 {
     margin: 0 0 30px;
   }
   .box-text p {
@@ -314,7 +329,7 @@
     margin: 0 0 90px;
   }
   .documents .mb-50 {
-    margin: 0 0 35px;
+    margin-bottom: 35px;
   }
   .documents-card {
     width: calc(50% - 35px);
@@ -437,7 +452,8 @@
   .about-content {
     margin: 17px 0 0;
   }
-  .about-content h3 {
+  .about-content .h3 {
+    max-width: none;
     margin: 11px 0 16px;
   }
   .about-content .btn {
@@ -483,6 +499,9 @@
   }
   .reviews-slider__nav {
     display: none;
+  }
+  .btn-all-reviews {
+    margin: 0;
   }
   .reviews-card {
     width: 322px;
@@ -583,7 +602,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .communication-method h3 {
+  .communication-method .h2 {
     text-align: center;
     margin: 0 auto 16px;
     font-weight: 600;
@@ -703,7 +722,7 @@
   .about-section .about-content {
     margin: 0 0 40px;
   }
-  .about-section .about-content h3 {
+  .about-section .about-content .h3 {
     margin: 11px 0 16px;
     max-width: none;
   }
@@ -726,7 +745,7 @@
     width: 100%;
     border-radius: 10px 10px 0 0;
   }
-  .company-founder__name h3 {
+  .company-founder__name .h2 {
     font-size: 36px;
   }
   .company-founder__content {
@@ -750,9 +769,6 @@
   }
   .jobs {
     margin: 28px 0 70px;
-  }
-  .jobs h2 {
-    margin: 0 0 32px;
   }
   .jobs-area {
     margin: 22px 0 0;
@@ -843,7 +859,7 @@
   .footer-box__bottom {
     margin: 18px 0 0;
   }
-  .schedule h4 {
+  .schedule .h4 {
     width: 100%;
     margin: 0 0 10px;
   }
@@ -886,9 +902,6 @@
   }
   .cases {
     margin: 66px 0 64px;
-  }
-  .cases h2 {
-    margin: 0 0 15px;
   }
   .case-card {
     width: 232px;
@@ -947,7 +960,7 @@
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .contacts-page .social-box h4 {
+  .contacts-page .social-box .h4 {
     margin: 0 0 20px;
   }
   .contacts-page .list-social {
@@ -985,7 +998,7 @@
     border: none;
     padding: 36px 0 0;
   }
-  .contacts-callback h3 {
+  .contacts-callback .h3 {
     margin: 0 auto;
   }
   .contacts-callback .box-text {
@@ -1046,6 +1059,12 @@
   }
 }
 @media only screen and (max-width: 576px) {
+  h3, .h3 {
+    font-size: 20px;
+  }
+  .mb-55 {
+    margin-bottom: 30px;
+  }
   .section-top-line {
     padding: 40px 0 0;
   }
@@ -1179,20 +1198,20 @@
   .table-price {
     font-size: 12px;
   }
-  .table-price h4 {
+  .table-price .h4 {
     font-size: 14px;
   }
   .team-card__photo {
     height: 280px;
-  }
-  .warranty h2 {
-    margin: 0 0 37px;
   }
   .cases-slider {
     padding: 0 0;
   }
   .name-company {
     font-size: 16px;
+  }
+  .driving-direction-box__head {
+    margin: 0 0 37px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1289,7 +1308,7 @@
   .table-price {
     font-size: 10px;
   }
-  .table-price h4 {
+  .table-price .h4 {
     font-size: 12px;
   }
   .team-card__name {
