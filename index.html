@@ -40,7 +40,8 @@
 		<div class="overlay-bg"></div>
 		<div class="mobile-menu">
 			<div class="mobile-menu__head">
-				<a href="index.html" class="logo" itemprop="url"><img src="img/logo-mobile.svg" alt="" itemprop="logo image"></a>
+				<a href="index.html" class="logo" itemprop="url"><img src="img/logo-mobile.svg" alt=""
+						itemprop="logo image"></a>
 				<button class="mobile-menu__close"><svg class="svg-icon">
 						<use xlink:href="img/sprite.svg#close-mobile"></use>
 					</svg></button>
@@ -639,7 +640,8 @@
 								<div class="col-12 col-lg-6">
 									<div class="about-content">
 										<h2>О компании</h2>
-										<div class="h3">«Мигрон» - это профессиональное узкоспециализированное миграционное агентство. Мы занимаемся
+										<div class="h3">«Мигрон» - это профессиональное узкоспециализированное миграционное агентство. Мы
+											занимаемся
 											исключительно миграционными
 											вопросами и разбираемся в теме досконально</div>
 										<div class="box-text">
@@ -772,24 +774,33 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="video-reviews-wrapper">
-							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-								<img src="img/reviews-preview1.png" alt="">
+							<div class="video-reviews">
+								<!-- <img src="img/reviews-preview1.png" alt="">
 								<span class="video-reviews__icon"><svg class="svg-icon">
 										<use xlink:href="img/sprite.svg#play"></use>
-									</svg></span>
-							</a>
-							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-								<img src="img/reviews-preview2.png" alt="">
-								<span class="video-reviews__icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#play"></use>
-									</svg></span>
-							</a>
-							<a href="#" data-bs-toggle="modal" data-bs-target="#reviewsModal" class="video-reviews">
-								<img src="img/reviews-preview3.png" alt="">
-								<span class="video-reviews__icon"><svg class="svg-icon">
-										<use xlink:href="img/sprite.svg#play"></use>
-									</svg></span>
-							</a>
+									</svg></span> -->
+								<video controls poster="img/reviews-preview1.png">
+									<source src="video/video-bg.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="video-reviews">
+								<!-- <img src="img/reviews-preview1.png" alt="">
+															<span class="video-reviews__icon"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#play"></use>
+																</svg></span> -->
+								<video controls poster="img/reviews-preview2.png">
+									<source src="video/video-bg.mp4" type="video/mp4">
+								</video>
+							</div>
+							<div class="video-reviews">
+								<!-- <img src="img/reviews-preview1.png" alt="">
+															<span class="video-reviews__icon"><svg class="svg-icon">
+																	<use xlink:href="img/sprite.svg#play"></use>
+																</svg></span> -->
+								<video controls poster="img/reviews-preview3.png">
+									<source src="video/video-bg.mp4" type="video/mp4">
+								</video>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1059,26 +1070,31 @@
 									<div class="row">
 										<div class="col-12">
 											<div class="video-mass-media-wrapper">
-												<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
-													class="video-reviews video-mass-media">
-													<span class="video-mass-media__img">
-														<img src="img/mass-media-video1.png" alt="">
-														<span class="video-reviews__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#play"></use>
-															</svg></span>
-													</span>
-													<span class="video-mass-media__title">Выступление на канале ABRACADABRA TV</span>
-												</a>
-												<a href="#" data-bs-toggle="modal" data-bs-target="#mediaModal"
-													class="video-reviews video-mass-media">
-													<span class="video-mass-media__img">
-														<img src="img/mass-media-video2.png" alt="">
-														<span class="video-reviews__icon"><svg class="svg-icon">
-																<use xlink:href="img/sprite.svg#play"></use>
-															</svg></span>
-													</span>
-													<span class="video-mass-media__title">Ролик на телеканале НТВ</span>
-												</a>
+												<div class="video-reviews video-mass-media">
+													<!-- <img src="img/reviews-preview1.png" alt="">
+																				<span class="video-reviews__icon"><svg class="svg-icon">
+																						<use xlink:href="img/sprite.svg#play"></use>
+																					</svg></span> -->
+													<div class="video-mass-media__img">
+														<video controls poster="img/mass-media-video1.png">
+															<source src="video/video-bg.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="video-mass-media__title">Выступление на канале ABRACADABRA TV</div>
+												</div>
+												<div class="video-reviews video-mass-media">
+													<!-- <img src="img/reviews-preview1.png" alt="">
+																																<span class="video-reviews__icon"><svg class="svg-icon">
+																																		<use xlink:href="img/sprite.svg#play"></use>
+																																	</svg></span> -->
+													<div class="video-mass-media__img">
+														<video controls poster="img/mass-media-video2.png">
+															<source src="video/video-bg.mp4" type="video/mp4">
+														</video>
+													</div>
+													<div class="video-mass-media__title">Ролик на телеканале НТВ</div>
+												</div>
+												
 											</div>
 										</div>
 										<div class="col-12 d-flex flex-wrap">
@@ -1348,83 +1364,83 @@
 					<div class="col-12 col-xxl-6">
 						<div class="footer-box">
 							<div class="footer-box__top">
-								<a href="index.html" class="logo" itemprop="url"><img src="img/logo-footer.svg" alt="" itemprop="logo image"></a>
+								<a href="index.html" class="logo" itemprop="url"><img src="img/logo-footer.svg" alt=""
+										itemprop="logo image"></a>
 								<a href="tel:+74996818014" class="phone" itemprop="telephone">8 499 681 80 14</a>
 								<a href="mailto:info@migron.ru" class="mail" itemprop="email">info@migron.ru</a>
 							</div>
 							<div class="footer-box__bottom">
-								<div class="schedule itemprop="openingHours" datetime="Mo-Sn 09:00−21:00"">
-									<div class="font-bold h4">Режим работы</div>
-									<p>пн-вс 09:00 - 21:00 МСК</p>
-								</div>
-								<ul class="list-messengers my-ul">
-									<li><a href="#" rel="nofollow" target="_blank"><img src="img/tg.svg" alt=""></a></li>
-									<li><a href="#" rel="nofollow" target="_blank"><img src="img/whatsapp.svg" alt=""></a></li>
-									<li><a href="#" rel="nofollow" target="_blank"><img src="img/viber.svg" alt=""></a></li>
-								</ul>
-								<a href="#" class="rating-link" rel="nofollow" target="_blank"><img src="img/rating-icon.svg"
-										alt=""></a>
+								<div class="schedule itemprop=" openingHours" datetime="Mo-Sn 09:00−21:00"">
+									<div class=" font-bold h4">Режим работы</div>
+								<p>пн-вс 09:00 - 21:00 МСК</p>
 							</div>
+							<ul class="list-messengers my-ul">
+								<li><a href="#" rel="nofollow" target="_blank"><img src="img/tg.svg" alt=""></a></li>
+								<li><a href="#" rel="nofollow" target="_blank"><img src="img/whatsapp.svg" alt=""></a></li>
+								<li><a href="#" rel="nofollow" target="_blank"><img src="img/viber.svg" alt=""></a></li>
+							</ul>
+							<a href="#" class="rating-link" rel="nofollow" target="_blank"><img src="img/rating-icon.svg" alt=""></a>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-12 col-xxl-6">
-						<div class="footer-box">
-							<div class="row">
-								<div class="col-5 col-md-2">
-									<ul class="nav nav-menu nav-menu-footer">
-										<li class="nav-item"><a href="o-kompanii.html" class="nav-link">О компании</a></li>
-										<li class="nav-item"><a href="uslugi.html" class="nav-link">Услуги</a></li>
-										<li class="nav-item"><a href="ceni.html" class="nav-link">Цены</a></li>
-										<li class="nav-item"><a href="akcii.html" class="nav-link">Акции</a></li>
-									</ul>
-								</div>
-								<div class="col-7 col-md-3">
-									<ul class="nav nav-menu nav-menu-footer">
-										<li class="nav-item"><a href="kontakti.html" class="nav-link">Контакты</a></li>
-										<li class="nav-item"><a href="informaciya.html" class="nav-link">Полезная информация</a></li>
-										<li class="nav-item"><a href="testi.html" class="nav-link">Тесты</a></li>
-										<li class="nav-item"><a href="prezentaciya.html" class="nav-link">Презентация</a></li>
-									</ul>
-								</div>
-								<div class="col-12 col-md-7">
-									<div class="social-box">
-										<div class="h4">Мы в соц.сетях</div>
+				<div class="col-12 col-xxl-6">
+					<div class="footer-box">
+						<div class="row">
+							<div class="col-5 col-md-2">
+								<ul class="nav nav-menu nav-menu-footer">
+									<li class="nav-item"><a href="o-kompanii.html" class="nav-link">О компании</a></li>
+									<li class="nav-item"><a href="uslugi.html" class="nav-link">Услуги</a></li>
+									<li class="nav-item"><a href="ceni.html" class="nav-link">Цены</a></li>
+									<li class="nav-item"><a href="akcii.html" class="nav-link">Акции</a></li>
+								</ul>
+							</div>
+							<div class="col-7 col-md-3">
+								<ul class="nav nav-menu nav-menu-footer">
+									<li class="nav-item"><a href="kontakti.html" class="nav-link">Контакты</a></li>
+									<li class="nav-item"><a href="informaciya.html" class="nav-link">Полезная информация</a></li>
+									<li class="nav-item"><a href="testi.html" class="nav-link">Тесты</a></li>
+									<li class="nav-item"><a href="prezentaciya.html" class="nav-link">Презентация</a></li>
+								</ul>
+							</div>
+							<div class="col-12 col-md-7">
+								<div class="social-box">
+									<div class="h4">Мы в соц.сетях</div>
 
-										<ul class="list-social my-ul">
-											<li><a href="#" rel="nofollow" target="_blank"><img src="img/vk.svg" alt=""></a></li>
-											<li><a href="#" rel="nofollow" target="_blank" class="link-tg"><img src="img/tg.svg" alt=""></a>
-											</li>
-											<li><a href="#" rel="nofollow" target="_blank"><img src="img/youtube.svg" alt=""></a></li>
-											<li><a href="#" rel="nofollow" target="_blank"><img src="img/tiktok.svg" alt=""></a></li>
-										</ul>
-										<div class="btn-group">
-											<a href="#" class="btn btn-border-accent" data-bs-toggle="modal"
-												data-bs-target="#addressModal">карта сайта</a>
-											<a href="#" class="btn btn-border-accent" data-bs-toggle="modal"
-												data-bs-target="#addressModal">Скачать
-												презентацию</a>
-										</div>
+									<ul class="list-social my-ul">
+										<li><a href="#" rel="nofollow" target="_blank"><img src="img/vk.svg" alt=""></a></li>
+										<li><a href="#" rel="nofollow" target="_blank" class="link-tg"><img src="img/tg.svg" alt=""></a>
+										</li>
+										<li><a href="#" rel="nofollow" target="_blank"><img src="img/youtube.svg" alt=""></a></li>
+										<li><a href="#" rel="nofollow" target="_blank"><img src="img/tiktok.svg" alt=""></a></li>
+									</ul>
+									<div class="btn-group">
+										<a href="#" class="btn btn-border-accent" data-bs-toggle="modal"
+											data-bs-target="#addressModal">карта сайта</a>
+										<a href="#" class="btn btn-border-accent" data-bs-toggle="modal"
+											data-bs-target="#addressModal">Скачать
+											презентацию</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
 
-				<div class="row">
-					<div class="col-12 col-lg-6">
-						<ul class="list-documents my-ul">
-							<li><a href="#" rel="nofollow" target="_blank">Политика конфиденциальности</a></li>
-							<li><a href="#" rel="nofollow" target="_blank">Пользовательское соглашение</a></li>
-						</ul>
-					</div>
-					<div class="col-12 col-lg-6">
-						<div class="copyright">© 2014 - 2022 ИП Данилов И.Г.</div>
-					</div>
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<ul class="list-documents my-ul">
+						<li><a href="#" rel="nofollow" target="_blank">Политика конфиденциальности</a></li>
+						<li><a href="#" rel="nofollow" target="_blank">Пользовательское соглашение</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="copyright">© 2014 - 2022 ИП Данилов И.Г.</div>
 				</div>
 			</div>
-		</footer>
+	</div>
+	</footer>
 	</div>
 
 	<!-- Модальное окно -->
@@ -1776,45 +1792,46 @@
 		</div>
 	</div>
 
-		<div class="modal modal-v2 fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="modal-title">Видео отзыв</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#close"></use>
-							</svg></button>
-					</div>
-					<div class="modal-body">
-						<div class="video-iframe">
-							<iframe src="https://www.youtube.com/embed/njX2bu-_Vw4" title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen></iframe>
-						</div>
+	<div class="modal modal-v2 fade" id="reviewsModal" tabindex="-1" aria-labelledby="reviewsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Видео отзыв</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="video-iframe">
+						<iframe src="https://www.youtube.com/embed/njX2bu-_Vw4" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal modal-v2 fade" id="mediaModal" tabindex="-1" aria-labelledby="mediaModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="modal-title">Видео отзыв</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
-								<use xlink:href="img/sprite.svg#close"></use>
-							</svg></button>
-					</div>
-					<div class="modal-body">
-						<div class="video-iframe">
-							<iframe src="https://www.youtube.com/embed/njX2bu-_Vw4" title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen></iframe>
-						</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="mediaModal" tabindex="-1" aria-labelledby="mediaModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Видео отзыв</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<div class="video-iframe">
+						<iframe src="https://www.youtube.com/embed/njX2bu-_Vw4" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

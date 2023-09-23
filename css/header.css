@@ -262,10 +262,10 @@ header {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.nav-menu .nav-link:hover {
+.nav-menu .nav-link:hover, .nav-menu .nav-link.active {
   color: #051861;
 }
-.nav-menu .nav-link:hover::before {
+.nav-menu .nav-link:hover::before, .nav-menu .nav-link.active::before {
   width: 100%;
 }
 
