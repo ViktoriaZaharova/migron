@@ -1,123 +1,179 @@
-@import 'vars'
-
-// home section
 .home
 	margin: 40px 0 180px
+
 	h3
 		margin: 54px 0 97px
+
 	.btn
 		padding: 10px 40px
 		font-size: 20px
 		margin: 25px 0 0
 		height: 67px
+
 	.box-text
 		max-width: 322px
 
-.home-image
-	width: 100%
-	@include d-flex
-	border-radius: 10px
-	img
-		height: 100%
+	&-image
 		width: 100%
-		object-fit: cover
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		border-radius: 10px
-	&-max
+
+		img
+			height: 100%
+			width: 100%
+			-o-object-fit: cover
+			object-fit: cover
+			border-radius: 10px
+
+	&-image-max
 		height: 702px
-	&-min
+
+	&-image-min
 		height: 334px
 		margin: 0 0 22px
-		&__last
-			height: 346px
-			margin: 0
 
-// sales section
-.sales
-	.title-decor
-		padding: 70px 160px 70px 0
+	&-image-min__last
+		height: 346px
+		margin: 0
+
+.sales .title-decor
+	padding: 70px 160px 70px 0
 
 .sales-slider
 	width: calc(100% + 10px)
 	padding: 0 120px 0 0
+
 	.slick-prev
 		opacity: 0
+
 	.slick-arrow
 		top: 35%
 
-.sales-item
-	&__img
-		width: 100%
-		height: 334px
-		border-radius: 10px
-		@include d-flex
-		img
-			border-radius: 10px
-			width: 100%
-			height: 100%
-			object-fit: cover
-	&__body
-		margin: 30px 0 0
-		width: 100%
-	&__title
-		color: #333
-		font-size: 20px
-		&:hover
-			color: $accent
-	.btn
-		margin: 20px 0 0
-		padding: 10px 30px
+.sales-item__img
+	width: 100%
+	height: 334px
+	border-radius: 10px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 
-// services
+	img
+		border-radius: 10px
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+
+.sales-item__body
+	margin: 30px 0 0
+	width: 100%
+
+.sales-item__title
+	color: #333
+	font-size: 20px
+
+	&:hover
+		color: #051861
+
+.sales-item .btn
+	margin: 20px 0 0
+	padding: 10px 30px
+
 .services-box
 	width: 100%
 	height: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+
 	.btn
 		margin: 25px 44px 0 0
-		&:last-child
-			margin: 25px 0 0
+
+	.btn:last-child
+		margin: 25px 0 0
+
 	&__icon
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 35px
 		height: 42px
 		min-width: 35px
-		fill: $accent
+		fill: #051861
 		margin: 0 0 28px
+
 	h3
 		font-size: 23px
 		width: 100%
+
 	&__head
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-ms-flex-wrap: wrap
 		flex-wrap: wrap
+
 	&__body
 		width: 100%
-		// height: calc(100% - 101px)
 		padding: 12px 0 0
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
+
 	.btn-group
 		margin: auto 0 0
+
 	.box-text
 		max-width: 506px
 
-// about
 .about
 	position: relative
 	overflow: hidden
 	margin: 70px 0 140px
+
 	h2
 		line-height: 77px
 
-.about-wrapper
-	width: 100%
-	position: relative
-	z-index: 1
-	border-radius: 20px 0 0 20px
-	padding: 84px 0 113px 50px
-	&::before
-		content: ''
+	&-wrapper
+		width: 100%
+		position: relative
+		z-index: 1
+		border-radius: 20px 0 0 20px
+		padding: 84px 0 113px 50px
+
+	&-wrapper::before
+		content: ""
 		position: absolute
 		left: 0
 		top: 0
@@ -127,55 +183,77 @@
 		border-radius: 20px
 		background: #F7F7F7
 
-.about-content
-	padding: 0 0 0 90px
-	.h3
+	&-content
+		padding: 0 0 0 90px
+
+	&-content .h3
 		margin: 32px 0 31px
 		max-width: 681px
-	.btn
+
+	&-content .btn
 		margin: 59px 0 0
 
-.about-image
-	width: 100%
-	height: 474px
-	border-radius: 10px
-	img
+	&-image
+		width: 100%
+		height: 474px
+		border-radius: 10px
+
+	&-image img
 		border-radius: 10px
 		width: 100%
 		height: 100%
+		-o-object-fit: cover
 		object-fit: cover
 
-// why-us
 .why-us
 	position: relative
 	overflow: hidden
+
 	h2
 		margin: 70px 0 0
 
-.why-us-box
-	margin: 0 0 83px
-	&__head
+	&-box
+		margin: 0 0 83px
+
+	&-box__head
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		margin: 0 0 20px
-	&__icon
-		@include d-flex
+
+	&-box__icon
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 35px
 		height: 42px
 		min-width: 35px
 		margin: 0 20px 0 0
-		fill: $accent
+		fill: #051861
 
-// reviews
 .reviews
 	margin: 70px 0 104px
 	padding: 87px 0 0
+
 	h2
 		margin: 0 0 54px
 
 .video-reviews-wrapper
 	width: calc(100% + 15px)
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
 
 .video-reviews
@@ -186,34 +264,49 @@
 	max-width: 504px
 	height: 277px
 	margin: 0 50px 80px 0
+
 	&:last-child
 		margin-right: 0
-	img, video
+
+	img, .video-reviews video
 		border-radius: 10px
 		width: 100%
 		height: 100%
+		-o-object-fit: cover
 		object-fit: cover
+
 	&__icon
 		position: absolute
 		z-index: 1
 		left: 50%
 		top: 50%
-		transform: translate(-50%,-50%)
-		transition: .3s
+		-webkit-transform: translate(-50%, -50%)
+		transform: translate(-50%, -50%)
+		-webkit-transition: 0.3s
+		transition: 0.3s
 		border-radius: 50%
 		fill: #fff
 		width: 97px
 		height: 97px
-		background: rgba(5, 24, 97, 0.60)
+		background: rgba(5, 24, 97, 0.6)
+		-webkit-backdrop-filter: blur(7.5px)
 		backdrop-filter: blur(7.5px)
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 
-		svg
-			width: 25px
-			height: 30px
-	&:hover
-		.video-reviews__icon
-			background: $accent
+	&__icon svg
+		width: 25px
+		height: 30px
+
+	&:hover .video-reviews__icon
+		background: #051861
 
 .reviews-card
 	max-width: 464px
@@ -222,40 +315,66 @@
 	border-radius: 10px
 	border: 1px solid #051861
 	padding: 20px 40px
+
 	&__head
 		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+
 	&__avatar
 		border-radius: 50%
 		width: 67px
 		height: 67px
 		min-width: 67px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		margin: 0 36px 0 0
-		img
-			border-radius: 50%
+
+	&__avatar img
+		border-radius: 50%
+
 	&__name
 		font-size: 20px
 		font-weight: 600
+
 	&__service
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		margin: 8px 0 0
-		.link
-			color: $accent
-			font-size: 14px
-			&:hover
-				color: $grey
+
+	&__service .link
+		color: #051861
+		font-size: 14px
+
+	&__service .link:hover
+		color: #5C5C5C
+
 	&__body
 		margin: 20px 0 0
+
 	.list-stars
 		margin: 0 0 20px
+
 	.box-text
 		font-size: 16px
 
 .btn-all-reviews
-	margin: 0 0 0 auto		
+	margin: 0 0 0 auto
 
 .w476
 	max-width: 476px
@@ -264,7 +383,15 @@
 	max-width: 408px
 
 .link-social
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 	margin: 0 0 0 20px
 	fill: #051861
 	width: 24px
@@ -272,58 +399,88 @@
 	min-width: 24px
 
 .list-stars
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+
 	li
 		width: 22px
 		height: 21px
 		fill: #FDC20C
 		margin: 0 10px 0 0
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
 		&:last-child
 			margin: 0
 
 .reviews-slider
 	width: calc(100% + 10px)
+
 	.slick-track
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
 		align-items: stretch
+
 	.slick-slide
 		height: auto
 		margin: 0 30px 0 0
+
 	&__nav
 		margin: 120px 0 0
+		-webkit-box-pack: end
+		-ms-flex-pack: end
 		justify-content: flex-end
-		.slick-prev
-			opacity: 0
 
-// mass-media
-.mass-media
-	h2
-		margin: 0 0 47px
-		max-width: 323px
-	&-wrapper
-		position: relative
-		z-index: 1
-		padding: 78px 0 53px 55px
-		&::before
-			content: ''
-			position: absolute
-			z-index: -1
-			top: 0
-			left: 0
-			height: 100%
-			width: calc(100% + 97px)
-			border-radius: 20px
-			background: #F7F7F7
+	&__nav .slick-prev
+		opacity: 0
+
+.mass-media h2
+	margin: 0 0 47px
+	max-width: 323px
+
+.mass-media-wrapper
+	position: relative
+	z-index: 1
+	padding: 78px 0 53px 55px
+
+	&::before
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 0
+		left: 0
+		height: 100%
+		width: calc(100% + 97px)
+		border-radius: 20px
+		background: #F7F7F7
 
 .video-mass-media-wrapper
 	width: calc(100% + 10px)
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
 	padding: 0 64px 0 0
+
 	.slick-arrow
 		top: 30%
+
 	.slick-prev
 		display: none !important
 
@@ -332,15 +489,27 @@
 	height: auto
 	color: #333
 	font-size: 20px
+
 	&:hover
-		color: $accent
+		color: #051861
+
 	&:last-child
 		margin: 0 0 60px
+
 	&__img
 		width: 100%
 		position: relative
 		height: 277px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
 	&__title
 		margin: 27px 0 0
 		max-width: 260px
@@ -351,31 +520,46 @@
 	margin: 0 33px 20px 0
 	max-width: 367px
 	width: 100%
+
 	&:last-child
 		margin: 0 0 20px
+
 	&__img
 		width: 100%
 		height: 225px
 		border-radius: 10px
-		@include d-flex
-		img
-			border-radius: 10px
-			width: 100%
-			height: 100%
-			object-fit: cover
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
+	&__img img
+		border-radius: 10px
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+
 	&__body
 		width: 100%
 		margin: 30px 0 0
+
 	&__title
 		color: #333
 		font-size: 20px
 		font-weight: 600
-		&:hover
-			color: $accent
+
+	&__title:hover
+		color: #051861
+
 	.btn
 		margin: 30px 0 0
 
-// news
 .news
 	margin: 110px 0 76px
 
@@ -388,120 +572,196 @@
 	border-radius: 20px
 	border: 1px solid #B4B4B4
 	padding: 20px
+
 	&__date
 		color: #051861
+
 	&__img
 		margin: 20px 0
 		width: 100%
 		height: 225px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		border-radius: 10px
-		img
-			border-radius: 10px
-			width: 100%
-			height: 100%
-			object-fit: cover
+
+	&__img img
+		border-radius: 10px
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+
 	&__title
 		font-size: 24px
 		font-weight: 600
 		color: #333
-		&:hover
-			color: $accent
+
+	&__title:hover
+		color: #051861
+
 	.box-text
 		margin: 15px 0 20px
+
 	&__body
 		width: 100%
 		height: calc(100% - 227px - 40px - 22px)
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
+
 	.btn
 		margin: auto 0 0
 
-// articles	
 .articles
 	padding: 103px 0 0
 
-.articles-card
-	width: 100%
-	height: 100%
-	display: flex
-	align-items: stretch
-	border-radius: 20px
-	background: #F7F7F7
-	padding: 35px
-	&__img
+	&-card
+		width: 100%
+		height: 100%
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+		border-radius: 20px
+		background: #F7F7F7
+		padding: 35px
+
+	&-card__img
 		border-radius: 10px
 		width: 169px
 		height: 169px
-		@include d-flex
-		img
-			width: 100%
-			height: 100%
-			object-fit: cover
-			border-radius: 10px
-	&__body
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
+	&-card__img img
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+		border-radius: 10px
+
+	&-card__body
 		width: calc(100% - 169px)
 		padding: 0 0 0 40px
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
 		flex-direction: column
-	&__title
+
+	&-card__title
 		color: #333
 		font-size: 20px
 		margin: 0 0 20px
-		&:hover
-			color: $accent
-	.btn
+
+	&-card__title:hover
+		color: #051861
+
+	&-card .btn
 		margin: auto 0 0
 
-// callback
 .callback
 	margin: 120px 0 70px
+
 	h2
 		margin: 0 0 60px
 		color: #fff
+
 	h3
 		margin: 0 0 53px auto
 		max-width: 645px
 
-.callback-v2
-	margin: 40px 0 120px
+	&-v2
+		margin: 40px 0 120px
 
-.callback-wrapper
-	position: relative
-	z-index: 1
-	width: 100%
-	display: flex
-	flex-wrap: wrap
-	border-radius: 20px
-	background: #F7F7F7
+	&-wrapper
+		position: relative
+		z-index: 1
+		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
+		border-radius: 20px
+		background: #F7F7F7
 
-.callback-content
-	border-radius: 20px
-	background: $accent
-	color: #fff
-	max-width: 860px
-	width: 100%
-	padding: 43px 45px 90px 53px
+	&-content
+		border-radius: 20px
+		background: #051861
+		color: #fff
+		max-width: 860px
+		width: 100%
+		padding: 43px 45px 90px 53px
 
 .form-callback
 	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	label
 		max-width: 245px
 		margin: 0 20px 20px 0
+
 		&:last-child
 			margin: 0 0 20px
+
 	input
 		border: 1px solid #FFF
 		color: #fff
-		&::placeholder
-			color: #fff
+
+	input::-webkit-input-placeholder
+		color: #fff
+
+	input::-moz-placeholder
+		color: #fff
+
+	input:-ms-input-placeholder
+		color: #fff
+
+	input::-ms-input-placeholder
+		color: #fff
+
+	input::placeholder
+		color: #fff
+
 	.form-group
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		margin: 10px 0 0
+
 	.consent
 		color: #405BA1
 		margin: 0 0 0 20px
@@ -523,64 +783,106 @@
 	bottom: 0
 	left: -176px
 	max-width: 314px
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 
 .list-messengers-callback
+	-webkit-box-pack: end
+	-ms-flex-pack: end
 	justify-content: flex-end
 	margin: 0
+
 	li
 		margin: 0 30px 20px 0
+
 		&:last-child
 			margin: 0 0 20px
+
 		a
 			border-radius: 20px
 			border: 1px solid #051861
 			width: 180px
 			height: 64px
 			color: #051861
-			&:hover
-				color: $grey
-			img
-				margin: 0 20px 0 0
+
+		&:hover
+			color: #5C5C5C
+
+		a img
+			margin: 0 20px 0 0
 
 .phone-callback
 	font-size: 64px
-	color: $accent
+	color: #051861
 	font-weight: bold
 	margin: 40px 0 0 auto
-	&:hover
-		color: $grey
 
-// contacts
-.contacts
-	h2
-		margin: 0 0 40px
+	&:hover
+		color: #5C5C5C
+
+.contacts h2
+	margin: 0 0 40px
 
 .contacts-photo
 	width: 100%
 	height: 441px
 	border-radius: 10px
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
 	img
 		width: 100%
 		height: 100%
+		-o-object-fit: cover
 		object-fit: cover
 		border-radius: 10px
 
 .contacts-address
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	margin: 42px 0 0
 
 .address-location
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
 	font-size: 20px
 	font-weight: 600
 	margin: 0 100px 0 0
+
 	&__icon
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		margin: 0 13px 0 0
 		fill: #5C5C5C
 		width: 18px
@@ -591,29 +893,37 @@
 	width: 100%
 	height: 441px
 	border-radius: 10px
+
 	iframe
 		width: 100%
 		height: 100%
 		border-radius: 10px
+
 	&__footer
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-ms-flex-wrap: wrap
 		flex-wrap: wrap
 		margin: 36px 0 0
 
 .btn-route
 	padding: 0 20px
 	margin: 0 11px 0 0
+
 	&:last-child
 		margin: 0
+
 	.svg-icon
 		width: 26px
 		height: 26px
 		fill: none
 		stroke: #fff
 
-.btn-route-metro
-	.svg-icon
+	&-metro .svg-icon
 		fill: #EE2F2E
 		stroke: none
 
@@ -624,234 +934,304 @@
 	width: 100%
 	margin: 0 auto 0 0
 
-// services-page
-.services-page
-	h1
-		margin: 0 0 110px
+.services-page h1
+	margin: 0 0 110px
 
-// .prices
 .subtitle
 	margin: 48px 0 63px
 	font-size: 32px
 	font-weight: 600
 	text-transform: uppercase
-	color: $accent
+	color: #051861
 
 .accordion
 	border: none
 	border-radius: 0
 
-.accordion-item
-	border-radius: 20px
-	border: none
-	margin: 0 0 34px
-	background: #fff
-	&:last-child
+	&-item
+		border-radius: 20px
+		border: none
+		margin: 0 0 34px
+		background: #fff
+
+	&-item:last-child
 		margin: 0
 		border-radius: 20px
-		.accordion-button
-			border-radius: 20px
-	&:first-child
-		border-radius: 20px
-		.accordion-button
-			border-radius: 20px
 
-.accordion-button
-	border-radius: 20px
-	background: #F7F7F7
-	padding: 31px 56px 39px 49px
-	color: #333
-	font-size: 24px
-	font-weight: 600
-	outline: none
-	box-shadow: none
-	border: none
-	cursor: pointer
-	&:focus
+	&-item:last-child &-button
+		border-radius: 20px
+
+	&-item:first-child
+		border-radius: 20px
+
+	&-item:first-child &-button
+		border-radius: 20px
+
+	&-button
+		border-radius: 20px
+		background: #F7F7F7
+		padding: 31px 56px 39px 49px
+		color: #333
+		font-size: 24px
+		font-weight: 600
+		outline: none
+		-webkit-box-shadow: none
 		box-shadow: none
-	&:after
-		background: url('../img/accordion-arrow.svg') no-repeat center
+		border: none
+		cursor: pointer
+
+	&-button:focus
+		-webkit-box-shadow: none
+		box-shadow: none
+
+	&-button:after
+		background: url("../img/accordion-arrow.svg") no-repeat center
 		background-size: 100%
 		width: 24px
 		min-width: 24px
 		height: 12px
 
-.accordion-body
-	border: 1px solid #B4B4B4
-	border-top: none
-	border-radius: 0 0 20px 20px
-	padding: 35px 45px 23px
-	margin: -20px 0 0
+	&-body
+		border: 1px solid #B4B4B4
+		border-top: none
+		border-radius: 0 0 20px 20px
+		padding: 35px 45px 23px
+		margin: -20px 0 0
 
-.accordion-button:not(.collapsed)
-	background: #F7F7F7
-	color: #333
-	box-shadow: none
-	&:after
-		background: url('../img/accordion-arrow.svg') no-repeat center
+	&-button:not(.collapsed)
+		background: #F7F7F7
+		color: #333
+		-webkit-box-shadow: none
+		box-shadow: none
+
+	&-button:not(.collapsed):after
+		background: url("../img/accordion-arrow.svg") no-repeat center
 		background-size: 100%
 		width: 24px
 		height: 12px
+		-webkit-transform: rotate(180deg)
 		transform: rotate(180deg)
 
-.accordion-item:last-of-type .accordion-button.collapsed
-	border-radius: 20px
+	&-item:last-of-type .accordion-button.collapsed
+		border-radius: 20px
 
 .table-price
 	font-size: 20px
-	color: $accent
+	color: #051861
+
 	.h4
 		font-weight: 600
 		color: #333
 		margin: 0
 		font-size: inherit
+
 	th
 		padding: 20px
 		font-weight: 600
 		text-align: center
 		border: 1px solid #B4B4B4
 		border-top: none
-		&:first-child
-			border-left: none
-		&:last-child
-			border-right: none
+
+	th:first-child
+		border-left: none
+
+	th:last-child
+		border-right: none
+
 	td
 		padding: 19px 20px 24px
 		min-height: 108px
 		border: 1px solid #B4B4B4
 		text-align: center
-		&:first-child
-			border-left: none
-			width: 43%
-			text-align: left
-			padding: 19px 70px 24px 0
-		&:last-child
-			border-right: none
+
+	td:first-child
+		border-left: none
+		width: 43%
+		text-align: left
+		padding: 19px 70px 24px 0
+
+	td:last-child
+		border-right: none
 
 .btn-details-service
 	margin: 32px 0 0
 
-// about page
 .about-section
 	margin: 0 0 175px
+
 	.about-image
 		height: 501px
+
 	.about-content
 		padding: 0
-		.h3
-			margin: 74px 0 31px
+
+	.about-content .h3
+		margin: 74px 0 31px
 
 .company-founder
 	margin: 133px 0 0
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
 	position: relative
+
 	&__photo
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 590px
 		height: 783px
 		border-radius: 10px
 		margin-left: auto
-		img
-			width: 100%
-			height: 100%
-			object-fit: cover
-			border-radius: 10px
+
+	&__photo img
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+		border-radius: 10px
+
 	&__name
 		top: 76px
 		left: 0
 		z-index: 1
 		position: absolute
-		background: $accent
+		background: #051861
 		color: #fff
 		padding: 35px 56px
 		border-radius: 10px
-		.h2
-			color: #fff
-		.position
-			font-size: 24px
-			margin: 20px 0 0
+
+	&__name .h2
+		color: #fff
+
+	&__name .position
+		font-size: 24px
+		margin: 20px 0 0
+
 	&__content
 		margin: 133px auto 0
 		max-width: 654px
-		h2
-			margin: 0 0 40px
 
-// team
+	&__content h2
+		margin: 0 0 40px
+
 .team
 	margin: 100px 0 55px
+
 	h2
 		margin: 0 0 90px
 
-.team-card
-	width: 100%
-	height: 100%
-	&__photo
-		@include d-flex
+	&-card
+		width: 100%
+		height: 100%
+
+	&-card__photo
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 100%
 		max-width: 258px
 		height: 295px
 		border-radius: 10px
-		img
-			width: 100%
-			height: 100%
-			border-radius: 10px
-			object-fit: cover
-	&__body
+
+	&-card__photo img
+		width: 100%
+		height: 100%
+		border-radius: 10px
+		-o-object-fit: cover
+		object-fit: cover
+
+	&-card__body
 		width: 100%
 		margin: 30px 0 0
-	&__position
+
+	&-card__position
 		margin: 7px 0 0
 		font-size: 20px
 
-// cases
 .cases
 	margin: 110px 0
 
-.cases-slider
-	padding: 0 54px 0 0
-	width: calc(100% + 15px)
-	.slick-prev
+	&-slider
+		padding: 0 54px 0 0
+		width: calc(100% + 15px)
+
+	&-slider .slick-prev
 		display: none !important
-	.slick-slide
+
+	&-slider .slick-slide
 		margin: 0 30px 0 0
 
 .case-card
 	width: 527px
 	border-radius: 10px
 	background: #F7F7F7
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: stretch
+	-ms-flex-align: stretch
 	align-items: stretch
 	font-size: 20px
+
 	&__photo
 		width: 256px
 		height: 256px
 		border-radius: 10px
-		@include d-flex
-		img
-			border-radius: 10px
-			width: 100%
-			height: 100%
-			object-fit: cover
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
+	&__photo img
+		border-radius: 10px
+		width: 100%
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+
 	&__body
 		width: calc(100% - 256px)
 		padding: 54px 0 0 30px
+
 	&__name
 		margin: 10px 0 0
+
 	.btn
 		margin: 36px 0 0
 
-// warranty
 .section-top-line
 	padding: 60px 0 0
 	position: relative
 	z-index: 1
+
 	&::before
-		content: ''
+		content: ""
 		position: absolute
 		left: 50%
 		top: 0
-		transform: translate(-50%,0)
+		-webkit-transform: translate(-50%, 0)
+		transform: translate(-50%, 0)
 		background: #FFC797
 		height: 1px
 		max-width: 1700px
@@ -859,222 +1239,321 @@
 
 .warranty-wrapper
 	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: stretch
+	-ms-flex-align: stretch
 	align-items: stretch
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 
 .warranty-box
-	background: $accent
+	background: #051861
 	border-radius: 10px
 	width: 479px
 	padding: 40px
 	color: #fff
 	margin: 0 54px 50px 0
+
 	&:last-child
 		margin: 0 0 50px
+
 	&__icon
 		fill: #fff
 		margin: 0 20px 0 0
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 40px
 		height: 40px
 		min-width: 40px
+
 	&__head
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
 		margin: 0 0 20px
 
-// jobs
 .jobs
 	margin: 58px 0 40px
 
 .accordion-jobs
 	max-width: 932px
 	margin: 0 0 0 auto
-	.accordion-button
-		span
-			max-width: 478px
+
+	.accordion-button span
+		max-width: 478px
 
 .jobs-callback
 	padding: 38px 0 0
 	margin: 46px 0 0
-	border-top: 1px solid $orange
+	border-top: 1px solid #FFC797
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
 	justify-content: space-between
+
 	.h3
+		width: -webkit-fit-content
+		width: -moz-fit-content
 		width: fit-content
 		max-width: 288px
 
 .mail-jobs
 	font-size: 48px
 	font-weight: 600
-	color: $accent
+	color: #051861
+
 	&:hover
-		color: $grey
+		color: #5C5C5C
 
 .jobs-area
 	margin: 47px 0 0
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	.box-text
 		max-width: 430px
 		margin: 0 auto 0 0
 
-// documents
 .documents
 	margin: 70px 0 140px
 
-.documents-wrapper
-	width: 100%
-	display: flex
-	align-items: stretch
-	flex-wrap: wrap
+	&-wrapper
+		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
 
-.documents-card
-	margin: 0 35px 35px 0
-	padding: 27px 40px
-	border-radius: 10px
-	border: 1px solid $accent
-	width: 380px
-	display: none
-	&:nth-child(-n+4)
+	&-card
+		margin: 0 35px 35px 0
+		padding: 27px 40px
+		border-radius: 10px
+		border: 1px solid #051861
+		width: 380px
+		display: none
+
+	&-card:nth-child(-n+4)
 		display: block
-	&:last-child
+
+	&-card:last-child
 		margin: 0 0 35px
-	&__icon
+
+	&-card__icon
 		width: 38px
 		height: 30px
 		min-width: 38px
 		fill: none
-		stroke: $accent
-	&__body
+		stroke: #051861
+
+	&-card__body
 		width: calc(100% - 38px)
 		padding: 30px 0 0 36px
 		margin: 0 0 0 auto
-	&__head
+
+	&-card__head
 		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
-	&__name
+
+	&-card__name
 		width: calc(100% - 38px)
 		padding: 0 0 0 36px
 		color: #333
 		font-size: 20px
-		&:hover
-			color: $accent
 
-.btn-download
-	.svg-icon
-		width: 12px
-		height: 18px
-		margin: 0 0 0 20px
+	&-card__name:hover
+		color: #051861
 
-.btn-toggle
-	svg
-		margin: 0 0 0 20px
-		fill: none
-		stroke: #fff
-		width: 18px
-		height: 9px
+.btn-download .svg-icon
+	width: 12px
+	height: 18px
+	margin: 0 0 0 20px
 
-// payments
+.btn-toggle svg
+	margin: 0 0 0 20px
+	fill: none
+	stroke: #fff
+	width: 18px
+	height: 9px
+
 .payments
 	padding: 70px 0 0
 	margin: 110px 0
 
-.payments-wrapper
-	width: 100%
-	display: flex
-	align-items: stretch
-	flex-wrap: wrap
+	&-wrapper
+		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+		-ms-flex-wrap: wrap
+		flex-wrap: wrap
 
-.payments-box
-	padding: 30px 60px
-	display: flex
-	align-items: center
-	border-radius: 20px
-	background: #F7F7F7
-	margin: 0 60px 50px 0
-	&:last-child
+	&-box
+		padding: 30px 60px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		border-radius: 20px
+		background: #F7F7F7
+		margin: 0 60px 50px 0
+
+	&-box:last-child
 		margin: 0 0 50px
-	.h3
+
+	&-box .h3
 		font-weight: normal
-	&__icon
+
+	&-box__icon
 		margin: 0 60px 0 0
 		width: 60px
 		height: 46px
-		@include d-flex
-
-// contacts page
-.contacts-page
-	.contacts-map
-		height: 100%
-		max-width: 772px
-		margin: 0 0 0 auto
-	.social-box
-		width: 100%
-		max-width: none
-		flex-direction: row
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
-		justify-content: flex-start
-		margin: 70px 0 0
-		font-size: 16px
-		color: $accent
-		.h4
-			margin: 0
-			font-size: inherit
-	.list-social
-		margin: 0 0 0 38px
-	.phone, .mail
-		font-size: 40px
-		color: $accent
-		&:hover
-			color: $orange
-	.schedule
-		flex-direction: column
-		align-items: flex-start
-		margin: 34px 0 38px
-		font-size: 20px
-		color: $accent
-		.h4
-			margin: 0 0 6px
-	.requisites-box
-		font-size: 16px
-		margin: 18px 0 20px
-	.address-location
-		align-items: flex-start
-		font-size: 16px
-		color: $accent
-		font-weight: normal
-		max-width: none
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
+.contacts-page .contacts-map
+	height: 100%
+	max-width: 772px
+	margin: 0 0 0 auto
+
+.contacts-page .social-box
+	width: 100%
+	max-width: none
+	-webkit-box-orient: horizontal
+	-webkit-box-direction: normal
+	-ms-flex-direction: row
+	flex-direction: row
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: start
+	-ms-flex-pack: start
+	justify-content: flex-start
+	margin: 70px 0 0
+	font-size: 16px
+	color: #051861
+
+	.h4
 		margin: 0
-		&__icon
-			margin: 0 13px 0 -30px
-			fill: #FFC797
-			width: 18px
-			height: 26px
-		&__text
-			max-width: 366px
+		font-size: inherit
+
+.contacts-page .list-social
+	margin: 0 0 0 38px
+
+.contacts-page .phone, .contacts-page .mail
+	font-size: 40px
+	color: #051861
+
+.contacts-page .phone:hover, .contacts-page .mail:hover
+	color: #FFC797
+
+.contacts-page .schedule
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
+	flex-direction: column
+	-webkit-box-align: start
+	-ms-flex-align: start
+	align-items: flex-start
+	margin: 34px 0 38px
+	font-size: 20px
+	color: #051861
+
+	.h4
+		margin: 0 0 6px
+
+.contacts-page .requisites-box
+	font-size: 16px
+	margin: 18px 0 20px
+
+.contacts-page .address-location
+	-webkit-box-align: start
+	-ms-flex-align: start
+	align-items: flex-start
+	font-size: 16px
+	color: #051861
+	font-weight: normal
+	max-width: none
+	margin: 0
+
+	&__icon
+		margin: 0 13px 0 -30px
+		fill: #FFC797
+		width: 18px
+		height: 26px
+
+	&__text
+		max-width: 366px
 
 .name-company
-	color: $accent
+	color: #051861
 	margin: 25px 0 60px
 	text-transform: uppercase
 	font-size: 32px
 
 .contacts-wrapper
 	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: stretch
+	-ms-flex-align: stretch
 	align-items: stretch
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 
 .contacts-box
+	-webkit-box-flex: 1
+	-ms-flex: 1
 	flex: 1
 	padding: 0 20px 0 0
-	border-right: 1px solid $orange
+	border-right: 1px solid #FFC797
+
 	&:last-child
 		padding: 0 0 0 90px
 		border: none
@@ -1083,103 +1562,170 @@
 	border-radius: 20px
 	background: #F7F7F7
 	padding: 32px 43px 24px 35px
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: stretch
+	-ms-flex-align: stretch
 	align-items: stretch
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	margin: 70px 0 0
+
 	.form-callback
 		max-width: 252px
 		width: 100%
 		margin: 30px 0 0
-		label
-			width: 100%
-			margin: 0 0 30px
-		input
-			border: 1px solid #051861
-			color: $accent
-			&::placeholder
-				color: $accent
-		[type="submit"]
-				width: 100%
-				max-width: none
-		.consent
-			margin: 20px 0 0
-			color: #5C5C5C
+
+	.form-callback label
+		width: 100%
+		margin: 0 0 30px
+
+	.form-callback input
+		border: 1px solid #051861
+		color: #051861
+
+	.form-callback input::-webkit-input-placeholder
+		color: #051861
+
+	.form-callback input::-moz-placeholder
+		color: #051861
+
+	.form-callback input:-ms-input-placeholder
+		color: #051861
+
+	.form-callback input::-ms-input-placeholder
+		color: #051861
+
+	.form-callback input::placeholder
+		color: #051861
+
+	.form-callback [type='submit']
+		width: 100%
+		max-width: none
+
+	.form-callback .consent
+		margin: 20px 0 0
+		color: #5C5C5C
+
 	.list-messengers-callback
 		margin: 44px 0 0
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
 		justify-content: space-between
+		-webkit-box-align: start
+		-ms-flex-align: start
 		align-items: flex-start
-		li
-			margin: 0 0 30px
-			width: 180px
-			&:last-child
-				margin: 0
 
-.contacts-callback-box
-	border-right: 1px solid $orange
-	width: 45%
-	padding: 0 40px 0 0
-	&:last-child
+	.list-messengers-callback li
+		margin: 0 0 30px
+		width: 180px
+
+	.list-messengers-callback li:last-child
+		margin: 0
+
+	&-box
+		border-right: 1px solid #FFC797
+		width: 45%
+		padding: 0 40px 0 0
+
+	&-box:last-child
 		padding: 0 0 0 40px
 		border: none
 		width: 55%
-	.h3
+
+	&-box .h3
 		color: #5C5C5C
 		max-width: 285px
-	.box-text
+
+	&-box .box-text
 		font-size: 16px
 		margin: 6px 0 0
 		max-width: 185px
 
 .driving-direction
 	margin: 88px 0 0
+
 	h3
 		font-size: 40px
-		color: $accent
+		color: #051861
+		width: -webkit-fit-content
+		width: -moz-fit-content
 		width: fit-content
 
 .driving-metro__img
 	position: relative
 	width: 100%
+
 	img
-		width: 100%		
-	
-.driving-direction-box
-	&__head
 		width: 100%
-		display: flex
-		align-items: center
-		flex-wrap: wrap
-		justify-content: space-between
-		margin: 0 0 30px
-	&-last
-		margin-left: auto
-		max-width: 1045px
-	&__img
+
+.driving-direction-box__head
+	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	-webkit-box-pack: justify
+	-ms-flex-pack: justify
+	justify-content: space-between
+	margin: 0 0 30px
+
+.driving-direction-box-last
+	margin-left: auto
+	max-width: 1045px
+
+.driving-direction-box__img
+	width: 100%
+	height: 467px
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
+
+	img
 		width: 100%
-		height: 467px
-		@include d-flex
-		img
-			width: 100%
-			height: 100%
-			object-fit: cover
-			border-radius: 20px			
-	.box-text
-		margin: 36px 0 0
+		height: 100%
+		-o-object-fit: cover
+		object-fit: cover
+		border-radius: 20px
+
+.driving-direction-box .box-text
+	margin: 36px 0 0
 
 .driving-slider
 	margin: 87px 0 0
 	padding: 0 24px
+
 	.slick-slide
 		margin: 0 20px
 
 .driving-photo
 	width: 100%
 	height: 194px
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 	border-radius: 5px
+
 	img
 		width: 100%
 		height: 100%
+		-o-object-fit: cover
 		object-fit: cover
-		border-radius: 5px			
+		border-radius: 5px

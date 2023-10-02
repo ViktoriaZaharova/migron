@@ -1,6 +1,5 @@
-@import "vars"
+@import 'vars'
 
-// header section
 header
 	background: #fff
 	margin: 0 0 22px
@@ -12,44 +11,77 @@ header
 
 .header-top
 	padding: 24px 0
-	color: $accent
+	color: #051861
 
 .logo
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 	max-width: 133px
 	width: 100%
 
 .schedule
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	.h4
 		margin: 0 20px 0 0
 		font-size: 20px
 
 .rating-link
 	margin: 0 52px
-	@include d-flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
 
 .header-contacts
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	.phone
 		margin: 0 10px 0 0
 
 .phone
 	font-size: 20px
 	font-weight: bold
-	color: $accent
+	color: #051861
+
 	&:hover
-		color: $grey
+		color: #5C5C5C
 
 .address
 	margin: 0 36px 0 auto
 
 .btn-burger
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-webkit-box-pack: center
+	-ms-flex-pack: center
 	justify-content: center
 	width: 45px
 	height: 29px
@@ -57,70 +89,115 @@ header
 	display: none
 
 .list-messengers
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	margin: 0 0 0 26px
+
 	li
 		margin: 0 15px 0 0
+
 		&:last-child
 			margin: 0
-		a
-			width: 28px
-			height: 28px
-			@include d-flex
+
+	a
+		width: 28px
+		height: 28px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 
 .header-bottom-wrapper
 	width: 100%
 	padding: 11px 15px
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	border-radius: 10px
-	background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0.60) 100%)
+	background: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(rgba(247, 247, 247, 0.6)))
+	background: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0.6) 100%)
 
-.dropdown-services
-	.dropdown-toggle
-		padding: 5px 36px
-	.dropdown-menu
-		min-width: 752px
-		padding: 58px 57px 33px 77px
+.dropdown-services .dropdown-toggle
+	padding: 5px 36px
+
+.dropdown-services .dropdown-menu
+	min-width: 752px
+	padding: 58px 57px 33px 77px
 
 .list-services
 	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	li
 		width: 50%
 		margin: 0 0 75px
 
 .services-link
 	color: #333
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+
 	&__icon
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		width: 30px
 		height: 30px
 		min-width: 30px
-		fill: $accent
+		fill: #051861
 		margin: 0 20px 0 0
-
-.services-link
-	display: flex
-	align-items: center
 
 .dropdown-menu
 	border-radius: 20px
 	background: #F7F7F7
+	-webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15)
 	box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15)
 	border: none
+
 	&__body
 		width: 100%
+
 	&__footer
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-ms-flex-wrap: wrap
 		flex-wrap: wrap
 
 .link-mobile
@@ -138,61 +215,79 @@ header
 .nav-menu
 	margin: 0 auto
 	font-size: 16px
+
 	.nav-item
 		margin: 0 60px 0 0
-		&:last-child
-			margin: 0
+
+	.nav-item:last-child
+		margin: 0
+
 	.nav-link
 		color: #333
 		position: relative
 		z-index: 1
 		padding: 0
-		&::before
-			content: ''
-			position: absolute
-			left: 0
-			bottom: -2px
-			width: 0
-			height: 2px
-			background: $accent
-			transition: .3s
-		&:hover, &.active
-			color: $accent
-			&::before
-				width: 100%
+
+	.nav-link::before
+		content: ""
+		position: absolute
+		left: 0
+		bottom: -2px
+		width: 0
+		height: 2px
+		background: #051861
+		-webkit-transition: 0.3s
+		transition: 0.3s
+
+	.nav-link:hover, .nav-link.active
+		color: #051861
+
+	.nav-link:hover::before, .nav-link.active::before
+		width: 100%
 
 .form-search
 	position: relative
 	max-width: 176px
 	width: 100%
+
 	label
 		margin: 0
+
 	input
 		padding: 0 37px 0 20px
 		height: 32px
 		border-radius: 10px
 		border: 1px solid #ECECEC
-	[type="submit"]
+
+	[type='submit']
 		fill: none
 		stroke: #051861
 		width: 17px
 		height: 17px
 		position: absolute
 		top: 50%
-		transform: translate(0,-50%)
+		-webkit-transform: translate(0, -50%)
+		transform: translate(0, -50%)
 		right: 20px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		background: transparent
 		padding: 0
 
-// mobile menu
 .overlay-bg
 	position: fixed
 	left: 0
 	top: 0
 	width: 100%
 	height: 100%
-	background: $accent
+	background: #051861
 	opacity: 0.3
 	display: none
 	z-index: 6
@@ -206,102 +301,165 @@ header
 	max-width: 309px
 	width: 100%
 	color: #fff
-	background: $accent
+	background: #051861
 	padding: 30px 35px
 	overflow-y: auto
-	transition: .4s
+	-webkit-transition: 0.4s
+	transition: 0.4s
+
 	&.open
 		right: 0
+
 	&__head
 		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-webkit-box-pack: justify
+		-ms-flex-pack: justify
 		justify-content: space-between
+
 	.logo
 		max-width: 35px
+
 	&__close
 		fill: #fff
 		width: 20px
 		height: 20px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		background: transparent
+
 	&__body
 		width: 100%
 		margin: 52px 0 0
+
 	.header-contacts
+		-webkit-box-align: start
+		-ms-flex-align: start
 		align-items: start
-		.schedule
-			font-size: 16px
+
+	.header-contacts .schedule
+		font-size: 16px
+
 	.phone
 		color: #fff
 		font-size: 24px
+
 	.form-search
 		margin: 25px 0 57px
 		max-width: 223px
-		[type='submit']
-			stroke: $orange
-		input
-			color: $orange
-			height: 42px
-			border-radius: 20px
-			border: 1px solid #ECECEC
-			&::placeholder
-				color: $orange
+
+	.form-search [type='submit']
+		stroke: #FFC797
+
+	.form-search input
+		color: #FFC797
+		height: 42px
+		border-radius: 20px
+		border: 1px solid #ECECEC
+
+	.form-search input::-webkit-input-placeholder
+		color: #FFC797
+
+	.form-search input::-moz-placeholder
+		color: #FFC797
+
+	.form-search input:-ms-input-placeholder
+		color: #FFC797
+
+	.form-search input::-ms-input-placeholder
+		color: #FFC797
+
+	.form-search input::placeholder
+		color: #FFC797
+
 	.nav-menu
 		font-size: 20px
 		margin: 30px 0 75px
-		.nav-item
-			margin: 0 0 20px
-			width: 100%
-			&:last-child
-				margin: 0
-		.nav-link
-			color: #fff
+
+	.nav-menu .nav-item
+		margin: 0 0 20px
+		width: 100%
+
+	.nav-menu .nav-item:last-child
+		margin: 0
+
+	.nav-menu .nav-link
+		color: #fff
+
 	.list-messengers
 		margin: 32px 0 0
-		li
-			a
-				fill: $orange
+
 	.btn-consultation
 		height: auto
 		padding: 10px 20px
 		text-align: left
+		width: -webkit-fit-content
+		width: -moz-fit-content
 		width: fit-content
 		max-width: 215px
 		line-height: normal
+
 	.address
 		margin: 27px 0 0
-	.dropdown-services
-		.dropdown-toggle
-			border-radius: 20px
-			background: #000
-			border: none
-			color: #fff
-			padding: 5px 20px
-			height: 47px
-			font-size: 20px
-			display: flex
-			align-items: center
-			&::before
-				background: $orange
-			&:after
-				order: -1
-				margin: 0 20px 0 0
-				filter: brightness(0) invert(1)
-		.dropdown-menu
-			min-width: 308px
-			padding: 20px
+
+	.dropdown-services .dropdown-toggle
+		border-radius: 20px
+		background: #000
+		border: none
+		color: #fff
+		padding: 5px 20px
+		height: 47px
+		font-size: 20px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+
+	.dropdown-services .dropdown-toggle::before
+		background: #FFC797
+
+	.dropdown-services .dropdown-toggle:after
+		-webkit-box-ordinal-group: 0
+		-ms-flex-order: -1
+		order: -1
+		margin: 0 20px 0 0
+		-webkit-filter: brightness(0) invert(1)
+		filter: brightness(0) invert(1)
+
+	.dropdown-services .dropdown-menu
+		min-width: 308px
+		padding: 20px
+
 	.list-services
 		font-size: 16px
-		li
-			width: 100%
-			margin: 0 0 20px
 
-			&:last-child
-				margin: 0
+	.list-services li
+		width: 100%
+		margin: 0 0 20px
+
+	.list-services li:last-child
+		margin: 0
+
 	.services-link
+		-webkit-box-align: start
+		-ms-flex-align: start
 		align-items: flex-start
-		&__icon
-			width: 25px
-			height: 25px
-			min-width: 25px
+
+	.services-link__icon
+		width: 25px
+		height: 25px
+		min-width: 25px

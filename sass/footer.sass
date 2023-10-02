@@ -1,112 +1,171 @@
-@import "vars"
+@import 'vars'
 
 footer
 	margin: 80px 0 0
 	background: #F7F7F7
 	padding: 57px 0 45px
+
 	.logo
 		max-width: 175px
+
 	.phone
 		font-size: 40px
 		color: #5C5C5C
 		margin: 0 70px 0 80px
-		&:hover
-			color: $accent
+
+	.phone:hover
+		color: #051861
+
 	.schedule
 		color: #5C5C5C
 		font-size: 20px
+
 	.list-messengers
 		margin: 0 70px 0 35px
+
 	.rating-link
 		margin: 0
 
 .footer
 	background: transparent
 	padding: 70px 0
-	margin: 10px 0 0		
+	margin: 10px 0 0
 
 .mail
 	color: #5C5C5C
 	font-size: 20px
 	font-weight: bold
+
 	&:hover
-		color: $accent
+		color: #051861
 
 .footer-box
 	width: 100%
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
-	&__top, &__bottom
+
+	&__top, .footer-box__bottom
 		width: 100%
+		display: -webkit-box
+		display: -ms-flexbox
 		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
 		align-items: center
+		-ms-flex-wrap: wrap
 		flex-wrap: wrap
+
 	&__bottom
 		margin: 43px 0 0
 
 .social-box
 	max-width: 475px
+	width: -webkit-fit-content
+	width: -moz-fit-content
 	width: fit-content
 	margin: 0 0 0 auto
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-orient: vertical
+	-webkit-box-direction: normal
+	-ms-flex-direction: column
 	flex-direction: column
+
 	.h4
 		margin: 0 0 10px
-		color: $accent
+		color: #051861
+
 	.btn-group
+		-webkit-box-pack: end
+		-ms-flex-pack: end
 		justify-content: flex-end
-		.btn
-			margin-right: 20px
-			&:last-child
-				margin: 0
+
+	.btn-group .btn
+		margin-right: 20px
+
+	.btn-group .btn:last-child
+		margin: 0
 
 .list-social
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
 	align-items: center
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	margin: 0 0 18px
+
 	li
 		margin: 0 40px 0 0
-		&:last-child
-			margin: 0
-		a
-			@include d-flex
-		.link-tg
-			width: 38px
-			height: 31px
-			img
-				width: 100%
 
-.nav-menu-footer
-	.nav-item
+	li:last-child
+		margin: 0
+
+	li a
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+
+	li .link-tg
+		width: 38px
+		height: 31px
+
+	li .link-tg img
 		width: 100%
+
+.nav-menu-footer .nav-item
+	width: 100%
+	margin: 0 0 16px
+
+	&:last-child
 		margin: 0 0 16px
-		&:last-child
-			margin: 0 0 16px
-	.nav-link
-		color: $accent
+
+.nav-menu-footer .nav-link
+	color: #051861
 
 .list-documents
+	display: -webkit-box
+	display: -ms-flexbox
 	display: flex
+	-webkit-box-align: start
+	-ms-flex-align: start
 	align-items: flex-start
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
 	font-size: 14px
+
 	li
 		margin: 0 90px 0 0
-		&:last-child
-			margin: 0
-		a
-			color: #BBB
-			&:hover
-				color: $accent
+
+	li:last-child
+		margin: 0
+
+	li a
+		color: #BBB
+
+	li a:hover
+		color: #051861
 
 .copyright
 	text-align: right
 	color: #BBB
 	font-size: 14px
 
-// modal
 .modal-dialog
 	max-width: 552px
 
@@ -115,18 +174,22 @@ footer
 	border: none
 	background: #FFF
 	padding: 50px 20px 40px
+
 	.form
 		max-width: 335px
 		width: 100%
 		margin: 0 auto
-		label
-			margin: 0 0 20px
-		button
-			width: 100%
-		.consent
-			text-align: center
-			margin: 20px auto 0
-			color: #5C5C5C
+
+	.form label
+		margin: 0 0 20px
+
+	.form button
+		width: 100%
+
+	.form .consent
+		text-align: center
+		margin: 20px auto 0
+		color: #5C5C5C
 
 .modal-header
 	padding: 0
@@ -134,7 +197,9 @@ footer
 	border-radius: 0
 	margin: 0 0 28px
 	width: 100%
+	-ms-flex-wrap: wrap
 	flex-wrap: wrap
+
 	.btn-close
 		padding: 0
 		position: absolute
@@ -145,7 +210,15 @@ footer
 		right: 16px
 		width: 21px
 		height: 21px
-		@include d-flex
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
 		fill: #051861
 		background: transparent
 		border: none
@@ -161,51 +234,67 @@ footer
 .modal-body
 	width: 100%
 	padding: 0
+
 	.box-text
 		color: #5C5C5C
 		margin: 0 auto 20px
 		font-size: 16px
 
-#addressModal
-	.modal-dialog
-		max-width: 1412px
-	.modal-title
-		color: $accent
-		font-size: 40px
-	.modal-header
-		margin: 0 0 90px
-	.modal-content
-		padding: 56px 90px 95px
+#addressModal .modal-dialog
+	max-width: 1412px
+
+#addressModal .modal-title
+	color: #051861
+	font-size: 40px
+
+#addressModal .modal-header
+	margin: 0 0 90px
+
+#addressModal .modal-content
+	padding: 56px 90px 95px
 
 .address-gallery
 	padding: 0 44px
 
-.address-gallery-photo
-	@include d-flex
-	padding: 0 20px
-	height: 522px
-	width: 100%
-	img
+	&-photo
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		padding: 0 20px
+		height: 522px
+		width: 100%
+
+	&-photo img
 		width: 100%
 		height: 100%
+		-o-object-fit: cover
 		object-fit: cover
 		border-radius: 5px
 
-.modal-v2
-	.modal-dialog
-		max-width: 680px
-	.modal-header
-		margin: 0 0 39px
-		padding: 0 0 32px
-		border-bottom: 1px solid #FFC797
-	.modal-title
-		text-align: left
-		color: #333
-	.modal-content
-		padding: 43px 37px 52px
+.modal-v2 .modal-dialog
+	max-width: 680px
+
+.modal-v2 .modal-header
+	margin: 0 0 39px
+	padding: 0 0 32px
+	border-bottom: 1px solid #FFC797
+
+.modal-v2 .modal-title
+	text-align: left
+	color: #333
+
+.modal-v2 .modal-content
+	padding: 43px 37px 52px
 
 .route-metro-photo
 	width: 100%
+
 	img
 		width: 100%
 
@@ -213,35 +302,37 @@ footer
 	width: 100%
 	height: 516px
 	border-radius: 20px
+
 	iframe
 		border-radius: 20px
 		width: 100%
 		height: 100%
 
-#surveyModal
-	.modal-dialog
-		max-width: 1200px
+#surveyModal .modal-dialog
+	max-width: 1200px
 
 .form-survey
 	width: 100%
-	[type='submit'], .checkbox-consent
-		display: none
-	&.last-slide
-		[type='submit'], .checkbox-consent
-			display: flex
 
-.form-survey-box
-	width: 100%
-	&__header
+	[type='submit'], .form-survey .checkbox-consent
+		display: none
+
+	.last-slide [type='submit'], .form-survey.last-slide .checkbox-consent
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+
+	&-box
+		width: 100%
+
+	&-box__header
 		width: 100%
 		margin: 0 0 33px
-
-		
 
 .number-question
 	font-size: 40px
 	font-weight: 600
-	color: $accent
+	color: #051861
 
 .title-question
 	margin: 33px 0 0
@@ -249,67 +340,83 @@ footer
 .checkbox-consent
 	color: #5C5C5C
 	font-size: 12px
+	width: -webkit-fit-content
+	width: -moz-fit-content
 	width: fit-content
 	margin: 0 27px 0 0
+
 	.checkbox-text
 		max-width: 152px
 
-.form-survey-slider
-	&__nav
-		margin: 30px 0 0
-		.slick-arrow
-			padding: 10px 30px
-			height: 62px
-			width: fit-content
-			border-radius: 20px
-			order: -1
-			svg
-				width: 9px
-				height: 18px
-				display: inline-flex
-		.slick-prev
-			margin: 0 27px 0 0
-			svg
-				margin: 0 20px 0 0
-				stroke: $accent
-		.btn-border-accent
-			border: 1px solid $accent
-			&:hover
-				svg
-					stroke: #fff
-		.btn-accent
-			background: $accent
-			svg
-				stroke: #fff
+.form-survey-slider__nav
+	margin: 30px 0 0
+
+	.slick-arrow
+		padding: 10px 30px
+		height: 62px
+		width: -webkit-fit-content
+		width: -moz-fit-content
+		width: fit-content
+		border-radius: 20px
+		-webkit-box-ordinal-group: 0
+		-ms-flex-order: -1
+		order: -1
+
+	.slick-arrow svg
+		width: 9px
+		height: 18px
+		display: -webkit-inline-box
+		display: -ms-inline-flexbox
+		display: inline-flex
+
+	.slick-prev
+		margin: 0 27px 0 0
+
+	.slick-prev svg
+		margin: 0 20px 0 0
+		stroke: #051861
+
+	.btn-border-accent
+		border: 1px solid #051861
+
+	.btn-border-accent:hover svg
+		stroke: #fff
+
+	.btn-accent
+		background: #051861
+
+	.btn-accent svg
+		stroke: #fff
 
 .requisites-box
 	font-size: 20px
+
 	h3
 		margin: 0 0 24px
-		color: $accent
+		color: #051861
 		font-size: 20px
 		font-weight: normal
 
-#requisitesModal
-	.modal-dialog
-		max-width: 1030px		
+#requisitesModal .modal-dialog
+	max-width: 1030px
 
 .list-requisites
 	max-width: 470px
+
 	.font-bold
 		font-weight: 600
+
 	span
 		margin: 0 10px 0 0
 
-#mediaModal, #reviewsModal
-	.modal-dialog
-		max-width: 1030px		
-
+#mediaModal .modal-dialog, #reviewsModal .modal-dialog
+	max-width: 1030px
 
 .video-iframe
 	width: 100%
 	position: relative
 	padding-bottom: 56.25%
+
 	iframe
 		position: absolute
 		left: 0

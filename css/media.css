@@ -20,7 +20,8 @@
   .contacts-map-size {
     max-width: 255px;
   }
-  footer .phone, footer .list-messengers {
+  footer .phone,
+  footer .list-messengers {
     margin: 0 auto;
   }
   .warranty-box {
@@ -55,13 +56,14 @@
     font-size: 15px;
   }
   footer .phone {
-    font-size: 34px;
+    font-size: 30px;
   }
   footer .schedule {
-    font-size: 18px;
+    font-size: 16px;
   }
   .schedule .h4 {
-    font-size: 18px;
+    font-size: 16px;
+    margin: 0 10px 0 0;
   }
   h3, .h3 {
     font-size: 22px;
@@ -106,6 +108,26 @@
     width: 100%;
     margin: 13px 0 0;
   }
+  .list-social li {
+    margin: 0 20px 0 0;
+  }
+  .social-box .btn-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .social-box .btn-group .btn {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+  }
+  .social-box .btn-group .btn:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .footer-box {
@@ -135,8 +157,8 @@
   .header-contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     line-height: 1;
   }
   .header-contacts .phone {
@@ -166,8 +188,8 @@
     padding: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .articles-card__img {
     width: 100%;
@@ -288,14 +310,14 @@
   .list-messengers-callback {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
   .list-messengers-callback li {
     margin: 0 0 20px;
@@ -370,6 +392,9 @@
     margin: 15px 0 0;
     padding: 60px 0;
   }
+  .list-documents li {
+    margin: 0 20px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   header {
@@ -387,7 +412,7 @@
   .header-top {
     padding: 19px 0;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
     background: #fff;
     position: fixed;
     z-index: 5;
@@ -509,7 +534,7 @@
   }
   .reviews-card__head {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .reviews-card__avatar {
     margin: 0 0 20px;
@@ -599,8 +624,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .communication-method .h2 {
     text-align: center;
@@ -614,11 +639,11 @@
   }
   .list-messengers-callback {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .list-messengers-callback li a {
     height: 44px;
@@ -638,8 +663,8 @@
     margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .form-callback label {
     width: 100%;
@@ -649,8 +674,8 @@
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 9px 0 0;
   }
   .form-callback [type=submit] {
@@ -666,12 +691,12 @@
   .list-documents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 0 30px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 0 10px;
   }
   .list-documents li {
-    margin: 0 0 30px;
+    margin: 0 0 10px;
   }
   .list-documents li:last-child {
     margin: 0;
@@ -729,7 +754,7 @@
   .company-founder {
     margin: 53px auto 0;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 700px;
   }
   .company-founder__photo {
@@ -786,8 +811,8 @@
   }
   .footer .list-documents {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .footer .copyright {
     margin: 0 auto;
@@ -822,11 +847,11 @@
   .contacts-map__footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .contacts-map__footer .btn {
     margin: 0 0 30px;
@@ -907,8 +932,8 @@
     width: 232px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 20px;
     font-size: 16px;
   }
@@ -923,7 +948,7 @@
   .case-card__name {
     margin: 10px 0 0;
   }
-  .case-card .btn {
+  .btn {
     margin: 18px 0 0;
   }
   .warranty-box {
@@ -954,11 +979,11 @@
     margin: 45px 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .contacts-page .social-box .h4 {
     margin: 0 0 20px;
@@ -968,8 +993,8 @@
   }
   .contacts-box {
     -webkit-box-flex: 0;
-        -ms-flex: none;
-            flex: none;
+    -ms-flex: none;
+    flex: none;
     width: 100%;
     padding: 0 0 45px;
     border: none;
@@ -983,8 +1008,8 @@
     padding: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .contacts-callback-box {
     width: 100%;
@@ -1011,11 +1036,11 @@
     margin: 20px auto 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .contacts-callback .list-messengers-callback li {
     width: 180px;
@@ -1082,7 +1107,7 @@
   }
   .services-box__head {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
   }
   .services-box h3 {
     font-size: 20px;
@@ -1129,8 +1154,8 @@
   }
   .list-messengers-callback {
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
   .modal-dialog {
     max-width: 370px;
@@ -1172,13 +1197,13 @@
     margin: 0 0 20px;
     width: 100%;
   }
-  .list-services li:last-child {
+  .list-services:last-child {
     margin: 0;
   }
   .services-link {
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .services-link__icon {
     width: 25px;
@@ -1285,13 +1310,13 @@
   }
   .social-box .btn-group {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .social-box .btn-group .btn {
     margin: 0 20px 10px 0;
