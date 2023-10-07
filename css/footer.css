@@ -428,10 +428,6 @@ footer .rating-link {
   font-weight: normal;
 }
 
-#requisitesModal .modal-dialog {
-  max-width: 1030px;
-}
-
 .list-requisites {
   max-width: 470px;
 }
@@ -442,7 +438,7 @@ footer .rating-link {
   margin: 0 10px 0 0;
 }
 
-#mediaModal .modal-dialog, #reviewsModal .modal-dialog {
+#mediaModal .modal-dialog, #reviewsModal .modal-dialog, #requisitesModal .modal-dialog {
   max-width: 1030px;
 }
 

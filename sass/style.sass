@@ -1,5 +1,6 @@
 @charset "UTF-8"
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap")
+@import 'vars'
 
 *
 	-webkit-box-sizing: border-box
@@ -375,6 +376,9 @@ h3, .h3
 .mb-30
 	margin-bottom: 30px
 
+.mb-40
+	margin-bottom: 40px
+
 .mb-50
 	margin-bottom: 50px
 
@@ -383,6 +387,9 @@ h3, .h3
 
 .mb-65
 	margin-bottom: 65px
+
+.mb-70
+	margin-bottom: 70px
 
 .mb-80
 	margin-bottom: 80px
@@ -395,12 +402,17 @@ h3, .h3
 
 .box-text
 	font-size: 20px
-
+	line-height: normal
 	p
 		margin: 0 0 30px
 
 		&:last-child
 			margin: 0
+
+a.color-accent
+	color: $accent
+	&:hover
+		color: $grey
 
 .column-count-5
 	-webkit-column-count: 5
@@ -487,6 +499,25 @@ h3, .h3
 .slick-disabled
 	display: none !important
 
+.progress
+	width: 100%
+	height: 20px
+	border-radius: 10px
+	background: #F7F7F7
+	position: relative
+	padding: 4px 5px
+	overflow: hidden
+	&-bg
+		position: absolute
+		left: 5px
+		top: 50%
+		transform: translate(0,-50%)
+		height: calc(100% - 8px)
+		background: $accent
+		border-radius: 10px
+		transition: .3s
+
+
 .checkbox
 	position: relative
 	display: -webkit-box
@@ -500,7 +531,8 @@ h3, .h3
 
 	input
 		display: none
-
+		&:checked ~ .checkbox-custom:before
+			opacity: 1
 	&-custom
 		margin: 0 17px 0 0
 		position: relative
@@ -511,31 +543,28 @@ h3, .h3
 		min-width: 28px
 		cursor: pointer
 
-	&-custom::before
-		content: "✓"
-		position: absolute
-		left: 50%
-		top: 50%
-		-webkit-transform: translate(-50%, -50%)
-		transform: translate(-50%, -50%)
-		width: 22px
-		height: 22px
-		color: #051861
-		opacity: 0
-		-webkit-transition: 0.3s
-		transition: 0.3s
-		display: -webkit-box
-		display: -ms-flexbox
-		display: flex
-		-webkit-box-align: center
-		-ms-flex-align: center
-		align-items: center
-		-webkit-box-pack: center
-		-ms-flex-pack: center
-		justify-content: center
-
-	input:checked ~ .checkbox-custom:before
-		opacity: 1
+		&::before
+			content: "✓"
+			position: absolute
+			left: 50%
+			top: 50%
+			-webkit-transform: translate(-50%, -50%)
+			transform: translate(-50%, -50%)
+			width: 22px
+			height: 22px
+			color: #051861
+			opacity: 0
+			-webkit-transition: 0.3s
+			transition: 0.3s
+			display: -webkit-box
+			display: -ms-flexbox
+			display: flex
+			-webkit-box-align: center
+			-ms-flex-align: center
+			align-items: center
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
 
 .radio
 	display: -webkit-box
@@ -547,13 +576,10 @@ h3, .h3
 	font-size: 20px
 	color: #333
 	cursor: pointer
-
 	input
 		display: none
-
-	input:checked ~ .checkbox-custom::before
-		opacity: 1
-
+		&:checked ~ .checkbox-custom::before
+			opacity: 1
 	&-custom
 		width: 36px
 		height: 36px

@@ -1,3 +1,4 @@
+@import 'vars'
 .home
 	margin: 40px 0 180px
 
@@ -268,7 +269,7 @@
 	&:last-child
 		margin-right: 0
 
-	img, .video-reviews video
+	img, video
 		border-radius: 10px
 		width: 100%
 		height: 100%
@@ -339,14 +340,23 @@
 		-webkit-box-pack: center
 		-ms-flex-pack: center
 		justify-content: center
-		margin: 0 36px 0 0
+		img
+			border-radius: 50%
 
-	&__avatar img
-		border-radius: 50%
+	&__user
+		width: calc(100% - 67px)
+		padding: 0 0 0 20px
+		position: relative
+		.link-web
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translate(0,-50%)
 
 	&__name
 		font-size: 20px
 		font-weight: 600
+		padding: 0 41px 0 0
 
 	&__service
 		display: -webkit-box
@@ -366,7 +376,9 @@
 
 	&__body
 		margin: 20px 0 0
-
+	&__date
+		color: #757575
+		font-size: 14px
 	.list-stars
 		margin: 0 0 20px
 
@@ -776,6 +788,8 @@
 	width: calc(100% - 860px)
 	padding: 43px 74px 90px 30px
 	text-align: right
+	.h2
+		margin: 0 0 50px
 
 .callback-image
 	position: absolute
@@ -1729,3 +1743,319 @@
 		-o-object-fit: cover
 		object-fit: cover
 		border-radius: 5px
+
+// answer page
+.answer-section
+	.subtitle
+		max-width: 1023px
+		text-transform: none
+		font-size: 48px
+		margin: 50px 0
+
+.accordion-answer
+	.accordion-button
+		padding: 31px 37px
+		span
+			max-width: 471px
+	.accordion-body
+		padding: 32px 37px
+
+.question-group
+	margin: 125px 0
+
+.question-group-wrapper
+	position: relative
+	margin: 0 auto
+	border-radius: 10px
+	background: #F7F7F7
+	max-width: 979px
+	width: 100%
+	display: flex
+	align-items: center
+	&__image
+		border-radius: 10px
+		max-width: 239px
+		width: 100%
+		height: 437px
+		margin: -25px 0 -25px auto
+		position: relative
+		@include d-flex
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__content
+		padding: 47px 0 47px 49px
+	.btn
+		margin: 36px 0 0
+		img
+			filter: brightness(0) invert(1)
+			width: 24px
+			margin: 0 0 0 20px
+
+// advantages page
+.advantages-page
+	h1
+		margin: 0 0 50px
+
+.advantages-box
+	width: 100%
+	height: 100%
+	border-radius: 10px
+	border: 1px solid #051861
+	padding: 40px
+	.services-box__head
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+	.services-box__icon
+		margin: 0 0 20px
+	.h3
+		max-width: 290px
+
+.articles-recommended
+	padding: 0
+	margin: 25px 0 70px
+
+.articles-recommended-card
+	padding: 20px
+	.articles-card__img
+		width: 107px
+		height: 107px
+	.articles-card__body
+		width: calc(100% - 107px)
+		padding: 0 0 0 25px
+
+// reviews page			
+.reviews-section
+	h1
+		margin: 0 0 54px
+	.reviews-card
+		max-width: none
+		width: 100%
+
+.rating-web
+	margin: 37px 0 40px
+	.h3
+		margin: 0 0 28px
+
+.rating-web-box
+	display: flex
+	align-items: center
+	border-radius: 10px
+	background: #F7F7F7
+	width: 100%
+	height: 100%
+	padding: 32px 65px
+	.logo-company
+		max-width: 201px
+		margin: 0 auto 0 0
+		display: flex
+		flex-direction: column
+		align-items: center
+		span
+			margin: 23px auto 0
+
+.logo-company-yandex
+	max-width: 260px
+	width: 100%
+	img
+		width: 100%
+
+.link-web
+	max-width: 41px
+
+.reviews-video-section
+	padding: 0
+	margin: 150px 0 35px
+
+.video-reviews-slider
+	padding: 0 64px 0 0
+	.slick-next
+		top: 30%
+	.slick-prev
+		display: none !important
+
+.reviews-slider-social
+	width: calc(100% + 110px)
+	margin: 0 0 40px
+	.slick-track
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-align: stretch
+		-ms-flex-align: stretch
+		align-items: stretch
+
+	.slick-slide
+		height: auto
+		margin: 0 30px 0 0
+
+.other-reviews
+	margin: 130px 0 115px
+
+.other-reviews-slider
+	padding: 0 65px
+	margin: 0 0 50px
+	.slick-list
+		margin: 0 -30px
+	.slide
+		padding: 0 30px
+	&__item
+		border-radius: 10px
+		height: 450px
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			border-radius: 10px
+			object-fit: cover
+
+.question-group-reviews
+	margin: 115px 0 95px
+	.question-group-wrapper
+		max-width: 1555px
+		padding: 30px 60px
+		align-items: flex-start
+		&__content
+			padding: 0
+			margin: 0 auto 0 0
+			max-width: 690px
+		&__box
+			max-width: 372px
+			width: 100%
+			padding: 0 38px
+			border-left: 1px solid #FFC797
+			&:last-child
+				padding-right: 0
+				max-width: 334px
+
+// service page
+.service-section
+	margin: 0 0 85px
+
+.service-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+	h1
+		margin: 0 0 64px
+		color: #fff
+	&__content
+		border-radius: 10px
+		background: #051861
+		max-width: 890px
+		width: 100%
+		color: #fff
+		padding: 54px 60px 53px 73px
+	&__image
+		width: calc(100% - 890px)
+		border-radius: 0 10px 10px 0
+		@include d-flex
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: 0 10px 10px 0
+	.box-text
+		position: relative
+		padding: 0 0 0 77px
+		max-width: 583px
+		width: 100%
+		svg
+			position: absolute
+			left: 0
+			top: 0
+			fill: #fff
+			width: 36px
+	form
+		margin: 45px 0 0
+		[type='submit']
+			min-width: 224px
+
+.service-sale
+	margin: 0 0 100px
+	h2
+		margin: 0 0 15px
+	.box-text
+		p
+			margin: 0 0 15px
+		&:last-child
+			margin: 0
+	&__image
+		position: relative
+		z-index: 1
+		border-radius: 10px
+		max-height: 370px
+		overflow: hidden
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #fff
+		&::before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: linear-gradient(-270deg, rgba(5, 24, 97, 0.80) 1.18%, rgba(5, 24, 97, 0.00) 38.54%)
+		img
+			border-radius: 10px
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transform: scale(-1, 1)
+			z-index: -1
+		.box-text
+			position: absolute
+			width: 100%
+			left: 0
+			bottom: 0
+			padding: 44px 42px
+			font-weight: 600
+			span
+				margin: 26px 0 0
+				display: block
+			.h3
+				text-transform: uppercase
+				font-size: 48px
+
+.service-advantages
+	margin: 100px 0 84px
+
+.service-advantages-slider
+	padding: 0 45px
+	.slick-track
+		display: flex
+		align-items: stretch
+	.slide
+		margin: 0 23px
+		height: auto
+
+.service-advantages-box
+	width: 100%
+	height: 100%
+	padding: 32px 36px
+	border-radius: 10px
+	background: #F7F7F7
+	.h3
+		margin: 0 0 14px
+
+.service-who-box
+	width: 100%
+	&__head
+		display: flex
+		align-items: center
+		margin: 0 0 20px
+		.svg-icon
+			min-width: 50px
+			width: 50px
+			height: 35px
+			margin: 0 20px 0 0
+			@include d-flex		
+			fill: $accent
+	.box-text
+		max-width: 347px

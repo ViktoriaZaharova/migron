@@ -1,3 +1,9 @@
+if ($('#wpadminbar')[0]) { // fix admin bar
+	$('header').css('margin-top', '32px')
+	$('header').next().css('margin-top', '32px')
+}
+
+
 // mobile menu
 $('.btn-burger').on('click', function () {
 	$('.mobile-menu').toggleClass('open');
@@ -15,7 +21,6 @@ $('.video-reviews-wrapper').slick({
 	variableWidth: true,
 	arrows: false,
 	infinite: false,
-	// swipe: false,
 	responsive: [
 		{
 			breakpoint: 992,
@@ -26,6 +31,15 @@ $('.video-reviews-wrapper').slick({
 			}
 		}
 	]
+});
+
+$('.video-reviews-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	infinite: false,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+
 });
 
 $('.reviews-slider').slick({
@@ -51,6 +65,115 @@ $('.reviews-slider').slick({
 		}
 	]
 });
+
+$('.reviews-slider-social1').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	arrows: false,
+	swipe: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	asNavFor: '.reviews-slider-social2',
+	responsive: [
+		{
+			breakpoint: 480,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.reviews-slider-social2').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	arrows: false,
+	swipe: false,
+	autoplay: true,
+	autoplaySpeed: 2000,
+	asNavFor: '.reviews-slider-social1',
+	responsive: [
+		{
+			breakpoint: 480,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+//progressbar
+$(document).ready(function () {
+	function setProgress1(index) {
+		const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+		$progressBar.css('width', calc - 0.5 + '%').attr('aria-valuenow', calc);
+	}
+
+	const $slider = $('.reviews-slider-social2');
+	const $progressBar = $slider.siblings().find('.progress-bg');
+
+	$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+		setProgress1(nextSlide);
+	});
+
+	setProgress1(0);
+});
+
+
+$('.other-reviews-slider').slick({
+	slidesToShow: 1,
+	variableWidth: true,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				variableWidth: false,
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$('.service-advantages-slider').slick({
+	slidesToShow: 3,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
+$(document).ready(function () {
+	function setProgress2(index) {
+		const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+		$progressBar.css('width', calc - 0.5 + '%').attr('aria-valuenow', calc);
+	}
+
+	const $slider = $('.other-reviews-slider');
+	const $progressBar = $slider.siblings().find('.progress-bg');
+
+	$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+		setProgress2(nextSlide);
+	});
+
+	setProgress2(0);
+});
+
 
 $('.video-mass-media-wrapper').slick({
 	slidesToShow: 2,
@@ -154,7 +277,7 @@ $(window).on('load resize', function () {
 			slidesToShow: 1,
 			variableWidth: true,
 			nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
-			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',	
+			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
 			responsive: [
 				{
 					breakpoint: 390,
@@ -212,3 +335,49 @@ $('.btn-toggle').on('click', function (e) {
 		$(this).hide();
 	}
 });
+
+$('.mediaModal').on('show.bs.modal', function () {
+	$(this).find('iframe').attr('src', $(this).find('iframe').data('src'));
+});
+
+
+$(document).ready(function () {
+	initMap();
+});
+
+
+function initMap() {
+	if ($(document).scrollTop() > 300) {
+		$('.contacts-map').find('iframe').attr('src', $('.contacts-map').find('iframe').data('src'));
+		$(document).off("scroll", initMap);
+	}
+}
+
+$(document).on("scroll", initMap);
+
+if (typeof (Fancybox) != 'undefined') {
+	Fancybox.bind("[data-fancybox]", {
+		closeButton: true,
+	});
+}
+
+
+
+$('.form-search').submit(function (e) {
+	e.preventDefault();
+	var val = $(this).find('input[name="query"]').val();
+
+	window.location.href = "/search/" + val + '/';
+
+});
+
+
+if (typeof (hidden_blocks) != 'undefined') {
+	var i = 0;
+	$('section').not('.callback, .contacts').each(function (k, v) {
+		i++;
+		if (i % 2 == 0) {
+			$(v).addClass('m-105');
+		}
+	});
+}

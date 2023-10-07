@@ -39,6 +39,9 @@
 	.contacts-box:last-child
 		padding: 0 0 0 60px
 
+	.rating-web-box
+		padding: 20px
+
 @media only screen and (max-width: 1520px)
 	.phone-callback
 		font-size: 44px
@@ -121,6 +124,9 @@
 		.btn:last-child
 			margin: 0
 
+	.answer-section .subtitle
+		font-size: 38px
+
 @media only screen and (max-width: 1399px)
 	.footer-box
 		margin: 0 0 38px
@@ -144,6 +150,9 @@
 
 	.company-founder__name
 		padding: 25px 30px
+
+	.rating-web-box .logo-company
+		max-width: 170px
 
 @media only screen and (max-width: 1350px)
 	.header-contacts
@@ -199,6 +208,28 @@
 
 	.documents-card
 		width: calc(33.33% - 35px)
+
+	.answer-section .subtitle
+		font-size: 30px
+
+	.articles-recommended-card
+		.articles-card__img
+			width: 100%
+			height: 200px
+		.articles-card__body
+			width: 100%
+			padding: 0
+
+	.rating-web-box
+		flex-direction: column
+		align-items: center
+		.logo-company
+			margin: auto auto 20px
+			span
+				margin: 10px auto 0
+		.btn
+			width: 100%
+			margin: auto auto 0
 
 @media only screen and (max-width: 1200px)
 	.nav-menu .nav-item
@@ -387,6 +418,26 @@
 	.list-documents li
 		margin: 0 20px 0 0
 
+	.answer-section .subtitle
+		font-size: 24px
+		margin: 30px 0
+
+	.question-group
+		margin: 70px 0
+
+	.rating-web
+		margin: 30px 0
+
+	.reviews-video-section
+		padding: 0
+		margin: 0
+
+	.reviews-slider-social
+		width: calc(100% + 15px)
+
+	.other-reviews
+		margin: 70px 0
+
 @media only screen and (max-width: 992px)
 	header
 		position: relative
@@ -533,6 +584,9 @@
 
 		&__name
 			font-size: 18px
+		&__user
+			width: 100%
+			padding: 0
 
 	.mass-media h2
 		margin: 0 0 35px
@@ -814,6 +868,51 @@
 	.driving-slider
 		margin: 60px auto 0
 
+	.accordion-answer
+		.accordion-item:last-child
+			margin: 0 0 23px
+		.accordion-button
+			padding: 20px
+		.accordion-body
+			padding: 30px 20px 20px
+
+	.articles-recommended
+		padding: 0
+		margin: 25px 0 50px
+
+	.question-group-reviews
+		margin: 60px 0
+		.question-group-wrapper
+			flex-wrap: wrap
+			padding: 20px
+			.btn
+				margin: 20px auto 0
+			&__content
+				max-width: none
+				width: 100%
+				margin: 0 auto 20px
+				text-align: center
+
+			&__box
+				max-width: none
+				width: 100%
+				padding: 0 0 20px
+				margin: 0 0 20px
+				border: none
+				border-bottom: 1px solid #FFC797
+				&:last-child
+					border: none
+					padding: 0
+					margin: 0
+					max-width: none
+
+	.other-reviews-slider
+		padding: 0 32px
+		.slick-list
+			margin: 0 -10px
+		.slide
+			padding: 0 10px
+
 @media only screen and (max-width: 768px)
 	h1, .h1
 		font-size: 36px
@@ -1011,10 +1110,10 @@
 			border-bottom: 1px solid #FFC797
 			padding: 0 0 36px
 
-		&-box:last-child
-			width: 100%
-			border: none
-			padding: 36px 0 0
+			&:last-child
+				width: 100%
+				border: none
+				padding: 36px 0 0
 
 		.h3
 			margin: 0 auto
@@ -1074,6 +1173,21 @@
 			right: 21px
 			background: url("../img/loupe.svg") no-repeat center
 			background-size: 100%
+
+	.question-group-wrapper
+		text-align: center
+		flex-wrap: wrap
+		&__content
+			padding: 20px
+			width: 100%
+		&__image
+			margin: 0 auto
+		.btn
+			margin: 20px auto 0
+
+	.answer-section .subtitle
+		margin: 20px 0 10px
+		font-size: 20px
 
 @media only screen and (max-width: 576px)
 	h3, .h3
@@ -1230,12 +1344,20 @@
 	.driving-direction-box__head
 		margin: 0 0 37px
 
+	.video-reviews-slider
+		padding: 0 32px 0 0
+
 @media only screen and (max-width: 480px)
 	.logo
 		max-width: 110px
 
 	.team-card__photo
 		height: 201px
+
+	.reviews-slider-social
+		width: 100%
+		.slick-slide
+			margin: 0
 
 @media only screen and (max-width: 420px)
 	.home .btn

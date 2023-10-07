@@ -39,6 +39,9 @@
   .contacts-box:last-child {
     padding: 0 0 0 60px;
   }
+  .rating-web-box {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 1520px) {
   .phone-callback {
@@ -128,6 +131,9 @@
   .social-box .btn-group .btn:last-child {
     margin: 0;
   }
+  .answer-section .subtitle {
+    font-size: 38px;
+  }
 }
 @media only screen and (max-width: 1399px) {
   .footer-box {
@@ -151,6 +157,9 @@
   }
   .company-founder__name {
     padding: 25px 30px;
+  }
+  .rating-web-box .logo-company {
+    max-width: 170px;
   }
 }
 @media only screen and (max-width: 1350px) {
@@ -207,6 +216,36 @@
   }
   .documents-card {
     width: calc(33.33% - 35px);
+  }
+  .answer-section .subtitle {
+    font-size: 30px;
+  }
+  .articles-recommended-card .articles-card__img {
+    width: 100%;
+    height: 200px;
+  }
+  .articles-recommended-card .articles-card__body {
+    width: 100%;
+    padding: 0;
+  }
+  .rating-web-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .rating-web-box .logo-company {
+    margin: auto auto 20px;
+  }
+  .rating-web-box .logo-company span {
+    margin: 10px auto 0;
+  }
+  .rating-web-box .btn {
+    width: 100%;
+    margin: auto auto 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -395,6 +434,26 @@
   .list-documents li {
     margin: 0 20px 0 0;
   }
+  .answer-section .subtitle {
+    font-size: 24px;
+    margin: 30px 0;
+  }
+  .question-group {
+    margin: 70px 0;
+  }
+  .rating-web {
+    margin: 30px 0;
+  }
+  .reviews-video-section {
+    padding: 0;
+    margin: 0;
+  }
+  .reviews-slider-social {
+    width: calc(100% + 15px);
+  }
+  .other-reviews {
+    margin: 70px 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   header {
@@ -541,6 +600,10 @@
   }
   .reviews-card__name {
     font-size: 18px;
+  }
+  .reviews-card__user {
+    width: 100%;
+    padding: 0;
   }
   .mass-media h2 {
     margin: 0 0 35px;
@@ -821,6 +884,59 @@
   .driving-slider {
     margin: 60px auto 0;
   }
+  .accordion-answer .accordion-item:last-child {
+    margin: 0 0 23px;
+  }
+  .accordion-answer .accordion-button {
+    padding: 20px;
+  }
+  .accordion-answer .accordion-body {
+    padding: 30px 20px 20px;
+  }
+  .articles-recommended {
+    padding: 0;
+    margin: 25px 0 50px;
+  }
+  .question-group-reviews {
+    margin: 60px 0;
+  }
+  .question-group-reviews .question-group-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .question-group-reviews .question-group-wrapper .btn {
+    margin: 20px auto 0;
+  }
+  .question-group-reviews .question-group-wrapper__content {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+  .question-group-reviews .question-group-wrapper__box {
+    max-width: none;
+    width: 100%;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border: none;
+    border-bottom: 1px solid #FFC797;
+  }
+  .question-group-reviews .question-group-wrapper__box:last-child {
+    border: none;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+  .other-reviews-slider {
+    padding: 0 32px;
+  }
+  .other-reviews-slider .slick-list {
+    margin: 0 -10px;
+  }
+  .other-reviews-slider .slide {
+    padding: 0 10px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -1082,6 +1198,25 @@
     background: url("../img/loupe.svg") no-repeat center;
     background-size: 100%;
   }
+  .question-group-wrapper {
+    text-align: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .question-group-wrapper__content {
+    padding: 20px;
+    width: 100%;
+  }
+  .question-group-wrapper__image {
+    margin: 0 auto;
+  }
+  .question-group-wrapper .btn {
+    margin: 20px auto 0;
+  }
+  .answer-section .subtitle {
+    margin: 20px 0 10px;
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 576px) {
   h3, .h3 {
@@ -1238,6 +1373,9 @@
   .driving-direction-box__head {
     margin: 0 0 37px;
   }
+  .video-reviews-slider {
+    padding: 0 32px 0 0;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logo {
@@ -1245,6 +1383,12 @@
   }
   .team-card__photo {
     height: 201px;
+  }
+  .reviews-slider-social {
+    width: 100%;
+  }
+  .reviews-slider-social .slick-slide {
+    margin: 0;
   }
 }
 @media only screen and (max-width: 420px) {
