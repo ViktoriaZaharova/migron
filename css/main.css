@@ -267,6 +267,9 @@
   -ms-flex-align: start;
   align-items: flex-start;
 }
+.video-reviews-wrapper .slick-arrow {
+  display: none !important;
+}
 
 .video-reviews {
   position: relative;
@@ -1094,7 +1097,8 @@
   padding: 20px;
   font-weight: 600;
   text-align: center;
-  border: 1px solid #B4B4B4;
+  border-right: 1px solid #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
   border-top: none;
 }
 .table-price th:first-child {
@@ -1106,7 +1110,8 @@
 .table-price td {
   padding: 19px 20px 24px;
   min-height: 108px;
-  border: 1px solid #B4B4B4;
+  border-right: 1px solid #B4B4B4;
+  border-bottom: 1px solid #B4B4B4;
   text-align: center;
 }
 .table-price td:first-child {
@@ -2298,4 +2303,273 @@
 }
 .service-who-box .box-text {
   max-width: 347px;
+}
+
+.service-base {
+  margin: 90px 0 70px;
+}
+
+.service-base-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #051861;
+  padding: 32px 36px 48px;
+}
+.service-base-box .h3 {
+  margin: 0 0 14px;
+}
+
+.service-country {
+  margin: 85px 0 90px;
+}
+
+.service-country-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.service-country-box__icon {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  margin: 0 34px 0 0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+.service-country-box__icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service-restrictions h2 {
+  margin: 0 0 35px;
+}
+.service-restrictions__content .box-text {
+  max-width: 576px;
+  width: 100%;
+}
+.service-restrictions__content .box-text ul {
+  font-size: 24px;
+}
+.service-restrictions__content .box-text ul li {
+  margin: 0 0 30px;
+}
+.service-restrictions__content .box-text ul li:last-child {
+  margin: 0;
+}
+.service-restrictions__image {
+  width: 100%;
+  height: 456px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.service-restrictions__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.service-stages {
+  margin: 115px 0 50px;
+}
+
+.service-stage-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 0 27px;
+}
+.service-stage-box__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background: #051861;
+  color: #fff;
+  width: 66px;
+  height: 66px;
+  margin: 8px 0 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+.service-stage-box__body {
+  width: calc(100% - 66px);
+  padding: 0 0 0 28px;
+}
+.service-stage-box .h3 {
+  margin: 0 0 14px;
+}
+
+.table-price-service {
+  border-radius: 20px;
+  border: 1px solid #B4B4B4;
+  border-collapse: separate;
+}
+.table-price-service tbody tr:last-child td {
+  border-bottom: none;
+}
+.table-price-service td:first-child {
+  padding: 19px 70px 24px 40px;
+}
+
+.service-documents {
+  margin: 84px 0 185px;
+}
+.service-documents h2 {
+  margin: 0 0 30px;
+}
+.service-documents .h2 {
+  margin: 0 0 22px;
+}
+.service-documents .documents-card {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.service-documents .documents-card:first-child {
+  margin: 0;
+}
+.service-documents__content {
+  padding: 40px 0 0;
+}
+.service-documents__content .box-text ul {
+  font-size: 24px;
+}
+.service-documents__content .box-text ul li {
+  margin: 0 0 30px;
+}
+.service-documents__content .box-text ul li:last-child {
+  margin: 0;
+}
+.service-documents__content-company {
+  border-radius: 20px;
+  background: #F7F7F7;
+  padding: 40px 45px 43px;
+}
+.service-documents__content-company .box-text {
+  margin: 0 0 40px;
+}
+
+.all-reviews {
+  width: 100%;
+}
+
+.service-type {
+  margin: 0 0 100px;
+}
+
+.service-type-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.service-type-box {
+  padding: 0 35px 0 0;
+  border-right: 1px solid #FFC797;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.service-type-box:last-child {
+  padding: 0 0 0 35px;
+  border: none;
+}
+.service-type-box__content {
+  width: calc(100% - 238px);
+  padding: 0 44px 0 0;
+}
+.service-type-box__image {
+  width: 238px;
+  height: 262px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+}
+.service-type-box__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.service-type-box .h3 {
+  margin: 0 0 55px;
+}
+
+.reviews-v2 .video-reviews-wrapper {
+  margin: 60px 0 0;
+  padding: 0 55px 0 0;
+}
+.reviews-v2 .video-reviews-wrapper .slick-next {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+.reviews-v2 .video-reviews-wrapper .video-reviews {
+  margin-bottom: 0;
+}
+
+.service-question .accordion-jobs {
+  max-width: none;
+}
+
+.service-articles {
+  margin: 85px 0 50px;
+  padding: 0;
 }
