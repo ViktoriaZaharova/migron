@@ -1846,6 +1846,9 @@
   margin: 50px 0;
 }
 
+.accordion-answer {
+  max-width: none;
+}
 .accordion-answer .accordion-button {
   padding: 31px 37px;
 }
@@ -1937,7 +1940,7 @@
 .advantages-box .services-box__icon {
   margin: 0 0 20px;
 }
-.advantages-box .h3 {
+.advantages-box .h3, .advantages-box h3 {
   max-width: 290px;
 }
 
@@ -2018,7 +2021,7 @@
 
 .reviews-video-section {
   padding: 0;
-  margin: 150px 0 35px;
+  margin: 75px 0 35px;
 }
 
 .video-reviews-slider {
@@ -2049,7 +2052,7 @@
 }
 
 .other-reviews {
-  margin: 130px 0 115px;
+  margin: 115px 0;
 }
 
 .other-reviews-slider {
@@ -2455,9 +2458,6 @@
 .service-documents h2 {
   margin: 0 0 30px;
 }
-.service-documents .h2 {
-  margin: 0 0 22px;
-}
 .service-documents .documents-card {
   margin: 0;
   width: 100%;
@@ -2485,6 +2485,9 @@
 }
 .service-documents__content-company .box-text {
   margin: 0 0 40px;
+}
+.service-documents__content-company h2 {
+  margin: 0 0 22px;
 }
 
 .all-reviews {
