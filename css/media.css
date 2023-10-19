@@ -1069,7 +1069,7 @@
   .service-type-box:last-child {
     padding: 20px 0 0;
   }
-  .service-type-box .h3 {
+  .service-type-box h3 {
     margin: 0 0 20px;
   }
 }
