@@ -294,6 +294,29 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   margin: 0;
 }
 
+.btn-icon-arrow {
+  width: 11px;
+  height: 22px;
+  fill: #051861;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 20px 0 0;
+}
+
+.btn-next-sale .btn-icon-arrow {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0 0 0 20px;
+}
+
 .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
   border-radius: 20px;
@@ -464,6 +487,10 @@ h3, .h3 {
 
 .m-105 {
   margin: 105px 0;
+}
+
+section {
+  margin: 0 0 100px;
 }
 
 .box-text {

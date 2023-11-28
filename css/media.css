@@ -263,6 +263,13 @@
   .service-wrapper__image {
     width: calc(100% - 720px);
   }
+  .recommended-information-box {
+    padding: 20px;
+  }
+  .recommended-information-box__name {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .nav-menu .nav-item {
@@ -469,6 +476,15 @@
   }
   .other-reviews {
     margin: 70px 0;
+  }
+  .sales-section h1, .sales-section .box-text {
+    margin: 0 0 30px;
+  }
+  .sales-navigation {
+    margin: 30px 0 0;
+  }
+  .new-page-section .box-text {
+    margin: 60px 0 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1072,6 +1088,16 @@
   .service-type-box h3 {
     margin: 0 0 20px;
   }
+  .sales-img {
+    margin: 30px 0 0;
+  }
+  .btn-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .btn-group .btn {
+    margin: 0 20px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -1352,6 +1378,36 @@
     margin: 20px 0 10px;
     font-size: 20px;
   }
+  .sales-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sales-navigation .btn {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  section {
+    margin: 0 0 60px;
+  }
+  .our-services-box .h3 {
+    padding: 0 0 0 20px;
+    width: calc(100% - 32px);
+  }
+  .our-services-box .services-box__icon {
+    width: 32px;
+    min-width: 32px;
+  }
+  .special-offers-card .box-text {
+    max-width: none;
+  }
+  .special-offers-card .box-text br {
+    display: none;
+  }
 }
 @media only screen and (max-width: 576px) {
   h3, .h3 {
@@ -1540,6 +1596,12 @@
   .service-articles {
     padding: 0;
     margin: 60px 0 50px;
+  }
+  .our-services-box .h3 br {
+    display: none;
+  }
+  .new-page-section .box-text {
+    margin: 0 0 20px;
   }
 }
 @media only screen and (max-width: 480px) {
