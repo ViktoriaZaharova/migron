@@ -2741,3 +2741,168 @@
   margin: 0 0 80px;
   max-width: 682px;
 }
+
+.documents-page-section .documents-card {
+  height: 100%;
+  padding: 25px 45px;
+  width: 100%;
+  max-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.documents-page-section .documents-card__body {
+  padding: 0 0 0 66px;
+  width: 100%;
+  margin: auto 0 0;
+}
+.documents-page-section .documents-card__head {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.documents-page-section .documents-card .btn {
+  margin: 0;
+}
+
+.employees-image {
+  width: 100%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.employees-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.company-management h2 {
+  margin: 0 0 70px;
+}
+
+.payments-information {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.payments-information .box-text {
+  max-width: 913px;
+  margin: 0 50px 0 0;
+}
+
+.payments-variable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.payments-variable li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 37px;
+  margin: 0 40px 0 0;
+}
+.payments-variable li:last-child {
+  margin: 0;
+}
+.payments-variable li img {
+  max-height: 100%;
+}
+
+.form-payments {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 20px;
+  background: #F7F7F7;
+  padding: 40px 35px 0;
+}
+.form-payments label {
+  max-width: 335px;
+  width: 100%;
+  margin: 0 23px 30px 0;
+}
+.form-payments label:last-child {
+  margin: 0 23px 30px 0;
+}
+.form-payments [type=submit] {
+  margin: 0 0 30px;
+}
+
+.payments-rules {
+  margin: 0 0 40px;
+}
+
+.payments-recommended {
+  margin: 0 0 70px;
+}
+.payments-recommended .box-text p {
+  margin: 0;
+}
+
+.payments-recommended-box__img {
+  max-width: 542px;
+}
+.payments-recommended-box.img-min {
+  max-width: 322px;
+  margin: 0 auto;
+}
+
+.purchase-returns {
+  margin: 0 0 55px;
+}
+.purchase-returns .box-text p {
+  margin: 0;
+}
+
+.requisites-company .list-requisites {
+  max-width: none;
+  font-size: 20px;
+  width: 100%;
+}
+.requisites-company .list-requisites li {
+  margin: 0 0 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.requisites-company .list-requisites li:last-child {
+  margin: 0;
+}
+.requisites-company .list-requisites li p {
+  min-width: 285px;
+  color: #051861;
+}

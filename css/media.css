@@ -28,6 +28,12 @@
     width: calc(50% - 35px);
     margin: 0 auto 35px 0;
   }
+  .form-payments {
+    padding: 30px 30px 0;
+  }
+  .form-payments label {
+    max-width: 300px;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .jobs-area .box-text {
@@ -41,6 +47,30 @@
   }
   .rating-web-box {
     padding: 20px;
+  }
+  .form-payments {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .form-payments label {
+    max-width: calc(20% - 10px);
+    margin: 0 0 20px;
+  }
+  .form-payments label:last-child {
+    margin: 0 0 20px;
+  }
+  .form-payments [type=submit] {
+    max-width: calc(20% - 10px);
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  .payments-variable li {
+    margin: 0 20px 0 0;
+  }
+  .payments-information .box-text {
+    margin: 0 20px 0 0;
+    max-width: 800px;
   }
 }
 @media only screen and (max-width: 1520px) {
@@ -136,6 +166,17 @@
   }
   .services-box .box-text br {
     display: none;
+  }
+  .form-payments label {
+    max-width: calc(50% - 10px);
+  }
+  .form-payments [type=submit] {
+    max-width: calc(50% - 10px);
+    margin: 0 auto 20px;
+  }
+  .payments-information .box-text {
+    max-width: none;
+    margin: 0 0 20px;
   }
 }
 @media only screen and (max-width: 1399px) {
@@ -1408,6 +1449,21 @@
   .special-offers-card .box-text br {
     display: none;
   }
+  .form-payments {
+    padding: 20px;
+  }
+  .form-payments label {
+    max-width: none;
+  }
+  .form-payments [type=submit] {
+    max-width: none;
+  }
+  .mb-45 {
+    margin-bottom: 30px;
+  }
+  .payments-page-section .btn {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   h3, .h3 {
@@ -1602,6 +1658,24 @@
   }
   .new-page-section .box-text {
     margin: 0 0 20px;
+  }
+  .documents-page-section .documents-card {
+    padding: 20px 30px;
+  }
+  .documents-page-section .documents-card__name {
+    padding: 0 0 0 20px;
+  }
+  .documents-page-section .documents-card__body {
+    padding: 0 0 0 55px;
+  }
+  .requisites-company .list-requisites li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .requisites-company .list-requisites li p {
+    min-width: none;
+    width: 100%;
+    margin: 0 0 10px;
   }
 }
 @media only screen and (max-width: 480px) {
