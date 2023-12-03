@@ -159,6 +159,26 @@ $('.service-advantages-slider').slick({
 	]
 });
 
+$('.article-slider-gallery').slick({
+	slidesToShow: 3,
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+			}
+		}
+	]
+});
+
 $(document).ready(function () {
 	function setProgress2(index) {
 		const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
