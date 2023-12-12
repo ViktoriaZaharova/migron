@@ -35,7 +35,16 @@
 			max-width: 300px
 
 	.video-article
-		max-width: none		
+		max-width: none
+
+	.address-contacts
+		.contacts-wrapper
+			.phone
+				margin: 0 40px 0 0
+			.schedule
+				margin: 0 40px
+			.address-location
+				padding: 0 0 0 40px
 
 @media only screen and (max-width: 1600px)
 	.jobs-area .box-text
@@ -59,19 +68,27 @@
 				margin: 0	0 20px
 		[type='submit']
 			max-width: calc(20% - 10px)
-			width: 100%	
-			margin: 0 0 20px	
+			width: 100%
+			margin: 0 0 20px
 
 	.payments-variable li
 		margin: 0 20px 0 0
 
 	.payments-information .box-text
 		margin: 0 20px 0 0
-		max-width: 800px			
+		max-width: 800px
 
 	.author-article .btn-group
 		width: 100%
-		margin: 20px 0 0	
+		margin: 20px 0 0
+
+	.address-contacts .contacts-wrapper .schedule
+		font-size: 16px
+
+	.rezume-box
+		margin: 30px 0 0
+		.box-text
+			max-width: 600px
 
 @media only screen and (max-width: 1520px)
 	.phone-callback
@@ -167,14 +184,13 @@
 		label
 			max-width: calc(50% - 10px)
 		[type='submit']
-			max-width: calc(50% - 10px)	
+			max-width: calc(50% - 10px)
 			margin: 0 auto 20px
 
-	.payments-information 
-		.box-text				
+	.payments-information
+		.box-text
 			max-width: none
 			margin: 0 0 20px
-
 
 @media only screen and (max-width: 1399px)
 	.footer-box
@@ -202,6 +218,16 @@
 
 	.rating-web-box .logo-company
 		max-width: 170px
+
+	.address-contacts .contacts-wrapper
+		.phone, .mail
+			font-size: 30px
+		.address-location
+			width: 100%
+			padding: 20px 0 0
+			border: none
+			border-top: 1px solid #FFC797
+			margin: 20px 0 0
 
 @media only screen and (max-width: 1350px)
 	.header-contacts
@@ -298,7 +324,13 @@
 			margin: 0 0 20px
 
 	.article-slider-gallery
-		padding: 0 60px		
+		padding: 0 60px
+
+	.company-management-details 
+		margin: 20px 0 0
+		.h3
+			margin: 0 0 20px
+			width: 100%	
 
 @media only screen and (max-width: 1200px)
 	.nav-menu .nav-item
@@ -519,10 +551,30 @@
 			margin: 60px 0 0
 
 	.article-slider-gallery
-		padding: 0 20px	
+		padding: 0 20px
 
 	.article-page-section .box-text
-		margin: 0		
+		margin: 0
+
+	.address-contacts .contacts-wrapper
+		.phone, .mail
+			font-size: 26px
+
+	.advantages-company
+		margin: 60px 0
+		&-slider
+			padding: 0 40px
+			.slick-prev
+				left: 0
+			.slick-next
+				right: 0
+
+	.rezume-box
+		.box-text
+			max-width: none
+			margin: 0 0 20px
+		.btn
+			margin: 0
 
 @media only screen and (max-width: 992px)
 	header
@@ -1111,7 +1163,13 @@
 			margin: 0 20px 0 0
 
 	.video-article
-		max-width: none		
+		max-width: none
+
+	.vacancies-img
+		height: auto
+
+	.advantages-company-slider
+		margin: 30px 0 0
 
 @media only screen and (max-width: 768px)
 	h1, .h1
@@ -1424,14 +1482,14 @@
 
 	.payments-page-section
 		.btn
-			margin: 0	
+			margin: 0
 
 	.author-article
 		.btn
 			width: 100%
 
 	.author-article-box
-		width: 100%		
+		width: 100%
 
 	.rating-article
 		width: 100%
@@ -1440,6 +1498,23 @@
 	.article-page-section .sales-content .box-text
 		font-size: 18px
 
+	.address-contacts
+		.contacts-wrapper
+			.mail, .phone
+				font-size: 24px
+			.mail
+				width: 100%
+			.phone
+				margin: 0 0 20px
+			.schedule
+				margin: 20px 0
+				width: 100%
+
+	.advantages-company h2
+		margin: 0 0 30px
+
+	.btn-rezume
+		flex-wrap: wrap
 
 @media only screen and (max-width: 576px)
 	h3, .h3
@@ -1644,7 +1719,7 @@
 		&__body
 			padding: 0 0 0 55px
 
-	.requisites-company	
+	.requisites-company
 		.list-requisites
 			li
 				flex-wrap: wrap
@@ -1654,7 +1729,15 @@
 					margin: 0 0 10px
 
 	.article-page-section .sales-content .box-text
-		margin: 0				
+		margin: 0
+
+	.rezume-box .btn
+		font-size: 16px
+		.mail-text
+			margin: 5px 0 0
+
+	.btn-vacancy .btn-icon
+		margin: 0 0 0 10px		
 
 @media only screen and (max-width: 480px)
 	.logo
@@ -1667,6 +1750,9 @@
 		width: 100%
 		.slick-slide
 			margin: 0
+
+	.advantages-company-slider__item
+		height: 350px
 
 @media only screen and (max-width: 420px)
 	.home .btn

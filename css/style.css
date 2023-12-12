@@ -310,6 +310,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   margin: 0;
 }
 
+.btn-grey {
+  background: #F7F7F7;
+}
+
 .btn-icon-arrow {
   width: 11px;
   height: 22px;
