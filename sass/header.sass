@@ -218,6 +218,16 @@ header
 
 	.nav-item
 		margin: 0 60px 0 0
+		&:hover
+			.dropdown-menu
+				display: block
+		.dropdown-menu
+			overflow: hidden
+			left: 50%
+			transform: translate(-50%,0)
+		.dropdown-item
+			&:hover
+				background: #fff	 		
 
 	.nav-item:last-child
 		margin: 0
@@ -397,6 +407,8 @@ header
 
 	.nav-menu .nav-link
 		color: #fff
+	.dropdown-toggle:after
+		filter: brightness(0) invert(1)	
 
 	.list-messengers
 		margin: 32px 0 0

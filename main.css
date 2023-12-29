@@ -1052,7 +1052,7 @@
   box-shadow: none;
 }
 .accordion-button:after {
-  background: url("../img/accordion-arrow.svg") no-repeat center;
+  background: url("/wp-content/themes/migron/img/accordion-arrow.svg") no-repeat center;
   background-size: 100%;
   width: 24px;
   min-width: 24px;
@@ -1072,7 +1072,7 @@
   box-shadow: none;
 }
 .accordion-button:not(.collapsed):after {
-  background: url("../img/accordion-arrow.svg") no-repeat center;
+  background: url("/wp-content/themes/migron/img/accordion-arrow.svg") no-repeat center;
   background-size: 100%;
   width: 24px;
   height: 12px;
@@ -2473,6 +2473,9 @@
 .service-documents__content {
   padding: 40px 0 0;
 }
+/* .service-documents__content .box-text ul {
+  font-size: 24px;
+} */
 .service-documents__content .box-text ul li {
   margin: 0 0 30px;
 }
@@ -2790,23 +2793,6 @@
 
 .company-management h2 {
   margin: 0 0 70px;
-}
-.company-management-details {
-  margin: 35px 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.company-management-details .h3 {
-  margin: 0 48px 0 0;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 .payments-information {
